@@ -28,6 +28,7 @@ checklists:
   - offer-stack-checklist
   - guarantee-checklist
 registries: [offer-registry]
+metrics: [cac, ltv_cac_ratio, payback_period, front_end_cac_liquidation, aov]
 tags: [offer-architecture, unit-economics, cac, ltv, aov, payback, offer-stack, garantia, escassez, magic-naming, d2]
 ---
 
@@ -80,6 +81,13 @@ CAC, AOV, margem, LTV, payback e LTV:CAC estão calculados (ou estimados com sup
 - [`unit-economics-checklist`](../../checklists/unit-economics-checklist.md)
 - [`offer-stack-checklist`](../../checklists/offer-stack-checklist.md)
 - [`guarantee-checklist`](../../checklists/guarantee-checklist.md)
+
+## Métricas
+Move KPIs da família **economics** ([`config.yaml`](../../config.yaml) `kpis:`), por ser quem calcula a unidade e valida a liquidação do CAC:
+- **`cac`**, **`ltv_cac_ratio`** e **`payback_period`** — esta task **calcula** os três (CAC, LTV:CAC e payback); o veredito aritmético aqui é a fonte direta da família.
+- **`front_end_cac_liquidation`** — confirma onde na escada a atração+upsell liquidam o CAC, o KPI central de "% do CAC pago pela atração".
+- **`aov`** — soma o AOV de front e total ao longo do stack/escada.
+Acompanhamento no [`kpi-dashboard-template`](../../data/metrics/kpi-dashboard-template.md) (família economics), com a economia gravada em [`offer-registry`](../../data/registries/offer-registry.md).
 
 ## Handoff
 **Próxima task:** [`design-money-model`](design-money-model.md) — dono [`money-model-designer`](../../agents/money-model-designer.md), que recebe o **veredito de liquidação do CAC** e a economia por degrau para **fechar a espinha** (relação iterativa: ele desenha a forma, eu valido a conta, ele fecha). Adiante, o [`offerbook-chief`](../../agents/offerbook-chief.md) recebe os números para o gate `unit_economics_known`; o [`vsl-webinar-scriptwriter`](../../agents/vsl-webinar-scriptwriter.md) e o [`funnel-architect`](../../agents/funnel-architect.md) recebem o offer stack, a garantia, a escassez verdadeira e o nome MAGIC prontos para apresentar. **Garantia:** todo downstream recebe economia conhecida (ou estimada com suposição), liquidação de CAC declarada, stack com valor > preço, garantia exequível e escassez 100% real.

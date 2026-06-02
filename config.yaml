@@ -346,6 +346,80 @@ kpis:
   operational: [registry_currency, swipe_reuse_rate, compliance_pass_rate, lessons_learned_frequency]
 
 # ============================================================
+# GOVERNANCE & OPERATING LOOP (HRM) — escala, decide, aprende
+# ============================================================
+score_thresholds:
+  gold: 95                       # nota mínima de "pronto" (qa-runner + scorecard)
+  sota: 98                       # excelência
+  rework_below: 95               # abaixo: loop de melhoria obrigatório
+  per_kpi_min:                   # barras numéricas (go/no-go) — ver data/metrics/
+    proof_coverage_rate: 1.0     # 100% dos claims com prova
+    value_equation_score: 4      # escala 1-5; >=4 para avançar
+    ltv_cac_ratio: 3             # >=3:1
+    front_end_cac_liquidation: 1.0   # atração liquida >=100% do CAC
+    compliance_pass_rate: 1.0
+    money_model_completeness: 2  # >=2 partes (alvo 4)
+
+readiness_rules:                 # go/no-go por marco (gate + score)
+  offer_book_ready:
+    requires: [offer-book-stack/intelligence-complete-gate, offer-book-stack/offer-architecture-gate, offer-book-stack/big-idea-locked-gate]
+    gate: offer-book-stack/offer-book-dod-gate     # ★ HARD STOP
+    min_score: gold
+    decision_by: offerbook-chief
+  blackbook_ready:
+    requires: [blackbook-stack/copy-coverage-gate, blackbook-stack/funnel-tech-gate, blackbook-stack/ops-events-gate, blackbook-stack/growth-affiliate-pr-gate]
+    gate: blackbook-stack/blackbook-dod-gate
+    min_score: gold
+    decision_by: [compliance-auditor, offerbook-chief]
+  ship:
+    requires: [truthful_scarcity, claim_backing, compliance_pass]
+    no_override: [false_claim, false_scarcity]     # nunca liberam
+
+escalation_rules:                # gatilho -> de -> para (detalhe em docs/hrm-governance.md)
+  rules:
+    - { trigger: "gate falha >=2x no mesmo artefato",   from: agente_dono, to: offerbook-chief }
+    - { trigger: "conflito de veto entre agentes",      from: agentes, to: offerbook-chief, via: chief/chief-conflict-resolution-gate }
+    - { trigger: "risco estratégico ou fora de escopo", from: offerbook-chief, to: hrm_central }
+    - { trigger: "score < gold após 2 loops de rework", from: offerbook-chief, to: hrm_central }
+    - { trigger: "claim sem lastro / escassez falsa",   from: compliance-auditor, to: VETO, override: none }
+  doc: docs/hrm-governance.md
+
+delegation_rules:                # task fora do escopo -> squad destino (+ contrato)
+  upstream:                      # quem entrega PARA o offer book
+    - { need: "market sizing / VOC / competitor intel", to: deepresearch_squad }
+    - { need: "stress-test estratégico + risk flags",   to: advisory_board_squad }
+  downstream:                    # offer book entrega PARA
+    - { deliver: "polished long-form copy",        to: copy_squad }
+    - { deliver: "ad creative + funnel p/ tráfego", to: traffic_squad }
+    - { deliver: "visuais de página/ad/mailer",     to: design_squad }
+    - { deliver: "positioning + brand voice",       to: brand_squad }
+    - { deliver: "pricing test + cohort analysis",  to: data_squad }
+    - { deliver: "business case + projeções",       to: c_level_squad }
+  contract_required: templates/cross-squad/handoff-contract-template
+  handoff_gate: cross-squad/cross-squad-handoff-quality
+  ingest_gate: cross-squad/cross-squad-asset-validation
+
+improvement_loop:                # RalphLoop / Kaizen (memória -> próxima execução)
+  cadence: per_launch
+  cycle: ["run", "qa-memory/memory-update", "lessons-learned-registry", "data/backlog", "planning/intake-and-scope"]
+  retro_task: qa-memory/memory-update
+  feeds_back_to: planning/intake-and-scope
+  review_agents: [knowledge-librarian, offerbook-chief]
+  principle: memory_before_repetition
+  artifacts: [data/scorecards, data/backlog, data/registries/lessons-learned-registry, data/registries/control-registry]
+  doc: docs/improvement-loop-kaizen.md
+
+owner_conventions:
+  registry_writes: "apenas write_agents declarados no frontmatter do registry"
+  output_naming: "<project>-<deliverable>-v<semver>"
+  decision_logging: "toda decisão/override -> decision-registry (made_by, vetoed_by, linked_registry)"
+  default_owner: offerbook-chief
+
+taxonomy:                        # vocabulário controlado
+  source: lib/taxonomies
+  controlled: [awareness-levels, sophistication-levels, offer-types, lead-types, guarantee-types]
+
+# ============================================================
 # DEFAULTS
 # ============================================================
 defaults:
@@ -360,3 +434,8 @@ defaults:
   mandatory_compliance_audit: true
   mandatory_registry_update: true
   money_model_min_parts: 2                  # mínimo aceitável; alvo = 4
+  score_gate: gold                          # ver score_thresholds
+  escalation_enabled: true                  # ver escalation_rules
+  kaizen_loop: true                         # ver improvement_loop
+  readiness_required: true                  # ver readiness_rules (go/no-go)
+  hrm_layer_above: hrm_central              # camada superior de comando (multi-squad)

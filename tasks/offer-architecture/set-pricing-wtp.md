@@ -30,6 +30,7 @@ checklists:
   - pricing/pricing-method-declared-gate
   - pricing/pricing-packaging-gate
 registries: [price-test-registry]
+metrics: [aov, ltv_cac_ratio, front_end_cac_liquidation]
 tags: [offer-architecture, pricing, wtp, van-westendorp, gabor-granger, conjoint, ancoragem, packaging, d2]
 ---
 
@@ -76,6 +77,13 @@ Cada ponto de preço tem método e faixa por trás; ≥2 métodos convergem na f
 - [`pricing/pricing-value-derived-gate`](../../checklists/pricing/pricing-value-derived-gate.md)
 - [`pricing/pricing-method-declared-gate`](../../checklists/pricing/pricing-method-declared-gate.md)
 - [`pricing/pricing-packaging-gate`](../../checklists/pricing/pricing-packaging-gate.md)
+
+## Métricas
+Move KPIs da família **economics** ([`config.yaml`](../../config.yaml) `kpis:`), por fixar os pontos de preço de que toda a economia deriva:
+- **`aov`** — os pontos de preço por tier/degrau e o packaging good-better-best determinam diretamente a receita por pedido.
+- **`ltv_cac_ratio`** — preço derivado de valor (não cost-plus) é o que mantém a margem que sustenta um LTV:CAC saudável; preço fraco quebra a razão a jusante.
+- **`front_end_cac_liquidation`** — o ponto de preço da atração define quanto do CAC a oferta de front-end consegue liquidar.
+Acompanhamento no [`kpi-dashboard-template`](../../data/metrics/kpi-dashboard-template.md) (família economics), com cada ponto/teste em [`price-test-registry`](../../data/registries/price-test-registry.md).
 
 ## Handoff
 **Próxima task:** [`model-unit-economics`](model-unit-economics.md) — dono [`unit-economics-stack-analyst`](../../agents/unit-economics-stack-analyst.md), que recebe o preço/margem para o cálculo de CAC/LTV e a liquidação do CAC. Adiante, o [`money-model-designer`](../../agents/money-model-designer.md) recebe os **pontos de preço por degrau** (insumo direto da escada); o [`vsl-webinar-scriptwriter`](../../agents/vsl-webinar-scriptwriter.md), a âncora e o packaging para a apresentação do preço (valor antes do preço). **Garantia:** todo downstream recebe pontos derivados de valor, com método declarado e packaging com tier-alvo — nunca um número avulso "porque sim".

@@ -24,6 +24,7 @@ checklists:
   - ads/ads-claim-backing-gate
   - ads/ads-variation-gate
 registries: [control-registry, swipe-registry]
+metrics: [opt_in_rate, cac, swipe_reuse_rate, copy_throughput]
 tags: [copy, ads, matriz, angulos, retargeting, continuidade, hook, fascination, hard-stop]
 ---
 
@@ -75,6 +76,14 @@ Transformar UMA Big Idea e UM mecanismo numa matriz de ads onde cada dor do avat
 
 ## Gates
 [`ads/ads-angle-coverage-gate`](../../checklists/ads/ads-angle-coverage-gate.md) · [`ads/ads-claim-backing-gate`](../../checklists/ads/ads-claim-backing-gate.md) · [`ads/ads-variation-gate`](../../checklists/ads/ads-variation-gate.md). Gate de entrada (HARD STOP): [`offer-book-stack/offer-book-dod-gate`](../../checklists/offer-book-stack/offer-book-dod-gate.md).
+
+## Métricas
+Move KPIs de **conversion**, **economics** e **operational** ([`config.yaml`](../../config.yaml) `kpis:`), por multiplicar a tese em criativos de tráfego:
+- **`opt_in_rate`** — os ganchos de topo (frio) que param o scroll e levam ao opt-in alimentam a taxa de optin.
+- **`cac`** — ângulos realmente diferentes e claim lastreado melhoram a eficiência do tráfego pago, baixando o custo de aquisição.
+- **`swipe_reuse_rate`** — esta task grava ganchos reutilizáveis no `swipe-registry`, abastecendo a taxa de reúso de swipe.
+- **`copy_throughput`** — cada ad aprovado na matriz conta na vazão de copy.
+Acompanhamento no [`kpi-dashboard-template`](../../data/metrics/kpi-dashboard-template.md), com cada ad em [`control-registry`](../../data/registries/control-registry.md) e os ganchos em [`swipe-registry`](../../data/registries/swipe-registry.md).
 
 ## Handoff
 **Próxima task:** [`voice-pass`](voice-pass.md) (passe obrigatório do voice-style-guardian). **Contrato de saída:** todo ad é rastreável à UMA Big Idea, com claim lastreado, ângulo declarado e lead casado à consciência — pronto para o guardião e, após o veredito APROVADO, para o [`funnel-architect`](../funnel-tech/map-funnel.md) (ângulo/temperatura → página de destino) e o [`tech-links-deliverability-engineer`](../funnel-tech/plan-tech-deliverability.md) (destinos → UTM por origem/campanha/ângulo).

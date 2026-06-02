@@ -24,6 +24,7 @@ checklists:
   - voice/voice-no-adverb-gate
   - voice/voice-positive-language-gate
 registries: [control-registry]
+metrics: [compliance_pass_rate, copy_throughput]
 tags: [copy, voz, estilo, veto, passe, legibilidade, voz-ativa, guardiao, d4]
 ---
 
@@ -69,6 +70,12 @@ Roda como **passe obrigatório em TODAS as peças de copy de D4**, depois que o 
 
 ## Gates
 [`voice/voice-checklist`](../../voice/voice-checklist.md) · [`voice/voice-reading-level-gate`](../../checklists/voice/voice-reading-level-gate.md) · [`voice/voice-active-present-gate`](../../checklists/voice/voice-active-present-gate.md) · [`voice/voice-no-adverb-gate`](../../checklists/voice/voice-no-adverb-gate.md) · [`voice/voice-positive-language-gate`](../../checklists/voice/voice-positive-language-gate.md).
+
+## Métricas
+Move KPIs de **operational** e **efficiency** ([`config.yaml`](../../config.yaml) `kpis:`), por ser o passe de qualidade obrigatório de toda copy:
+- **`compliance_pass_rate`** — o veredito APROVADO/REPROVADO por peça é a medida direta da % de copy aprovada sem veto de voz.
+- **`copy_throughput`** — só copy com veredito APROVADO segue ao downstream; o ritmo de aprovação do guardião regula a vazão semanal de peças.
+Acompanhamento no [`kpi-dashboard-template`](../../data/metrics/kpi-dashboard-template.md) (famílias operational e efficiency), com cada veredito em [`control-registry`](../../data/registries/control-registry.md).
 
 ## Handoff
 **Veto e devolução:** copy REPROVADA volta ao autor — [`vsl-webinar-scriptwriter`](write-vsl-webinar.md), [`email-sms-sequence-writer`](write-email-sms-sequences.md), [`direct-mail-insert-writer`](write-mailers-inserts.md) ou [`ad-creative-factory`](generate-ad-matrix.md) — que corrige e reenvia. **Próximas tasks (só com veredito APROVADO):** [`map-funnel`](../funnel-tech/map-funnel.md) (a copy que vira páginas), [`plan-tech-deliverability`](../funnel-tech/plan-tech-deliverability.md) (e-mail pronto para envio) e [`compliance-audit`](../qa-memory/compliance-audit.md) (copy já conforme à voz, para a auditoria de claims/escassez). **Contrato:** todo downstream pode confiar que a copy recebida está na voz da marca — ativa, presente, sem advérbio, positiva, 3ª série — ou carrega um `override_decision_id` explícito. O guardião **só** julga voz e estilo, nunca o ângulo, a oferta ou o claim.

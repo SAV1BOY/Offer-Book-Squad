@@ -19,6 +19,7 @@ checklists:
   - chief/chief-project-type-gate
   - chief/chief-scope-approval-gate
 registries: [decision-registry]
+metrics: [time_to_offer_book, lessons_learned_frequency, registry_currency]
 tags: [planning, intake, escopo, project-type, hard-stop, command, d0]
 ---
 
@@ -65,6 +66,13 @@ Existe UM project type classificado, UMA frase de escopo que não admite duas le
 ## Gates
 - [`chief/chief-project-type-gate`](../../checklists/chief/chief-project-type-gate.md)
 - [`chief/chief-scope-approval-gate`](../../checklists/chief/chief-scope-approval-gate.md)
+
+## Métricas
+Move KPIs de **efficiency** e **operational** ([`config.yaml`](../../config.yaml) `kpis:`), por ser o ponto de entrada que dispara o relógio do caso:
+- **`time_to_offer_book`** — travar UMA frase de escopo sem bifurcação e o project type certo evita o scope creep que estoura os dias até o Offer Book passar no DoD.
+- **`lessons_learned_frequency`** — ler o `lessons-learned-registry` no intake (memória antes de repetição) é o que faz as lições de lançamentos passados serem reusadas.
+- **`registry_currency`** — registrar a decisão de escopo/tipo no ato mantém o `decision-registry` atualizado desde o primeiro passo.
+Acompanhamento no [`kpi-dashboard-template`](../../data/metrics/kpi-dashboard-template.md) (famílias efficiency e operational), com as decisões em [`decision-registry`](../../data/registries/decision-registry.md).
 
 ## Handoff
 **Próxima task:** [`design-pipeline`](design-pipeline.md) — dono [`offer-squad-architect`](../../agents/offer-squad-architect.md). **Contrato:** o architect recebe (i) o project type classificado (gate verde), (ii) a frase de escopo travada (gate verde) e (iii) o esqueleto do Offer Book Master. Garantia: o architect nunca recebe um escopo elástico — se a frase ainda bifurca, esta task não fecha. Se o briefing for insuficiente, o handoff é de volta ao solicitante, não adiante.

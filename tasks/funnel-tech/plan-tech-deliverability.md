@@ -22,6 +22,7 @@ checklists:
   - tech-deliverability-checklist
   - launch/launch-fallback-gate
 registries: [decision-registry]
+metrics: [opt_in_rate, cart_close_lift, compliance_pass_rate]
 tags: [tech, load-test, integracao, anti-loop, links, utm, deliverability, aquecimento, fallback, d5]
 ---
 
@@ -72,6 +73,12 @@ Roda em D5, **depois** do funil: ativa quando (a) o [`funnel-architect`](../../a
 
 ## Gates
 [`tech-deliverability-checklist`](../../checklists/tech-deliverability-checklist.md) · [`launch/launch-fallback-gate`](../../checklists/launch/launch-fallback-gate.md).
+
+## Métricas
+Move KPIs de **conversion** e **operational** ([`config.yaml`](../../config.yaml) `kpis:`), por tornar o funil executável, entregável e rastreável:
+- **`opt_in_rate`** e **`cart_close_lift`** — SPF/DKIM/DMARC, a rampa de aquecimento e o load test garantem que o e-mail chega à caixa de entrada e a página aguenta o pico; sem inbox e sem uptime, optin e fechamento despencam.
+- **`compliance_pass_rate`** — sinalizar captura/rastreamento sem aviso de privacidade (LGPD/cookies) aqui antecipa o veto de privacidade do D7, elevando a taxa de aprovação.
+Acompanhamento no [`kpi-dashboard-template`](../../data/metrics/kpi-dashboard-template.md) (famílias conversion e operational), com capacidade/links/deliverability/fallback em [`decision-registry`](../../data/registries/decision-registry.md).
 
 ## Handoff
 **Próxima task:** [`build-run-of-show`](../ops/build-run-of-show.md) — dono [`launch-producer`](../../agents/launch-producer.md). **Contrato:** o produtor recebe o `tech-deliverability-plan` + `links-urls` + plano de fallback para entrar no run-of-show e na surge-ops do dia (capacidade confirmada, URLs canônicas, limites de envio). Também entrega ao [`events-logistics-coordinator`](../ops/build-events-logistics.md) as integrações de logística/3PL e ao [`compliance-auditor`](../qa-memory/compliance-audit.md) os links/rastreamento para checagem de privacidade. **Garantia:** funil testado sob carga, integrado, à prova de loop, com links rastreados, e-mail autenticado/aquecido e fallback por ponto crítico — ou um flag explícito de `pendente`/`bloqueado` com o risco nomeado.

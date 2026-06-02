@@ -33,8 +33,16 @@ tags: [docs, index, navigation]
 - [`contributing.md`](contributing.md) — como adicionar/estender arquivos no padrão.
 - [`changelog.md`](changelog.md) — histórico de versões.
 
+## Governança HRM & operação
+- [`hrm-governance.md`](hrm-governance.md) — as 4 camadas HRM, escalonamento, comando central, go/no-go.
+- [`team-coordination.md`](team-coordination.md) — os 10 grupos funcionais (teams/swarms): líder, sequência, gate intermediário.
+- [`quality-gate-cascade.md`](quality-gate-cascade.md) — o DAG completo dos quality gates (6 níveis).
+- [`improvement-loop-kaizen.md`](improvement-loop-kaizen.md) — o loop de aprendizado (memória → próximo lançamento).
+- [`traceability-matrix.md`](traceability-matrix.md) — task → agents → frameworks → checklists → templates → registries → metrics (gerada por script).
+- [`audit-report.md`](audit-report.md) — relatório da auditoria interna total (score por camada + verdict).
+
 ## Mapa rápido do repositório
 `agents/` cérebro · `frameworks/` como pensa · `reference/` conhecimento · `checklists/` gates · `templates/` esqueletos · `tasks/` runbooks · `workflows/` fluxos · `swipe/` estrutura reutilizável · `voice/` + `phrases/` voz · `data/` registries+métricas · `lib/` componentes+taxonomias · `authority/` prova · `projects/` 7 tipos · `scripts/` automação. Roteamento em [`config.yaml`](../config.yaml); progresso em [`BUILD-PROGRESS.md`](../BUILD-PROGRESS.md).
 
 ## Qualidade
-Rode `python scripts/qa-runner.py` (gate 95+/100) e `python scripts/coverage-report.py` (contagem vs meta) antes de entregar.
+Rode `python scripts/qa-runner.py` (gate 95+/100), `python scripts/coverage-report.py` (contagem vs meta), `python scripts/readiness-check.py --milestone <marco>` (go/no-go) e `python scripts/traceability-matrix.py` (regenera a matriz) antes de entregar.

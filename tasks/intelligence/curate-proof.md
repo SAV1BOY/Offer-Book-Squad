@@ -19,6 +19,7 @@ frameworks: [proof-to-claim-chain]
 checklists:
   - proof/proof-claim-backing-gate
 registries: [proof-registry, claim-registry]
+metrics: [proof_coverage_rate, compliance_pass_rate]
 tags: [intelligence, prova, credibilidade, depoimento, caso, claim, proof-to-claim, gap, d1]
 ---
 
@@ -65,6 +66,12 @@ Cada claim que a oferta fará tem ≥1 prova de força adequada ao estágio (mec
 
 ## Gates
 - [`proof/proof-claim-backing-gate`](../../checklists/proof/proof-claim-backing-gate.md)
+
+## Métricas
+Move KPIs de **offer_quality** e **operational** ([`config.yaml`](../../config.yaml) `kpis:`):
+- **`proof_coverage_rate`** — esta task **é** a fonte direta do KPI (% de claims com prova ligada): casa cada claim/objeção à melhor prova e reporta os gaps.
+- **`compliance_pass_rate`** — como primeira linha de defesa do compliance, abrir o proof-gap aqui (em vez de no veto) reduz reprovações no D7.
+Acompanhamento no [`kpi-dashboard-template`](../../data/metrics/kpi-dashboard-template.md), puxando de [`claim-registry`](../../data/registries/claim-registry.md) e [`proof-registry`](../../data/registries/proof-registry.md).
 
 ## Handoff
 **Próxima task:** fecha a camada D1 e libera o D2 ([`define-mechanism`](../offer-architecture/define-mechanism.md), dono [`mechanism-architect`](../../agents/mechanism-architect.md), que recebe a prova do mecanismo disponível para nomear um mecanismo com lastro). Adiante, os escritores de copy recebem a matriz prova×objeção e o `compliance-auditor` recebe o registro de prova com proveniência. **Garantia:** nenhum claim chega ao escritor de copy sem prova catalogada, e tudo que não tem prova vem marcado como gap — para que ninguém escreva o que o compliance vetará.

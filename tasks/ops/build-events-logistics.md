@@ -21,6 +21,7 @@ frameworks: [money-model-sequence]
 checklists:
   - events-logistics-checklist
 registries: [offer-registry]
+metrics: [compliance_pass_rate, upsell_take_rate, time_to_blackbook]
 tags: [ops, eventos, logistica, calendario, inventario, fulfillment, redemption, d6]
 ---
 
@@ -71,6 +72,13 @@ Roda em D6, **depois** do run-of-show: ativa quando o run-of-show do [`launch-pr
 
 ## Gates
 [`events-logistics-checklist`](../../checklists/events-logistics-checklist.md).
+
+## Métricas
+Move KPIs de **operational**, **conversion** e **efficiency** ([`config.yaml`](../../config.yaml) `kpis:`), por operacionalizar eventos e entrega sem furos:
+- **`compliance_pass_rate`** — ancorar **todo** limite de escassez a um número real no inventory tracker é o que sustenta a escassez no veto do `compliance-auditor` ("últimas 50 vagas" só com 50 no tracker).
+- **`upsell_take_rate`** — entregar o core **antes** de oferecer o upsell (ordem da escada) é pré-condição para a take rate do upsell acontecer.
+- **`time_to_blackbook`** — logística confirmada e fulfillment plugado evitam o retrabalho que atrasa o Blackbook.
+Acompanhamento no [`kpi-dashboard-template`](../../data/metrics/kpi-dashboard-template.md), com ofertas `active` e limites em [`offer-registry`](../../data/registries/offer-registry.md).
 
 ## Handoff
 **Próximas tasks:** [`build-affiliate-program`](../growth/build-affiliate-program.md) — recebe o calendário de eventos onde afiliados podem participar e o inventário disponível para promoções; [`build-pr-plan`](../growth/build-pr-plan.md) — recebe os eventos que geram pauta de PR. Também entrega ao [`compliance-auditor`](../qa-memory/compliance-audit.md) o inventory tracker para auditoria de escassez real e ao [`knowledge-librarian`](../../agents/knowledge-librarian.md) o que vira memória. **Garantia:** um calendário com logística confirmada, um tracker onde cada limite é um número real, e um plano de fulfillment onde cada oferta vendida tem como ser entregue e resgatada.

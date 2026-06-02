@@ -28,6 +28,7 @@ checklists:
   - blackbook-stack/blackbook-dod-gate
   - chief/chief-blackbook-readiness-gate
 registries: [offer-registry]
+metrics: [time_to_blackbook, compliance_pass_rate, registry_currency]
 tags: [qa, blackbook, dod, montagem, entregavel-final, hard-stop, d7]
 ---
 
@@ -78,6 +79,13 @@ Roda em D7, **depois** da [`compliance-audit`](compliance-audit.md): ativa **som
 
 ## Gates
 [`blackbook-stack/blackbook-dod-gate`](../../checklists/blackbook-stack/blackbook-dod-gate.md) · [`chief/chief-blackbook-readiness-gate`](../../checklists/chief/chief-blackbook-readiness-gate.md).
+
+## Métricas
+Move KPIs de **efficiency** e **operational** ([`config.yaml`](../../config.yaml) `kpis:`), por ser o ★ HARD STOP de saída que fecha o entregável final:
+- **`time_to_blackbook`** — esta task **fecha o relógio** do KPI (dias até o Blackbook completo); o `blackbook-readiness` APROVADO é o marco medido.
+- **`compliance_pass_rate`** — só monta sobre `compliance-verdict` APROVADO; nada com claim sem lastro ou escassez falsa entra no pacote final.
+- **`registry_currency`** — confirmar o status final das ofertas no `offer-registry` na entrega mantém o registro atualizado no fechamento.
+Acompanhamento no [`kpi-dashboard-template`](../../data/metrics/kpi-dashboard-template.md) (famílias efficiency e operational), com o status final em [`offer-registry`](../../data/registries/offer-registry.md).
 
 ## Handoff
 **Próxima task:** [`memory-update`](memory-update.md) — dono [`knowledge-librarian`](../../agents/knowledge-librarian.md). **Contrato:** a memória recebe o blackbook fechado e aprovado para extrair o que vira reutilizável — controles vencedores, swipe, lições aprendidas. **Garantia:** o blackbook entregue é completo, coerente, conforme (compliance APROVADO) e executável — o pacote final do lançamento, sem peça faltando e sem nada que o compliance não tenha liberado.

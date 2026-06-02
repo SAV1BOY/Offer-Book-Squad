@@ -21,6 +21,7 @@ frameworks: [launch/product-launch-formula, launch/runway-and-phases]
 checklists:
   - launch/launch-phase-readiness-gate
 registries: [decision-registry]
+metrics: [cart_close_lift, time_to_blackbook, compliance_pass_rate]
 tags: [ops, launch, memo, phases, plf, runway, datas-ancora, d6]
 ---
 
@@ -70,6 +71,13 @@ Roda em D6, **nunca antes**: ativa quando o Offer Book passou no `offer-book-sta
 
 ## Gates
 [`launch/launch-phase-readiness-gate`](../../checklists/launch/launch-phase-readiness-gate.md).
+
+## Métricas
+Move KPIs de **conversion**, **efficiency** e **operational** ([`config.yaml`](../../config.yaml) `kpis:`), por sequenciar o desejo antes de pedir o dinheiro:
+- **`cart_close_lift`** — as datas-âncora (abre/fecha) e as Fases V–VII (prova/objeção/escassez/fechamento) na ordem que constrói desejo são o que arma o lift da janela de fechamento.
+- **`time_to_blackbook`** — o launch memo + as fases são um marco do caminho até o Blackbook completo; sequenciar sobre fundação pronta evita retrabalho.
+- **`compliance_pass_rate`** — agendar só escassez real (zero deadline/vaga falsos) protege as fases do veto de compliance.
+Acompanhamento no [`kpi-dashboard-template`](../../data/metrics/kpi-dashboard-template.md), com o formato e as datas-âncora em [`decision-registry`](../../data/registries/decision-registry.md).
 
 ## Handoff
 **Próxima task:** [`build-run-of-show`](build-run-of-show.md) — mesmo dono [`launch-producer`](../../agents/launch-producer.md). **Contrato:** o run-of-show recebe o launch memo (datas-âncora, meta) e as Fases I–VIII (ordem, donos, ativos) para detalhar a janela crítica minuto a minuto, o sales-flow e o plano de surge. **Garantia:** a pista respeita a espinha do money model, cada fase tem dono e ativo, e nenhuma fase carrega escassez falsa — a base sobre a qual o run-of-show coreografa o dia.

@@ -24,6 +24,7 @@ checklists:
   - launch/launch-phase-readiness-gate
   - launch/launch-surge-gate
 registries: [decision-registry]
+metrics: [cart_close_lift, compliance_pass_rate, time_to_blackbook]
 tags: [ops, launch, run-of-show, sales-flow, surge, war-room, cart-open-close, d6]
 ---
 
@@ -74,6 +75,13 @@ Roda em D6, **depois** de [`build-launch-memo`](build-launch-memo.md): ativa qua
 
 ## Gates
 [`launch/launch-phase-readiness-gate`](../../checklists/launch/launch-phase-readiness-gate.md) · [`launch/launch-surge-gate`](../../checklists/launch/launch-surge-gate.md).
+
+## Métricas
+Move KPIs de **conversion**, **operational** e **efficiency** ([`config.yaml`](../../config.yaml) `kpis:`), por coreografar a janela crítica minuto a minuto:
+- **`cart_close_lift`** — o sales-flow do fechamento (e-mail de "horas restantes", SMS de "fecha à meia-noite", fechamento real no horário) é o disparo direto do lift da janela de fechamento.
+- **`compliance_pass_rate`** — gatilhos de escassez **100% verdadeiros** (deadline que não se renova, vagas com limite real) protegem o run-of-show do veto de escassez.
+- **`time_to_blackbook`** — capacidade de surge confirmada e fallbacks testados evitam o caos do dia que vira retrabalho e atrasa o Blackbook.
+Acompanhamento no [`kpi-dashboard-template`](../../data/metrics/kpi-dashboard-template.md), com a janela/cadência e o plano de fallback em [`decision-registry`](../../data/registries/decision-registry.md).
 
 ## Handoff
 **Próxima task:** [`build-events-logistics`](build-events-logistics.md) — dono [`events-logistics-coordinator`](../../agents/events-logistics-coordinator.md). **Contrato:** o coordenador recebe o run-of-show com datas e fallbacks para operacionalizar a logística (salas, links, ensaios, fulfillment). Também entrega ao [`affiliate-program-architect`](../growth/build-affiliate-program.md) as janelas em que afiliados entram na sequência, ao [`pr-brand-strategist`](../growth/build-pr-plan.md) os marcos de PR alinhados às fases, e ao [`compliance-auditor`](../qa-memory/compliance-audit.md) o run-of-show para auditoria de escassez/urgência. **Garantia:** um calendário datado, com fases nomeadas, donos atribuídos, gatilhos de escassez **verdadeiros** e fallbacks definidos — ninguém precisa adivinhar "quando" ou "quem".

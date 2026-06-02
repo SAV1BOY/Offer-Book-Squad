@@ -21,6 +21,7 @@ checklists:
   - market/market-awareness-gate
   - market/market-starving-crowd-gate
 registries: [offer-registry]
+metrics: [value_equation_score, big_idea_strength]
 tags: [intelligence, mercado, sofisticacao, consciencia, starving-crowd, tam-sam-som, d1]
 ---
 
@@ -69,6 +70,12 @@ Os dois números estão declarados com os termos das taxonomias e ≥2 evidênci
 - [`market/market-sophistication-gate`](../../checklists/market/market-sophistication-gate.md)
 - [`market/market-awareness-gate`](../../checklists/market/market-awareness-gate.md)
 - [`market/market-starving-crowd-gate`](../../checklists/market/market-starving-crowd-gate.md)
+
+## Métricas
+Move KPIs da família **offer_quality** ([`config.yaml`](../../config.yaml) `kpis:`), por ser a fundação que calibra a oferta sem palpite:
+- **`value_equation_score`** — a sofisticação diagnosticada define quanta amplificação de valor o mercado exige; um diagnóstico errado infla ou esvazia a Value Equation a jusante.
+- **`big_idea_strength`** — a consciência dominante e os claims saturados decidem o fit (nova/crível) da Big Idea; o brief é o lastro do critério de awareness.
+Acompanhamento no [`kpi-dashboard-template`](../../data/metrics/kpi-dashboard-template.md) (família offer_quality), com a oferta-semente registrada em [`offer-registry`](../../data/registries/offer-registry.md).
 
 ## Handoff
 **Próxima task:** [`build-avatar-voc`](build-avatar-voc.md) — dono [`avatar-voc-investigator`](../../agents/avatar-voc-investigator.md). **Contrato de saída:** todo downstream recebe o market-brief com (i) dois números defensáveis com ≥2 evidências cada, (ii) o mercado-alvo recortado e o veredito starving-crowd, (iii) TAM/SAM/SOM, (iv) as implicações. O avatar parte do mercado-alvo para minerar a voz certa; o [`mechanism-architect`](../../agents/mechanism-architect.md) parte do estágio (3-4 exige mecanismo nomeado/elevado); o [`positioning-lead-strategist`](../../agents/positioning-lead-strategist.md) parte da célula da matriz para escolher o lead. Garantia: esses números **nunca chegam sem evidência**.

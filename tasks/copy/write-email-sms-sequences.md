@@ -27,6 +27,7 @@ checklists:
   - email-sms/email-segmentation-gate
   - email-sms/email-timing-gate
 registries: [control-registry]
+metrics: [cart_close_lift, opt_in_rate, copy_throughput]
 tags: [copy, email, sms, sequencias, cart-open-close, abandono, segmentacao, timing, hard-stop]
 ---
 
@@ -80,6 +81,13 @@ Transformar o Offer Book aprovado em TODOS os fluxos de e-mail e SMS do ciclo de
 
 ## Gates
 [`email-sms/email-step-coverage-gate`](../../checklists/email-sms/email-step-coverage-gate.md) · [`email-sms/email-segmentation-gate`](../../checklists/email-sms/email-segmentation-gate.md) · [`email-sms/email-timing-gate`](../../checklists/email-sms/email-timing-gate.md). Gate de entrada (HARD STOP): [`offer-book-stack/offer-book-dod-gate`](../../checklists/offer-book-stack/offer-book-dod-gate.md).
+
+## Métricas
+Move KPIs da família **conversion** ([`config.yaml`](../../config.yaml) `kpis:`), por orquestrar a conversa de venda ao longo do ciclo de vida:
+- **`cart_close_lift`** — a sequência de cart-close (uma objeção por e-mail + SMS de últimas horas) é o motor direto do lift na janela de fechamento.
+- **`opt_in_rate`** — os fluxos de registro/indoctrination e os e-mails que empurram para o opt-in alimentam a taxa de optin.
+- **`copy_throughput`** — cada mensagem aprovada na matriz de sequências conta na vazão de copy.
+Acompanhamento no [`kpi-dashboard-template`](../../data/metrics/kpi-dashboard-template.md) (família conversion), com cada mensagem em [`control-registry`](../../data/registries/control-registry.md).
 
 ## Handoff
 **Próxima task:** [`voice-pass`](voice-pass.md) (passe obrigatório do voice-style-guardian). **Contrato de saída:** cada mensagem tem lista, timing, subject e CTA, com supressão definida, escassez real e cobertura sem buraco — pronta para o guardião e, após o veredito APROVADO, para o [`funnel-architect`](../funnel-tech/map-funnel.md) (destinos → páginas), o [`tech-links-deliverability-engineer`](../funnel-tech/plan-tech-deliverability.md) (volume/cadência → deliverability) e o [`launch-producer`](../ops/build-run-of-show.md) (timeline → run-of-show).

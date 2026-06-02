@@ -25,6 +25,7 @@ checklists:
   - big-idea/big-idea-new-big-credible-gate
   - big-idea/big-idea-awareness-fit-gate
 registries: [big-idea-registry]
+metrics: [big_idea_strength, value_equation_score]
 tags: [big-idea, tree-of-thoughts, power-of-one, hook, awareness-fit, veto, d3]
 ---
 
@@ -78,6 +79,12 @@ Existe UMA Big Idea (não duas); a soma de critérios é alta e nenhum critério
 - [`big-idea/big-idea-single-gate`](../../checklists/big-idea/big-idea-single-gate.md) (UMA só)
 - [`big-idea/big-idea-new-big-credible-gate`](../../checklists/big-idea/big-idea-new-big-credible-gate.md) (os 5 critérios)
 - [`big-idea/big-idea-awareness-fit-gate`](../../checklists/big-idea/big-idea-awareness-fit-gate.md) (fit de consciência)
+
+## Métricas
+Move KPIs da família **offer_quality** ([`config.yaml`](../../config.yaml) `kpis:`), por ser quem trava a tese e a pontua:
+- **`big_idea_strength`** — esta task **é** a fonte direta do KPI (nota dos 5 critérios): a Big Idea só fica `locked` quando nova/grande/crível/relevante/proprietária somam alto e nenhum critério é ≤ 2.
+- **`value_equation_score`** — a tese precisa ser fiel ao que a Value Equation entrega; uma Big Idea ancorada no valor real protege a nota de valor de promessas que a prova não sustenta.
+Acompanhamento no [`kpi-dashboard-template`](../../data/metrics/kpi-dashboard-template.md) (família offer_quality), com a `locked` e as `pruned` em [`big-idea-registry`](../../data/registries/big-idea-registry.md).
 
 ## Handoff
 **Próxima task:** [`lock-positioning-lead`](lock-positioning-lead.md) — dono [`positioning-lead-strategist`](../../agents/positioning-lead-strategist.md), que recebe a Big Idea travada para escolher posicionamento + lead. Adiante (após o HARD STOP), os agentes de copy recebem a tese via Offer Book. **Garantia:** o downstream recebe UMA tese, com promessa+gancho+vilão explícitos, mecanismo amarrado, fit de consciência confirmado e os ângulos podados disponíveis para variação. Nenhum agente de copy precisa "escolher entre ideias" — a escolha já foi feita e travada.

@@ -31,6 +31,7 @@ checklists:
   - offer-book-stack/offer-book-dod-gate
   - chief/chief-offer-book-readiness-gate
 registries: [offer-registry, decision-registry]
+metrics: [time_to_offer_book, value_equation_score, money_model_completeness, proof_coverage_rate, big_idea_strength, compliance_pass_rate]
 tags: [assembly, offer-book, hard-stop, dod-gate, compliance, readiness, d3]
 ---
 
@@ -80,6 +81,13 @@ Os 10 blocos do Offer Book Master estão preenchidos sem `{{PLACEHOLDER}}` solto
 ## Gates
 - [`offer-book-stack/offer-book-dod-gate`](../../checklists/offer-book-stack/offer-book-dod-gate.md) — **★ HARD STOP** (bloqueia D4+).
 - [`chief/chief-offer-book-readiness-gate`](../../checklists/chief/chief-offer-book-readiness-gate.md)
+
+## Métricas
+Move KPIs de **efficiency**, **offer_quality** e **operational** ([`config.yaml`](../../config.yaml) `kpis:`), por ser o ★ HARD STOP que mede a saúde inteira da oferta antes de liberar a copy:
+- **`time_to_offer_book`** — esta task **fecha o relógio** do KPI (dias até o Offer Book passar no DoD); o status verde/vermelho do gate é o marco medido.
+- **`value_equation_score`, `money_model_completeness`, `proof_coverage_rate`, `big_idea_strength`** — o DoD verifica os quatro de uma vez (alavancas sem órfão, escada ≥2 partes, claims com prova, UMA Big Idea); o gate só fica verde com a família offer_quality no alvo.
+- **`compliance_pass_rate`** — a auditoria de verdade do `compliance-auditor` aqui antecipa vetos do D7, elevando a taxa de aprovação sem veto.
+Acompanhamento no [`kpi-dashboard-template`](../../data/metrics/kpi-dashboard-template.md), com o status do HARD STOP em [`decision-registry`](../../data/registries/decision-registry.md) e o estado da oferta em [`offer-registry`](../../data/registries/offer-registry.md).
 
 ## Handoff
 **Próxima task (só com HARD STOP VERDE):** a camada de copy D4 — [`write-vsl-webinar`](../copy/write-vsl-webinar.md) (dono [`vsl-webinar-scriptwriter`](../../agents/vsl-webinar-scriptwriter.md)) e as demais tasks de copy, cada uma submetida ao [`voice-style-guardian`](../../agents/voice-style-guardian.md). **Contrato de saída:** os agentes de D4 recebem o Offer Book aprovado como fonte de verdade — Big Idea única, posição + lead travados, mecanismo, value stack, garantia e escassez verdadeira, com cada claim linkado a prova. **Garantia:** nenhuma copy nasce antes deste gate verde; com o gate vermelho, o handoff é **de volta** ao agente dono do bloco que falhou, nunca adiante. Em paralelo, o caso segue para o `launch-blackbook-skeleton` na construção do Blackbook.

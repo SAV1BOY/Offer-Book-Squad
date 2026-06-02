@@ -20,6 +20,7 @@ frameworks: [launch/pr-brand-maximization]
 checklists:
   - pr-plan-checklist
 registries: [decision-registry]
+metrics: [compliance_pass_rate, lessons_learned_frequency]
 tags: [growth, pr, marca, autoridade, buzz, angulo, kpis, d6]
 ---
 
@@ -66,6 +67,12 @@ Roda em D6, no flanco pós-venda: ativa quando o lançamento foi executado (ou e
 
 ## Gates
 [`pr-plan-checklist`](../../checklists/pr-plan-checklist.md).
+
+## Métricas
+Move KPIs da família **operational** ([`config.yaml`](../../config.yaml) `kpis:`) — os KPIs de **marca** do plano (menções, share of voice, sentimento) são métricas próprias do PR, não da grade dos 20:
+- **`compliance_pass_rate`** — exigir fato verificável + consentimento por ângulo (veracidade é critério eliminatório) é o que evita o veto de compliance sobre prova social/endosso de PR no D7.
+- **`lessons_learned_frequency`** — os ângulos vencedores e os KPIs de marca como baseline seguem ao `knowledge-librarian`, alimentando as lições registradas por lançamento.
+Acompanhamento no [`kpi-dashboard-template`](../../data/metrics/kpi-dashboard-template.md) (família operational), com o ângulo e os KPIs em [`decision-registry`](../../data/registries/decision-registry.md).
 
 ## Handoff
 **Próxima task:** [`compliance-audit`](../qa-memory/compliance-audit.md) — dono [`compliance-auditor`](../../agents/compliance-auditor.md), que recebe o ângulo, os ativos e a prova social para auditoria de consentimento/veracidade (a prova social usada em PR passa pela barreira final). Também entrega ao [`knowledge-librarian`](../../agents/knowledge-librarian.md) o que vira memória (ângulos vencedores, KPIs de marca como baseline). **Garantia:** um plano de PR onde cada ângulo nasce de um fato verificável e consentido, estende a Big Idea travada, e vem com KPIs de marca mensuráveis — nunca buzz sobre conquista inventada.

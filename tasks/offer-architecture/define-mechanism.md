@@ -21,6 +21,7 @@ checklists:
   - mechanism/mechanism-proof-gate
   - mechanism/mechanism-one-sentence-gate
 registries: [offer-registry]
+metrics: [value_equation_score, big_idea_strength, proof_coverage_rate]
 tags: [offer-architecture, mecanismo, unique-mechanism, 5-whys, naming, prova, d2]
 ---
 
@@ -67,6 +68,13 @@ A cadeia causal está completa do sintoma à raiz; o mecanismo é diferente dos 
 - [`mechanism/mechanism-naming-gate`](../../checklists/mechanism/mechanism-naming-gate.md)
 - [`mechanism/mechanism-proof-gate`](../../checklists/mechanism/mechanism-proof-gate.md)
 - [`mechanism/mechanism-one-sentence-gate`](../../checklists/mechanism/mechanism-one-sentence-gate.md)
+
+## Métricas
+Move KPIs da família **offer_quality** ([`config.yaml`](../../config.yaml) `kpis:`), por nomear o núcleo conceitual do qual o valor, a tese e a prova derivam:
+- **`value_equation_score`** — o mecanismo precisa mover ≥1 alavanca real (Sonho/Probabilidade/Tempo/Esforço); um mecanismo que não move alavanca é só rótulo e derruba a nota de valor a jusante.
+- **`big_idea_strength`** — a frase única e o contraste velho×novo são a matéria-prima proprietária da Big Idea; sem mecanismo nomeado, a tese perde o critério "novo/proprietário".
+- **`proof_coverage_rate`** — cada elo causal só fica `provado` com lastro no `proof-registry`; o mecanismo provado eleva a cobertura de claims.
+Acompanhamento no [`kpi-dashboard-template`](../../data/metrics/kpi-dashboard-template.md) (família offer_quality), com o mecanismo registrado em [`offer-registry`](../../data/registries/offer-registry.md).
 
 ## Handoff
 **Próxima task:** [`score-value-equation`](score-value-equation.md) — dono [`value-equation-engineer`](../../agents/value-equation-engineer.md), que recebe o mecanismo nomeado como insumo central da oferta e as alavancas que ele já move. Adiante, o [`money-model-designer`](../../agents/money-model-designer.md) recebe o mecanismo para a espinha; o [`big-idea-architect`](../../agents/big-idea-architect.md), a frase única como matéria-prima da tese; o [`positioning-lead-strategist`](../../agents/positioning-lead-strategist.md), o contraste velho×novo. **Garantia:** todo downstream recebe um mecanismo com nome próprio, cadeia causal provada e 1 frase — ou um flag explícito de `provisório` com a lacuna nomeada.

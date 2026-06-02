@@ -25,6 +25,7 @@ checklists:
   - avatar/avatar-dominant-emotion-gate
   - avatar/avatar-objection-map-gate
 registries: [objection-registry]
+metrics: [big_idea_strength, value_equation_score, proof_coverage_rate]
 tags: [intelligence, avatar, icp, voc, verbatim, objecao, falsa-crenca, dmu, jtbd, d1]
 ---
 
@@ -73,6 +74,13 @@ Cada segmento tem ≥10 verbatims literais (não paráfrases); a emoção domina
 - [`avatar/avatar-voc-verbatim-gate`](../../checklists/avatar/avatar-voc-verbatim-gate.md)
 - [`avatar/avatar-dominant-emotion-gate`](../../checklists/avatar/avatar-dominant-emotion-gate.md)
 - [`avatar/avatar-objection-map-gate`](../../checklists/avatar/avatar-objection-map-gate.md) (esta é a **aresta-chave** que destrava `curate-proof`)
+
+## Métricas
+Move KPIs da família **offer_quality** ([`config.yaml`](../../config.yaml) `kpis:`), por entregar a matéria-prima (voz do cliente) da oferta:
+- **`big_idea_strength`** — a emoção dominante e o JTBD ancoram o critério "relevante" da Big Idea; sem o VOC certo a tese fala com a cabeça errada.
+- **`value_equation_score`** — o sonho real e os sacrifícios temidos colhidos em verbatim alimentam as alavancas Sonho/Esforço da Value Equation.
+- **`proof_coverage_rate`** — o mapa de objeções define **contra o que** provar; depoimentos minerados abastecem o `proof-registry` para a cobertura de claims.
+Acompanhamento no [`kpi-dashboard-template`](../../data/metrics/kpi-dashboard-template.md) (família offer_quality), com objeções gravadas em [`objection-registry`](../../data/registries/objection-registry.md).
 
 ## Handoff
 **Próxima task:** [`curate-proof`](curate-proof.md) — dono [`proof-credibility-curator`](../../agents/proof-credibility-curator.md), que recebe o **mapa de objeções** para casar prova a cada objeção (a aresta real do pipeline D1, via `avatar/avatar-objection-map-gate`). Em paralelo, o [`mechanism-architect`](../../agents/mechanism-architect.md) recebe as falsas crenças que o mecanismo precisa reverter; o [`big-idea-architect`](../../agents/big-idea-architect.md), a emoção dominante e o JTBD. **Garantia:** todo downstream recebe avatar/ICP por segmento, ≥10 verbatims literais com fonte, a emoção dominante ancorada, o mapa de objeções categorizado por severidade, o JTBD e (B2B) a DMU por papel — tudo da voz do cliente, nunca de suposição. O curator não recebe um mapa de objeções pela metade.

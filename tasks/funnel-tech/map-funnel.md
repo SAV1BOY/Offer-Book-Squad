@@ -23,6 +23,7 @@ checklists:
   - funnel/funnel-no-dead-end-gate
   - funnel/funnel-backend-gate
 registries: [decision-registry]
+metrics: [upsell_take_rate, aov, cart_close_lift]
 tags: [funnel, funil, money-model, paginas, checkout, order-bump, sem-becos, pos-compra, d5]
 ---
 
@@ -74,6 +75,12 @@ Roda em D5, **depois** da copy: ativa quando (a) a copy de núcleo está **aprov
 
 ## Gates
 [`funnel/funnel-no-dead-end-gate`](../../checklists/funnel/funnel-no-dead-end-gate.md) · [`funnel/funnel-backend-gate`](../../checklists/funnel/funnel-backend-gate.md).
+
+## Métricas
+Move KPIs da família **conversion** ([`config.yaml`](../../config.yaml) `kpis:`), por construir as trilhas onde cada degrau do money model converte:
+- **`upsell_take_rate`** e **`aov`** — o order bump no checkout e as trilhas de upsell→downsell pós-compra são onde a take rate e o AOV de fato acontecem; sem becos, o "sim" sempre sobe.
+- **`cart_close_lift`** — a recuperação de abandono ligada à sequência de e-mail/SMS e a oferta de backend ao "não" final puxam o lift de fechamento.
+Acompanhamento no [`kpi-dashboard-template`](../../data/metrics/kpi-dashboard-template.md) (família conversion), com as rotas e bifurcações em [`decision-registry`](../../data/registries/decision-registry.md).
 
 ## Handoff
 **Próxima task:** [`plan-tech-deliverability`](plan-tech-deliverability.md) — dono [`tech-links-deliverability-engineer`](../../agents/tech-links-deliverability-engineer.md). **Contrato:** o engenheiro recebe o `funnel-map` + `page-specs` como **specs executáveis** (cada página, CTA, bump, redirecionamento e rota de recuperação com estados explícitos — sim/não/comprou/abandonou→destino), sem ambiguidade. Também entrega ao [`launch-producer`](../ops/build-run-of-show.md) o mapa para o run-of-show e ao [`compliance-auditor`](../qa-memory/compliance-audit.md) o funil para checagem de garantia/T&C por página. **Garantia:** funil sem becos sem saída, com as 4 partes em trilhas e o "não"/abandono com recuperação — ou um flag explícito de `bloqueada_por_copy`/`bloqueada_por_money_model`.

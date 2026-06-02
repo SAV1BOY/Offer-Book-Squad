@@ -31,6 +31,7 @@ checklists:
   - vsl/vsl-risk-reversal-gate
   - vsl/vsl-cta-strength-gate
 registries: [control-registry]
+metrics: [vsl_conversion_rate, cart_close_lift, copy_throughput]
 tags: [copy, vsl, webinar, sales-letter, ty-page, value-before-price, hard-stop]
 ---
 
@@ -83,6 +84,13 @@ Transformar o Offer Book aprovado em roteiros de longo formato — VSL, webinar,
 
 ## Gates
 [`vsl/vsl-value-before-price-gate`](../../checklists/vsl/vsl-value-before-price-gate.md) · [`vsl/vsl-risk-reversal-gate`](../../checklists/vsl/vsl-risk-reversal-gate.md) · [`vsl/vsl-cta-strength-gate`](../../checklists/vsl/vsl-cta-strength-gate.md). Gate de entrada (HARD STOP): [`offer-book-stack/offer-book-dod-gate`](../../checklists/offer-book-stack/offer-book-dod-gate.md).
+
+## Métricas
+Move KPIs da família **conversion** ([`config.yaml`](../../config.yaml) `kpis:`), por ser a peça de venda de longo formato:
+- **`vsl_conversion_rate`** — esta task **é** a fonte direta do KPI (vendas / espectadores VSL): o roteiro com valor antes do preço, slippery slide e CTA único é o que converte o espectador.
+- **`cart_close_lift`** — o recap VSL e a sales letter no fechamento puxam o lift na janela de fechamento.
+- **`copy_throughput`** — cada roteiro aprovado e registrado conta na vazão de copy da semana.
+Acompanhamento no [`kpi-dashboard-template`](../../data/metrics/kpi-dashboard-template.md) (família conversion), com cada roteiro versionado em [`control-registry`](../../data/registries/control-registry.md).
 
 ## Handoff
 **Próxima task:** [`voice-pass`](voice-pass.md) (passe obrigatório do voice-style-guardian). **Contrato de saída:** cada roteiro entregue tem os 3 blocos, valor antes do preço, risco revertido, CTA único e cada claim linkado a prova — pronto para o guardião e, após o veredito APROVADO, para o [`funnel-architect`](../funnel-tech/map-funnel.md) (scripts → páginas) e o [`launch-producer`](../ops/build-run-of-show.md) (webinar → run-of-show).

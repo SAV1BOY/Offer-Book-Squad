@@ -29,6 +29,7 @@ checklists:
   - compliance/compliance-scarcity-truth-gate
   - compliance/compliance-data-privacy-gate
 registries: [decision-registry, claim-registry]
+metrics: [compliance_pass_rate, proof_coverage_rate]
 tags: [qa, compliance, veto, claim-backing, escassez-real, lgpd, ftc, hard-stop, d7]
 ---
 
@@ -78,6 +79,12 @@ Roda em D7, **depois** que a copy (D4, já aprovada na voz via [`voice-pass`](..
 
 ## Gates
 [`compliance/compliance-claim-backing-gate`](../../checklists/compliance/compliance-claim-backing-gate.md) · [`compliance/compliance-scarcity-truth-gate`](../../checklists/compliance/compliance-scarcity-truth-gate.md) · [`compliance/compliance-data-privacy-gate`](../../checklists/compliance/compliance-data-privacy-gate.md).
+
+## Métricas
+Move KPIs de **operational** e **offer_quality** ([`config.yaml`](../../config.yaml) `kpis:`), por ser a última barreira que veta claim sem lastro e escassez falsa:
+- **`compliance_pass_rate`** — esta task **é** a fonte direta do KPI (% de peças aprovadas sem veto): o veredito APROVADO/VETADO por peça é a medida.
+- **`proof_coverage_rate`** — auditar cada claim contra a prova catalogada e atualizar o status de lastro no `claim-registry` é o que confirma a % de claims com prova ligada.
+Acompanhamento no [`kpi-dashboard-template`](../../data/metrics/kpi-dashboard-template.md) (famílias operational e offer_quality), com o veredito em [`decision-registry`](../../data/registries/decision-registry.md) e o lastro em [`claim-registry`](../../data/registries/claim-registry.md).
 
 ## Handoff
 **Veto e devolução:** peça VETADA volta ao dono do defeito com o ponto de re-entrada nomeado — copy ao autor via [`voice-pass`](../copy/voice-pass.md), escassez ao [`launch-producer`](../ops/build-run-of-show.md) ou [`events-logistics-coordinator`](../ops/build-events-logistics.md), privacidade ao [`plan-tech-deliverability`](../funnel-tech/plan-tech-deliverability.md). **Próxima task (só com veredito APROVADO):** [`assemble-blackbook`](assemble-blackbook.md). **Contrato:** o blackbook só monta sobre material com compliance APROVADO — cada claim lastreado, cada escassez real, cada captura conforme. O veto é absoluto; só o chief libera, com decisão explícita e registrada.

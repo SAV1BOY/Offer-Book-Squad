@@ -23,6 +23,7 @@ frameworks:
 checklists:
   - value/value-no-orphan-lever-gate
 registries: [offer-registry]
+metrics: [value_equation_score, money_model_completeness]
 tags: [offer-architecture, value-equation, alavancas, sonho, probabilidade, tempo, esforco, veto, d2]
 ---
 
@@ -70,6 +71,12 @@ Cada componente mapeia ≥1 alavanca, com direção declarada; nenhuma das 4 ala
 
 ## Gates
 - [`value/value-no-orphan-lever-gate`](../../checklists/value/value-no-orphan-lever-gate.md)
+
+## Métricas
+Move KPIs da família **offer_quality** ([`config.yaml`](../../config.yaml) `kpis:`), por ser quem audita a força do valor percebido da oferta:
+- **`value_equation_score`** — esta task **é** a fonte direta do KPI (nota 0-100 da Value Equation): pontua cada alavanca e veta os órfãos, então a nota só sobe quando o scorecard fecha sem buraco.
+- **`money_model_completeness`** — a atribuição de cada componente à alavanca certa abastece a alocação por degrau na espinha; valor mal mapeado vira escada incompleta a jusante.
+Acompanhamento no [`kpi-dashboard-template`](../../data/metrics/kpi-dashboard-template.md) (família offer_quality), com o scorecard registrado em [`offer-registry`](../../data/registries/offer-registry.md).
 
 ## Handoff
 **Próxima task:** [`set-pricing-wtp`](set-pricing-wtp.md) — dono [`pricing-wtp-strategist`](../../agents/pricing-wtp-strategist.md), que recebe o valor percebido por alavanca (base do preço por valor). Adiante, o [`unit-economics-stack-analyst`](../../agents/unit-economics-stack-analyst.md) recebe o custo×delta de cada componente; o [`money-model-designer`](../../agents/money-model-designer.md), o scorecard para alocar cada componente ao degrau certo; o [`big-idea-architect`](../../agents/big-idea-architect.md), a alavanca dominante. **Garantia:** todo componente que chega ao downstream move pelo menos uma alavanca, declarada e com direção — zero órfãos.

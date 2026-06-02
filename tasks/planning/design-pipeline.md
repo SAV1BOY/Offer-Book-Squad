@@ -24,6 +24,7 @@ checklists:
   - market/market-awareness-gate
   - market/market-starving-crowd-gate
 registries: [decision-registry, offer-registry]
+metrics: [time_to_offer_book, time_to_blackbook, registry_currency]
 tags: [planning, pipeline, dag, handoff, contratos, hard-stop, command, d0]
 ---
 
@@ -72,6 +73,12 @@ Existe UM grafo acíclico; cada nó tem dono (agente do `config.yaml: routing`);
 ## Gates
 - [`chief/chief-project-type-gate`](../../checklists/chief/chief-project-type-gate.md) e [`chief/chief-scope-approval-gate`](../../checklists/chief/chief-scope-approval-gate.md) (já verdes a montante; pré-condição de entrada).
 - Gates que o pipeline **posiciona** (não executa): [`market/market-sophistication-gate`](../../checklists/market/market-sophistication-gate.md) · [`market/market-awareness-gate`](../../checklists/market/market-awareness-gate.md) · [`market/market-starving-crowd-gate`](../../checklists/market/market-starving-crowd-gate.md).
+
+## Métricas
+Move KPIs de **efficiency** e **operational** ([`config.yaml`](../../config.yaml) `kpis:`), por desenhar o grafo e o caminho crítico que definem o prazo:
+- **`time_to_offer_book`** e **`time_to_blackbook`** — nomear o caminho crítico, marcar o paralelo seguro e confrontá-lo com a restrição de tempo do escopo é o que dimensiona (e protege) os dias até o Offer Book e o Blackbook.
+- **`registry_currency`** — logar a topologia escolhida e as podadas no ato mantém o `decision-registry` atualizado já no D0.
+Acompanhamento no [`kpi-dashboard-template`](../../data/metrics/kpi-dashboard-template.md) (famílias efficiency e operational), com a decisão de topologia em [`decision-registry`](../../data/registries/decision-registry.md).
 
 ## Handoff
 **Próxima task:** [`run-market-intel`](../intelligence/run-market-intel.md) — dono [`market-sophistication-analyst`](../../agents/market-sophistication-analyst.md). **Contrato:** cada agente de D1 recebe (i) sua posição no DAG, (ii) seu contrato de entrada, (iii) seu contrato de saída (ex.: o avatar garante ao proof um mapa de objeções com ≥N objeções categorizadas), (iv) os gates que precisa passar e (v) o peso esperado (construção completa vs revalidação leve). Garantia: nenhum downstream começa uma fase sem o input contratado — entradas nomeadas, qualidade mínima declarada, dono identificado. Se o escopo herdado ainda bifurca, esta task não fecha e devolve ao [`offerbook-chief`](../../agents/offerbook-chief.md).

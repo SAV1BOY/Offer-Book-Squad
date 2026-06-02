@@ -27,6 +27,7 @@ checklists:
   - money-model/money-model-sequence-gate
   - money-model/money-model-cta-per-step-gate
 registries: [offer-registry, price-test-registry]
+metrics: [money_model_completeness, front_end_cac_liquidation, aov, upsell_take_rate]
 tags: [offer-architecture, money-model, espinha, escada, atracao, upsell, continuidade, veto, hard-stop, d2]
 ---
 
@@ -79,6 +80,13 @@ A escada cobre os papéis (atração, núcleo, upsell, downsell, continuidade) c
 - [`money-model/money-model-four-parts-gate`](../../checklists/money-model/money-model-four-parts-gate.md)
 - [`money-model/money-model-sequence-gate`](../../checklists/money-model/money-model-sequence-gate.md)
 - [`money-model/money-model-cta-per-step-gate`](../../checklists/money-model/money-model-cta-per-step-gate.md)
+
+## Métricas
+Move KPIs de **offer_quality** e **economics** ([`config.yaml`](../../config.yaml) `kpis:`), por desenhar a espinha que liquida o CAC e financia a aquisição:
+- **`money_model_completeness`** — esta task **é** a fonte do KPI (nº de partes da escada, alvo 4): a espinha só pontua quando cobre atração/núcleo/upsell/downsell/continuidade.
+- **`front_end_cac_liquidation`** — o critério eliminatório do desenho é a atração liquidar o CAC; a configuração vencedora nomeia o ponto de liquidação.
+- **`aov`** e **`upsell_take_rate`** — o upsell no pico de compra é o degrau que sobe o AOV e cuja take rate mede a saúde da escada.
+Acompanhamento no [`kpi-dashboard-template`](../../data/metrics/kpi-dashboard-template.md) (famílias offer_quality e economics), com a espinha em [`offer-registry`](../../data/registries/offer-registry.md) e os pontos em [`price-test-registry`](../../data/registries/price-test-registry.md).
 
 ## Handoff
 **Próxima task:** [`generate-big-ideas`](../big-idea/generate-big-ideas.md) — dono [`big-idea-architect`](../../agents/big-idea-architect.md), que recebe a oferta-núcleo já posicionada na escada. Adiante, o [`vsl-webinar-scriptwriter`](../../agents/vsl-webinar-scriptwriter.md) e o [`funnel-architect`](../../agents/funnel-architect.md) recebem a sequência completa com CTAs por degrau (o funil **espelha** a escada); o [`events-logistics-coordinator`](../../agents/events-logistics-coordinator.md), o que cada degrau exige operar; o [`offerbook-chief`](../../agents/offerbook-chief.md), o sinal de que a espinha passou no DoD. **Garantia:** todo downstream recebe uma sequência completa, sequenciada, com um CTA por degrau e a atração validada como liquidante do CAC — nunca uma oferta avulsa. Fecha a camada D2.

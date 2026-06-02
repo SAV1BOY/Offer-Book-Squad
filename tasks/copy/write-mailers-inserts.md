@@ -24,6 +24,7 @@ checklists:
   - offer-book-stack/offer-book-dod-gate
   - mailer-checklist
 registries: [control-registry]
+metrics: [opt_in_rate, upsell_take_rate, copy_throughput]
 tags: [copy, direct-mail, mailer, insert, save-the-date, qr-code, specs, hard-stop]
 ---
 
@@ -76,6 +77,13 @@ Transformar o Offer Book aprovado em peças físicas — mailers de save-the-dat
 
 ## Gates
 [`mailer-checklist`](../../checklists/mailer-checklist.md). Gate de entrada (HARD STOP): [`offer-book-stack/offer-book-dod-gate`](../../checklists/offer-book-stack/offer-book-dod-gate.md).
+
+## Métricas
+Move KPIs da família **conversion** ([`config.yaml`](../../config.yaml) `kpis:`), por converter um toque físico em um passo digital por degrau:
+- **`opt_in_rate`** — o save-the-date e o mailer com QR levam ao funil/registro, alimentando a taxa de optin a partir do canal físico.
+- **`upsell_take_rate`** — os inserts por degrau (upsell/downsell/continuidade) ascendem o cliente ao próximo passo, movendo a take rate.
+- **`copy_throughput`** — cada peça física aprovada (copy + specs) conta na vazão de copy.
+Acompanhamento no [`kpi-dashboard-template`](../../data/metrics/kpi-dashboard-template.md) (família conversion), com cada peça em [`control-registry`](../../data/registries/control-registry.md).
 
 ## Handoff
 **Próxima task:** [`voice-pass`](voice-pass.md) (passe obrigatório do voice-style-guardian). **Contrato de saída:** cada peça tem copy + specs de produção completas, QR/CTA físico→digital coordenado, urgência real e (no insert) o degrau correto — pronta para o guardião e, após o veredito APROVADO, para o [`funnel-architect`](../funnel-tech/map-funnel.md) (destinos dos QR → páginas), o [`tech-links-deliverability-engineer`](../funnel-tech/plan-tech-deliverability.md) (URLs/UTM → rastreio) e o [`events-logistics-coordinator`](../ops/build-events-logistics.md) (save-the-date → logística do evento).

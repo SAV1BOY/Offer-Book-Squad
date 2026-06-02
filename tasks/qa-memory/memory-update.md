@@ -22,6 +22,7 @@ frameworks: [proof-to-claim-chain]
 checklists:
   - final-delivery-checklist
 registries: [control-registry, lessons-learned-registry, swipe-registry]
+metrics: [lessons_learned_frequency, swipe_reuse_rate, registry_currency]
 tags: [qa, memoria, registries, swipe, licoes-aprendidas, controles, reuso, d7]
 ---
 
@@ -69,6 +70,13 @@ Roda em D7, por último: ativa quando a [`assemble-blackbook`](assemble-blackboo
 
 ## Gates
 [`final-delivery-checklist`](../../checklists/final-delivery-checklist.md).
+
+## Métricas
+Move KPIs da família **operational** ([`config.yaml`](../../config.yaml) `kpis:`), por ser quem fecha o ciclo gravando a memória reutilizável:
+- **`lessons_learned_frequency`** — esta task **é** a fonte do KPI (lições registradas / lançamento): consolida o que funcionou e o que quebrou no `lessons-learned-registry`.
+- **`swipe_reuse_rate`** — extrair ganchos/estruturas vencedoras como swipe original abastece o `swipe-registry` de onde sai a taxa de reúso futura.
+- **`registry_currency`** — atualizar os três registries no fechamento, cada entrada rastreável e sem duplicata, é o que mantém a memória corrente.
+Acompanhamento no [`kpi-dashboard-template`](../../data/metrics/kpi-dashboard-template.md) (família operational), com as entradas em [`lessons-learned-registry`](../../data/registries/lessons-learned-registry.md) e [`swipe-registry`](../../data/registries/swipe-registry.md).
 
 ## Handoff
 **Fim do ciclo.** A memória atualizada alimenta o **próximo** lançamento: o [`offerbook-chief`](../../agents/offerbook-chief.md) e o [`offer-squad-architect`](../../agents/offer-squad-architect.md) consultam o `lessons-learned-registry` na [`intake-and-scope`](../planning/intake-and-scope.md) (memória antes de repetição), os autores de copy reusam o `swipe-registry`, e os controles vencedores do `control-registry` viram baseline. **Contrato:** nenhuma memória parcial ou não-conforme entra nos registries — só ativos de um lançamento fechado, aprovado no compliance e rastreáveis à fonte.

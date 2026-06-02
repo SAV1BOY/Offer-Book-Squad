@@ -22,6 +22,7 @@ frameworks: [positioning/dunford-positioning, positioning/moore-positioning-form
 checklists:
   - positioning/positioning-awareness-fit
 registries: [decision-registry]
+metrics: [big_idea_strength, vsl_conversion_rate, opt_in_rate]
 tags: [big-idea, positioning, lead-selection, dunford, moore, awareness, category-design, d3]
 ---
 
@@ -72,6 +73,12 @@ A posição está travada (categoria + atributo único + fórmula de Moore compl
 
 ## Gates
 - [`positioning/positioning-awareness-fit`](../../checklists/positioning/positioning-awareness-fit.md) (reprova lead que não casa com a consciência)
+
+## Métricas
+Move KPIs de **offer_quality** e **conversion** ([`config.yaml`](../../config.yaml) `kpis:`), por travar a moldura competitiva e o lead que abrem toda copy de D4:
+- **`big_idea_strength`** — a posição e o lead servem a tese; uma categoria que torna a comparação favorável reforça o critério "crível/relevante" da Big Idea.
+- **`vsl_conversion_rate`** e **`opt_in_rate`** — o lead travado define a abertura da VSL e das páginas; lead casado à consciência é o que faz a copy converter, e lead errado (oferta direta a frio) queima a conversão.
+Acompanhamento no [`kpi-dashboard-template`](../../data/metrics/kpi-dashboard-template.md) (famílias offer_quality e conversion), com a decisão de posição/lead em [`decision-registry`](../../data/registries/decision-registry.md).
 
 ## Handoff
 **Próxima task:** [`assemble-offer-book`](../assembly/assemble-offer-book.md) — dono [`offerbook-chief`](../../agents/offerbook-chief.md), que recebe a posição + o lead para fechar o último bloco do Offer Book Master e rodar o HARD STOP. Adiante (só **após** o Offer Book DoD), os agentes de copy ([`vsl-webinar-scriptwriter`](../../agents/vsl-webinar-scriptwriter.md), [`email-sms-sequence-writer`](../../agents/email-sms-sequence-writer.md), [`direct-mail-insert-writer`](../../agents/direct-mail-insert-writer.md), [`ad-creative-factory`](../../agents/ad-creative-factory.md)) aplicam o lead. **Garantia:** cada agente de copy recebe (1) a categoria de referência e o atributo único, (2) a fórmula de Moore pronta para virar headline/abertura e (3) o lead travado com a justificativa de consciência — para que nenhuma peça "escolha" a abertura por conta própria. Fecha a camada D3.

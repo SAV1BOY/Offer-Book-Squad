@@ -169,3 +169,28 @@ Ordem por dependência (referências sempre resolvem graças à reserva de ids n
 Hormozi (*$100M Offers* 2021, *Leads* 2023, *Money Models* 2025) · Schwartz (*Breakthrough Advertising*) · Cialdini · Halbert · Sugarman · Ogilvy · Caples · Hopkins · Collier · Bencivenga · Kennedy · Ramanujam · Nagle · Voss · Kahneman · Ariely · Ries/Trout · Dunford · Moore · Walker · Brunson · Challenger Sale · SPIN · MEDDIC. Metodologia de raciocínio: **HRM** (Sapient Inc., *Hierarchical Reasoning Model*, arXiv 2506.21734, 2025).
 
 Regra anti-plágio em [`docs/compliance-policy.md`](docs/compliance-policy.md) e [`docs/style-guide.md`](docs/style-guide.md).
+
+---
+
+## 9. Governança HRM & escalonamento
+
+O squad é um **setor** numa multinacional de squads, em 4 camadas: agentes (L1) → teams/swarms (L2) → squad chief (L3) → **HRM central command** (L4, multi-squad). O output **sobe** quando passa no gate da camada; **volta em loop** quando o gate fica vermelho ou o `score < gold`; **sobe ao `hrm_central`** quando há risco estratégico, task fora de escopo, conflito entre squads, ou 2 loops sem atingir gold. Regras em [`config.yaml`](config.yaml) `escalation_rules`; detalhe em [`docs/hrm-governance.md`](docs/hrm-governance.md) e a coordenação dos grupos em [`docs/team-coordination.md`](docs/team-coordination.md).
+
+## 10. Recebendo & entregando handoffs (input acceptance)
+
+**Entrada:** todo input (de squad upstream ou de fase anterior) só é aceito se passa o **input acceptance** — campos presentes + qualidade mínima por campo — definido no contrato ([`templates/cross-squad/handoff-contract-template.md`](templates/cross-squad/handoff-contract-template.md)) e validado por [`cross-squad-asset-validation`](checklists/cross-squad/cross-squad-asset-validation.md). Input fraco é **devolvido**, não ingerido.
+**Saída:** todo output que deixa o squad passa por [`cross-squad-handoff-quality`](checklists/cross-squad/cross-squad-handoff-quality.md), carrega o contrato e é logado em [`data/handoffs/`](data/handoffs/README.md) + `decision-registry`. Quem entrega para quem está em `config.yaml` `delegation_rules`.
+
+## 11. Ambiguidade, baixa confiança & conflito
+
+- **Ambiguidade / input incompleto:** o agente **não prossegue em silêncio** — degrada com elegância, sinaliza a lacuna e pede o campo faltante (ver §2 de cada agente). Confiança baixa é declarada, não escondida.
+- **Conflito entre agentes:** o team lead tenta resolver; se não resolver, escala ao chief via [`chief-conflict-resolution-gate`](checklists/chief/chief-conflict-resolution-gate.md); o trade-off é gravado no `decision-registry`.
+- **Fora de escopo:** delega ao squad certo (`delegation_rules`) — não improvisa o trabalho de outro setor.
+
+## 12. Loop de aprendizado (Kaizen) & memória operacional
+
+O squad **aprende a cada lançamento**: `run → memory-update → lessons-learned-registry + scorecard → data/backlog → próximo intake`. A memória influencia a próxima execução (`memory_before_repetition`). Estruturas: registries (decisão/oferta/prova/controls/lições), [`data/scorecards/`](data/scorecards/README.md), [`data/handoffs/`](data/handoffs/README.md), [`data/risk-assumptions/`](data/risk-assumptions/README.md), [`data/backlog/`](data/backlog/README.md). Mecanismo completo em [`docs/improvement-loop-kaizen.md`](docs/improvement-loop-kaizen.md).
+
+## 13. Cascade de quality gates & go/no-go
+
+Gates formam uma **cascade monotônica** de 6 níveis (agente → por-agente → task → domínio/stack → chief/HARD STOP → go/no-go HRM). Nada sobe "meio pronto". O go/no-go usa `readiness_rules` + `score_thresholds` (gold ≥ 95, sota ≥ 98). DAG completo em [`docs/quality-gate-cascade.md`](docs/quality-gate-cascade.md); recuperação em [`docs/failure-paths-and-gate-recovery.md`](docs/failure-paths-and-gate-recovery.md). **Como o squad mede valor:** KPIs por task (`config.yaml` `kpis`, ligados em cada `tasks/**` na seção Métricas) consolidados no [`data/metrics/kpi-dashboard-template.md`](data/metrics/kpi-dashboard-template.md) e no scorecard do lançamento.
