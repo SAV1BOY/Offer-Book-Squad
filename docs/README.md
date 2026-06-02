@@ -28,6 +28,7 @@ tags: [docs, index, navigation]
 
 ## Regras e governança
 - [`compliance-policy.md`](compliance-policy.md) — claims, escassez verdadeira, garantias, LGPD/FTC/CDC, veto.
+- [`failure-paths-and-gate-recovery.md`](failure-paths-and-gate-recovery.md) — o que acontece quando um gate fica vermelho ou um agente veta (pontos de re-entrada).
 - [`faq.md`](faq.md) — perguntas frequentes.
 - [`contributing.md`](contributing.md) — como adicionar/estender arquivos no padrão.
 - [`changelog.md`](changelog.md) — histórico de versões.

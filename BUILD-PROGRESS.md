@@ -33,7 +33,8 @@
 - **crosslink-graph:** **GRAFO OK** · 0 links quebrados (9.5k+ links resolvem).
 - **id-resolver:** **BIJEÇÃO OK** · 618 ids únicos · 0 colisões/inconsistências.
 - **citation-checker:** **0 violações** (literal ≤25 palavras; blocos de fonte presentes).
-- **coverage:** **643 arquivos** (109% das metas detalhadas do mapeamento).
+- **coverage:** **648 arquivos** (110% das metas detalhadas do mapeamento).
+- **Auditoria holística independente (2 passes):** **97/100 — GOLD-STANDARD / SOTA**; todos os gaps nomeados fechados (principles-enforcement-map, frameworks/README, exemplar walkthrough, failure-paths-and-gate-recovery). Integridade verificada por amostragem (qa-runner 100, links 0 quebrados, ids, citações).
 
 ## Notas
 - Os 11 princípios, o HARD STOP (`offer-book-dod-gate` antes de D4) e a espinha do money model estão modelados em `config.yaml` e enforçados pelos gates.
