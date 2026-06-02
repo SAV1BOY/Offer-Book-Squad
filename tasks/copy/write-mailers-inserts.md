@@ -30,7 +30,7 @@ tags: [copy, direct-mail, mailer, insert, save-the-date, qr-code, specs, hard-st
 # Task — Escrever a mala direta e os inserts físicos por degrau de compra
 
 ## Objetivo
-Transformar o Offer Book aprovado em peças físicas — mailers de save-the-date, mailers com QR que levam ao funil, e inserts por degrau de compra (front-end, upsell, downsell, continuidade) — cada peça com copy E specs de produção, convertendo um toque físico em um passo digital. O estado-pronto: cada peça com gancho, oferta resumida, objeção respondida, CTA físico→digital coordenado, specs completas, urgência real, aprovada no mailer-checklist e encaminhada ao [`voice-pass`](../qa-memory/voice-pass.md).
+Transformar o Offer Book aprovado em peças físicas — mailers de save-the-date, mailers com QR que levam ao funil, e inserts por degrau de compra (front-end, upsell, downsell, continuidade) — cada peça com copy E specs de produção, convertendo um toque físico em um passo digital. O estado-pronto: cada peça com gancho, oferta resumida, objeção respondida, CTA físico→digital coordenado, specs completas, urgência real, aprovada no mailer-checklist e encaminhada ao [`voice-pass`](voice-pass.md).
 
 ## Agente dono
 [`direct-mail-insert-writer`](../../agents/direct-mail-insert-writer.md). Materializa a estratégia em papel. Sem poder de veto; submete tudo ao voice-guardian.
@@ -78,4 +78,4 @@ Transformar o Offer Book aprovado em peças físicas — mailers de save-the-dat
 [`mailer-checklist`](../../checklists/mailer-checklist.md). Gate de entrada (HARD STOP): [`offer-book-stack/offer-book-dod-gate`](../../checklists/offer-book-stack/offer-book-dod-gate.md).
 
 ## Handoff
-**Próxima task:** [`voice-pass`](../qa-memory/voice-pass.md) (passe obrigatório do voice-style-guardian). **Contrato de saída:** cada peça tem copy + specs de produção completas, QR/CTA físico→digital coordenado, urgência real e (no insert) o degrau correto — pronta para o guardião e, após o veredito APROVADO, para o [`funnel-architect`](../funnel-tech/map-funnel.md) (destinos dos QR → páginas), o [`tech-links-deliverability-engineer`](../funnel-tech/plan-tech-deliverability.md) (URLs/UTM → rastreio) e o [`events-logistics-coordinator`](../ops/build-events-logistics.md) (save-the-date → logística do evento).
+**Próxima task:** [`voice-pass`](voice-pass.md) (passe obrigatório do voice-style-guardian). **Contrato de saída:** cada peça tem copy + specs de produção completas, QR/CTA físico→digital coordenado, urgência real e (no insert) o degrau correto — pronta para o guardião e, após o veredito APROVADO, para o [`funnel-architect`](../funnel-tech/map-funnel.md) (destinos dos QR → páginas), o [`tech-links-deliverability-engineer`](../funnel-tech/plan-tech-deliverability.md) (URLs/UTM → rastreio) e o [`events-logistics-coordinator`](../ops/build-events-logistics.md) (save-the-date → logística do evento).

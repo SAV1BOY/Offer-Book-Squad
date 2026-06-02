@@ -36,7 +36,7 @@ A sequência do funil híbrido, na nossa leitura:
 - **Quebra de crença antes da call.** Quem chega à chamada já aceitou o "One Thing"; a call fecha, não convence do zero — base de [`Expert Secrets`](../books/launches-and-funnels/brunson-expert-secrets.md).
 - **Inversão de poder.** Candidatar-se (em vez de comprar) sobe o valor percebido e qualifica — autoridade/escassez de Cialdini. Ver [`../books/persuasion-psychology/cialdini-influence.md`](../books/persuasion-psychology/cialdini-influence.md).
 - **Compromisso acumulado.** Registro → assistir → aplicar → comparecer são micro-sins que tornam o fechamento coerente — Cialdini.
-- **Ancoragem ao resultado + reversão de risco.** Na call, preço ancorado à transformação e risco revertido movem a [Value Equation](../../frameworks/value-equation-engineer/value-equation.md). Ver [`../psychology/anchoring.md`](../psychology/anchoring.md).
+- **Ancoragem ao resultado + reversão de risco.** Na call, preço ancorado à transformação e risco revertido movem a [Value Equation](../../frameworks/value-equation.md). Ver [`../psychology/anchoring.md`](../psychology/anchoring.md).
 
 ## Padrão reutilizável
 Esqueleto de webinar→alto ticket, abstraído e original:

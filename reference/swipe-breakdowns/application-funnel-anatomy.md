@@ -35,7 +35,7 @@ A sequência de etapas, na nossa leitura:
 - **Qualificação protege a margem.** Conversas só com fit elevam taxa de fechamento e LTV — `decision_before_ornament` (cada etapa serve à decisão de fechar).
 - **Compromisso e coerência.** Articular a dor no formulário e na call gera micro-sins que levam ao "sim" — Cialdini.
 - **Diagnóstico antes de prescrição.** Vender pela lacuna (atual vs. desejado) é mais forte que empurrar features — [SPIN/MEDDIC](../books/b2b-enterprise/meddic-meddpicc.md).
-- **Ancoragem ao resultado.** Preço alto é ancorado ao valor da transformação, não ao custo — [Value Equation](../../frameworks/value-equation-engineer/value-equation.md) e [`../psychology/anchoring.md`](../psychology/anchoring.md).
+- **Ancoragem ao resultado.** Preço alto é ancorado ao valor da transformação, não ao custo — [Value Equation](../../frameworks/value-equation.md) e [`../psychology/anchoring.md`](../psychology/anchoring.md).
 
 ## Padrão reutilizável
 Esqueleto de application funnel, abstraído e original:

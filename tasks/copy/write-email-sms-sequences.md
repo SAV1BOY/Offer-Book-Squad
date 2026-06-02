@@ -33,7 +33,7 @@ tags: [copy, email, sms, sequencias, cart-open-close, abandono, segmentacao, tim
 # Task — Escrever sequências de e-mail & SMS
 
 ## Objetivo
-Transformar o Offer Book aprovado em TODOS os fluxos de e-mail e SMS do ciclo de vida — do opt-in ao pós-evento — cada mensagem com lista-alvo, timing, subject line e regra de segmentação, sem buraco de cobertura. O estado-pronto: a matriz de sequências completa, cada claim com prova linkada, escassez verdadeira, supressão definida, aprovada nos três gates de e-mail e encaminhada ao [`voice-pass`](../qa-memory/voice-pass.md).
+Transformar o Offer Book aprovado em TODOS os fluxos de e-mail e SMS do ciclo de vida — do opt-in ao pós-evento — cada mensagem com lista-alvo, timing, subject line e regra de segmentação, sem buraco de cobertura. O estado-pronto: a matriz de sequências completa, cada claim com prova linkada, escassez verdadeira, supressão definida, aprovada nos três gates de e-mail e encaminhada ao [`voice-pass`](voice-pass.md).
 
 ## Agente dono
 [`email-sms-sequence-writer`](../../agents/email-sms-sequence-writer.md). Orquestra a conversa por mensagens ao longo do tempo. Sem poder de veto; submete tudo ao voice-guardian.
@@ -82,4 +82,4 @@ Transformar o Offer Book aprovado em TODOS os fluxos de e-mail e SMS do ciclo de
 [`email-sms/email-step-coverage-gate`](../../checklists/email-sms/email-step-coverage-gate.md) · [`email-sms/email-segmentation-gate`](../../checklists/email-sms/email-segmentation-gate.md) · [`email-sms/email-timing-gate`](../../checklists/email-sms/email-timing-gate.md). Gate de entrada (HARD STOP): [`offer-book-stack/offer-book-dod-gate`](../../checklists/offer-book-stack/offer-book-dod-gate.md).
 
 ## Handoff
-**Próxima task:** [`voice-pass`](../qa-memory/voice-pass.md) (passe obrigatório do voice-style-guardian). **Contrato de saída:** cada mensagem tem lista, timing, subject e CTA, com supressão definida, escassez real e cobertura sem buraco — pronta para o guardião e, após o veredito APROVADO, para o [`funnel-architect`](../funnel-tech/map-funnel.md) (destinos → páginas), o [`tech-links-deliverability-engineer`](../funnel-tech/plan-tech-deliverability.md) (volume/cadência → deliverability) e o [`launch-producer`](../ops/build-run-of-show.md) (timeline → run-of-show).
+**Próxima task:** [`voice-pass`](voice-pass.md) (passe obrigatório do voice-style-guardian). **Contrato de saída:** cada mensagem tem lista, timing, subject e CTA, com supressão definida, escassez real e cobertura sem buraco — pronta para o guardião e, após o veredito APROVADO, para o [`funnel-architect`](../funnel-tech/map-funnel.md) (destinos → páginas), o [`tech-links-deliverability-engineer`](../funnel-tech/plan-tech-deliverability.md) (volume/cadência → deliverability) e o [`launch-producer`](../ops/build-run-of-show.md) (timeline → run-of-show).

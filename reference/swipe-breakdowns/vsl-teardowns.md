@@ -25,7 +25,7 @@ A sequência de beats que faz uma VSL converter, na nossa leitura:
 2. **Promessa grande e específica.** A transformação prometida, dimensionada e datada, crível o bastante para o cético não sair.
 3. **Identificação e dor (callout).** Nomeia quem é o espectador e espelha a dor na linguagem dele (VOC verbatim), agitando a consequência.
 4. **Vilão externo + virada de culpa.** Move a culpa do fracasso passado do espectador para uma causa externa ("não é você — é X"). Reduz vergonha, abre a mente.
-5. **Mecanismo único (o "como/porquê").** Introduz o mecanismo do problema e o mecanismo da solução — o coração da VSL em mercado saturado. Ver [`../../frameworks/offer/unique-mechanism.md`](../../frameworks/offer/unique-mechanism.md) e [`sophistication-levels`](../../lib/taxonomies/sophistication-levels.md).
+5. **Mecanismo único (o "como/porquê").** Introduz o mecanismo do problema e o mecanismo da solução — o coração da VSL em mercado saturado. Ver [`../../frameworks/unique-mechanism.md`](../../frameworks/unique-mechanism.md) e [`sophistication-levels`](../../lib/taxonomies/sophistication-levels.md).
 6. **História de origem / credibilidade.** Por que confiar no apresentador: a jornada, a descoberta, as credenciais — autoridade ganha, não declarada.
 7. **Prova empilhada.** Demonstração, dados, depoimentos, antes/depois — cada claim recebe uma razão para acreditar.
 8. **A oferta e o stack de valor.** Revela o produto, empilha componentes e ancora valor antes do preço (ancoragem). Ver [`../psychology/anchoring.md`](../psychology/anchoring.md).
@@ -37,7 +37,7 @@ A sequência de beats que faz uma VSL converter, na nossa leitura:
 - **Controle do ritmo.** O vídeo impede o "pular para o preço"; a persuasão acontece na ordem desenhada — a [slippery slide](../../frameworks/copy/slippery-slide.md) de Sugarman. Ver [`../books/copywriting/sugarman-adweek-copywriting.md`](../books/copywriting/sugarman-adweek-copywriting.md).
 - **Mecanismo vence saturação.** Em sofisticação 3-4, só o "como/porquê" novo reabre a crença. Ver [`schwartz`](../books/copywriting/schwartz-breakthrough-advertising.md).
 - **Virada de culpa.** Tirar a vergonha do espectador baixa a resistência — psicologia de dor/identidade. Ver [`../psychology/pain-vs-pleasure-buying.md`](../psychology/pain-vs-pleasure-buying.md).
-- **Ancoragem + reversão de risco.** Ancorar valor alto e remover risco move a [Value Equation](../../frameworks/value-equation-engineer/value-equation.md) (sobe valor percebido, baixa esforço/risco).
+- **Ancoragem + reversão de risco.** Ancorar valor alto e remover risco move a [Value Equation](../../frameworks/value-equation.md) (sobe valor percebido, baixa esforço/risco).
 - **Prova social e autoridade.** Depoimentos e demonstração ativam Cialdini. Ver [`../books/persuasion-psychology/cialdini-influence.md`](../books/persuasion-psychology/cialdini-influence.md).
 
 ## Padrão reutilizável

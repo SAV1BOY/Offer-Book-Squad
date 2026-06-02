@@ -23,7 +23,7 @@ Arquétipo: **uma editora de informação que vende assinaturas baratas na frent
 A estrutura do motor, na nossa leitura:
 1. **Front-end de baixa fricção como ativo de lista.** A assinatura barata não existe para lucrar — existe para **comprar um nome qualificado** e colocá-lo na casa editorial. O assinante é o ativo; a primeira venda é o custo de adquiri-lo.
 2. **Lead de predição na promoção de aquisição.** A peça de topo aposta numa previsão datada e ousada (um colapso, uma janela, um catalisador). Casa com o [`lead de proclamação/segredo`](../../lib/taxonomies/lead-types.md) e dá motivo para agir agora.
-3. **Big Idea editorial recorrente.** Cada selo carrega UMA tese de mundo (o "porquê" macro) que une todas as edições — coerência de [Power of One](../../frameworks/big-idea-architect/power-of-one.md).
+3. **Big Idea editorial recorrente.** Cada selo carrega UMA tese de mundo (o "porquê" macro) que une todas as edições — coerência de [Power of One](../../frameworks/power-of-one.md).
 4. **Continuidade como espinha.** A renovação anual e o conteúdo periódico transformam a compra única em receita recorrente — o LTV vive aqui, não na primeira venda.
 5. **Escada de back-end (upgrade ladder).** Sequências internas sobem o assinante: relatório → serviço de alertas → mastermind → "lifetime"/aliança. Cada degrau é um upsell ligado por um motivo honesto (mais acesso, mais profundidade, menos esforço).
 6. **Mídia em volume e teste sistemático de controles.** Muitas variações rodam contra o **controle** (a peça campeã); só vence quem bate o número. O controle é o ativo de copy mais valioso da casa.

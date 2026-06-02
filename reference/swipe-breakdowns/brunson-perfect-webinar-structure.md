@@ -33,8 +33,8 @@ A sequência de beats, na nossa leitura:
 
 ## Por que funciona
 - **Quebra de crença antes da oferta.** Vender é remover crenças que bloqueiam — base de [`Expert Secrets`](../books/launches-and-funnels/brunson-expert-secrets.md) e da psicologia de [identidade](../psychology/identity-and-belonging.md).
-- **Power of One.** UMA crença central (o Big Domino) concentra toda a persuasão — princípio `one_big_idea`. Ver [`../../frameworks/big-idea-architect/power-of-one.md`](../../frameworks/big-idea-architect/power-of-one.md).
-- **The Stack + ancoragem.** Somar valor antes do preço explora ancoragem e a [Value Equation](../../frameworks/value-equation-engineer/value-equation.md) (valor percebido alto antes do número).
+- **Power of One.** UMA crença central (o Big Domino) concentra toda a persuasão — princípio `one_big_idea`. Ver [`../../frameworks/power-of-one.md`](../../frameworks/power-of-one.md).
+- **The Stack + ancoragem.** Somar valor antes do preço explora ancoragem e a [Value Equation](../../frameworks/value-equation.md) (valor percebido alto antes do número).
 - **Compromisso e coerência.** As perguntas de fechamento puxam micro-sins que levam ao "sim" final — Cialdini. Ver [`../books/persuasion-psychology/cialdini-influence.md`](../books/persuasion-psychology/cialdini-influence.md).
 - **Loop aberto.** A promessa inicial segura a atenção até o close — psicologia de tensão/curiosidade.
 

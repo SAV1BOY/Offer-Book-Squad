@@ -23,7 +23,7 @@ Arquétipo: **a VSL de nutracêutico (suplemento) de resposta direta** — um su
 A sequência de beats, na nossa leitura:
 1. **Gancho + promessa cuidadosa.** Abre prendendo a atenção e prometendo alívio, mas calibra o claim ao que é substanciável (evita promessa médica absoluta). Ver [`lead-types`](../../lib/taxonomies/lead-types.md).
 2. **Identificação e dor.** Nomeia o espectador e espelha a frustração de "já tentei de tudo e nada resolve" (VOC verbatim).
-3. **A causa-raiz oculta (o mecanismo do problema).** Revela o verdadeiro motivo pelo qual o problema persiste — algo que o espectador não conhecia. Tira a culpa dele e abre a mente. Coração do subgênero em sofisticação 3-4. Ver [`../../frameworks/offer/unique-mechanism.md`](../../frameworks/offer/unique-mechanism.md).
+3. **A causa-raiz oculta (o mecanismo do problema).** Revela o verdadeiro motivo pelo qual o problema persiste — algo que o espectador não conhecia. Tira a culpa dele e abre a mente. Coração do subgênero em sofisticação 3-4. Ver [`../../frameworks/unique-mechanism.md`](../../frameworks/unique-mechanism.md).
 4. **O ingrediente/composto (o mecanismo da solução).** Conecta a causa-raiz a um ingrediente específico e à ciência por trás — o "porquê isto funciona quando o resto falhou".
 5. **História de descoberta + autoridade.** Como o composto/fórmula foi descoberto; credenciais de quem está por trás — autoridade ganha.
 6. **Prova substanciada.** Estudos, mecanismo de ação, depoimentos — cada claim com lastro. Aqui o compliance manda: nada sem substanciação. Ver [`evidence_before_opinion`](../../ARCHITECTURE.md).
@@ -35,7 +35,7 @@ A sequência de beats, na nossa leitura:
 ## Por que funciona
 - **Mecanismo "causa-raiz" vence saturação e ceticismo.** Explicar o "porquê ainda não funcionou" reabre a crença num mercado exausto — Schwartz, sofisticação 3-4. Ver [`schwartz`](../books/copywriting/schwartz-breakthrough-advertising.md) e [`sophistication-levels`](../../lib/taxonomies/sophistication-levels.md).
 - **Virada de culpa baixa resistência.** Mover a culpa do espectador para a causa oculta reduz vergonha e defensividade. Ver [`../psychology/pain-vs-pleasure-buying.md`](../psychology/pain-vs-pleasure-buying.md).
-- **Reversão de risco + ancoragem por quantidade.** Garantia longa e desconto escalonado movem a [Value Equation](../../frameworks/value-equation-engineer/value-equation.md) (baixam risco/esforço, sobem valor percebido).
+- **Reversão de risco + ancoragem por quantidade.** Garantia longa e desconto escalonado movem a [Value Equation](../../frameworks/value-equation.md) (baixam risco/esforço, sobem valor percebido).
 - **Prova substanciada = crença + compliance.** Lastro científico serve à conversão e à conformidade ao mesmo tempo — `evidence_before_opinion` e o veto do [compliance-auditor](../../ARCHITECTURE.md).
 - **Escassez verdadeira.** Estoque/lote reais sustentam urgência sem mentir — `truthful_scarcity`.
 

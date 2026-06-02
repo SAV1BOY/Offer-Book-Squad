@@ -30,7 +30,7 @@ tags: [copy, ads, matriz, angulos, retargeting, continuidade, hook, fascination,
 # Task — Gerar a matriz de ads que ataca cada dor por múltiplos ângulos
 
 ## Objetivo
-Transformar UMA Big Idea e UM mecanismo numa matriz de ads onde cada dor do avatar é atacada por ≥3 ângulos distintos, o retargeting cobre cada objeção dominante, e a continuidade estende a recorrência — todos rastreáveis à tese e com claim lastreado. O estado-pronto: a matriz com as três camadas (frio, retarget, continuidade), cada gancho com prova linkada, ângulos realmente diferentes (não cosméticos), aprovada nos três gates de ads e encaminhada ao [`voice-pass`](../qa-memory/voice-pass.md).
+Transformar UMA Big Idea e UM mecanismo numa matriz de ads onde cada dor do avatar é atacada por ≥3 ângulos distintos, o retargeting cobre cada objeção dominante, e a continuidade estende a recorrência — todos rastreáveis à tese e com claim lastreado. O estado-pronto: a matriz com as três camadas (frio, retarget, continuidade), cada gancho com prova linkada, ângulos realmente diferentes (não cosméticos), aprovada nos três gates de ads e encaminhada ao [`voice-pass`](voice-pass.md).
 
 ## Agente dono
 [`ad-creative-factory`](../../agents/ad-creative-factory.md). Multiplica a tese estratégica em criativos. Sem poder de veto; submete tudo ao voice-guardian.
@@ -77,4 +77,4 @@ Transformar UMA Big Idea e UM mecanismo numa matriz de ads onde cada dor do avat
 [`ads/ads-angle-coverage-gate`](../../checklists/ads/ads-angle-coverage-gate.md) · [`ads/ads-claim-backing-gate`](../../checklists/ads/ads-claim-backing-gate.md) · [`ads/ads-variation-gate`](../../checklists/ads/ads-variation-gate.md). Gate de entrada (HARD STOP): [`offer-book-stack/offer-book-dod-gate`](../../checklists/offer-book-stack/offer-book-dod-gate.md).
 
 ## Handoff
-**Próxima task:** [`voice-pass`](../qa-memory/voice-pass.md) (passe obrigatório do voice-style-guardian). **Contrato de saída:** todo ad é rastreável à UMA Big Idea, com claim lastreado, ângulo declarado e lead casado à consciência — pronto para o guardião e, após o veredito APROVADO, para o [`funnel-architect`](../funnel-tech/map-funnel.md) (ângulo/temperatura → página de destino) e o [`tech-links-deliverability-engineer`](../funnel-tech/plan-tech-deliverability.md) (destinos → UTM por origem/campanha/ângulo).
+**Próxima task:** [`voice-pass`](voice-pass.md) (passe obrigatório do voice-style-guardian). **Contrato de saída:** todo ad é rastreável à UMA Big Idea, com claim lastreado, ângulo declarado e lead casado à consciência — pronto para o guardião e, após o veredito APROVADO, para o [`funnel-architect`](../funnel-tech/map-funnel.md) (ângulo/temperatura → página de destino) e o [`tech-links-deliverability-engineer`](../funnel-tech/plan-tech-deliverability.md) (destinos → UTM por origem/campanha/ângulo).

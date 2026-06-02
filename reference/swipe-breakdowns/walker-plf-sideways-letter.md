@@ -30,7 +30,7 @@ A sequência das quatro peças, na nossa leitura:
 - **Persuasão distribuída no tempo.** Fatiar a carta cria múltiplos contatos que constroem relação e crença gradualmente — o oposto do pedido frio. Ver [`../books/launches-and-funnels/walker-launch.md`](../books/launches-and-funnels/walker-launch.md).
 - **Reciprocidade + autoridade + prova social.** Entregar valor antes de pedir aciona reciprocidade; ensinar bem gera autoridade; casos geram prova — Cialdini. Ver [`../books/persuasion-psychology/cialdini-influence.md`](../books/persuasion-psychology/cialdini-influence.md).
 - **Antecipação e loops abertos.** Cada PLC abre uma curva que só fecha na próxima — tensão de curiosidade sustentada por dias. Ver [`../books/persuasion-psychology/cialdini-presuasion.md`](../books/persuasion-psychology/cialdini-presuasion.md).
-- **"Ownership" baixa a objeção.** Fazer o público se imaginar usando reduz risco percebido e move a [Value Equation](../../frameworks/value-equation-engineer/value-equation.md).
+- **"Ownership" baixa a objeção.** Fazer o público se imaginar usando reduz risco percebido e move a [Value Equation](../../frameworks/value-equation.md).
 - **Escassez verdadeira do carrinho.** A janela real de abertura/fechamento é `truthful_scarcity`, não falsa.
 
 ## Padrão reutilizável

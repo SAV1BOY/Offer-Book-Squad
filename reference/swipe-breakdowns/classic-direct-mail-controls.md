@@ -22,7 +22,7 @@ Arquétipo: **a carta de vendas física que venceu por anos e virou o "controle"
 ## Anatomia
 A estrutura comum dos controles, na nossa leitura:
 1. **Envelope/abertura que se faz abrir.** A peça vence o primeiro "leio ou jogo fora" antes de qualquer argumento — Halbert fez a carta parecer pessoal (selo real, postagem casada); a do WSJ abre com uma cena, não com um anúncio. Ver o arco de [história como lead](../../lib/taxonomies/lead-types.md).
-2. **Lead que prende com uma só ideia.** O WSJ usa o **lead de história** (dois colegas, mesma largada, destinos opostos) que encarna a tese "informação muda o resultado". Halbert usa **identidade** (a sua família, o seu nome). UMA ideia por carta — [Power of One](../../frameworks/big-idea-architect/power-of-one.md).
+2. **Lead que prende com uma só ideia.** O WSJ usa o **lead de história** (dois colegas, mesma largada, destinos opostos) que encarna a tese "informação muda o resultado". Halbert usa **identidade** (a sua família, o seu nome). UMA ideia por carta — [Power of One](../../frameworks/power-of-one.md).
 3. **Construção do desejo + agitação.** A carta desenvolve a consequência de agir vs. não agir, espelhando a dor/aspiração do leitor antes de oferecer a saída.
 4. **Oferta explícita e específica.** O que é, o que custa, o que vem junto — sem ambiguidade. A clareza da oferta é metade da conversão.
 5. **Prova e redução de risco.** Razões para acreditar (autoridade do veículo, garantia, especificidade) baixam a percepção de risco antes do pedido.

@@ -37,7 +37,7 @@ tags: [copy, vsl, webinar, sales-letter, ty-page, value-before-price, hard-stop]
 # Task — Escrever VSL & Webinar
 
 ## Objetivo
-Transformar o Offer Book aprovado em roteiros de longo formato — VSL, webinar, recap VSL, sales letter/offer page e TY page scripts — que entregam **valor antes do preço**, deslizam do gancho ao CTA único e estão prontos para o passe de voz. O estado-pronto: roteiros com os 3 blocos completos, cada claim com prova linkada, escassez verdadeira, aprovados nos gates de VSL e encaminhados ao [`voice-style-guardian`](../qa-memory/voice-pass.md).
+Transformar o Offer Book aprovado em roteiros de longo formato — VSL, webinar, recap VSL, sales letter/offer page e TY page scripts — que entregam **valor antes do preço**, deslizam do gancho ao CTA único e estão prontos para o passe de voz. O estado-pronto: roteiros com os 3 blocos completos, cada claim com prova linkada, escassez verdadeira, aprovados nos gates de VSL e encaminhados ao [`voice-style-guardian`](voice-pass.md).
 
 ## Agente dono
 [`vsl-webinar-scriptwriter`](../../agents/vsl-webinar-scriptwriter.md). Sem poder de veto; submete tudo ao voice-guardian.
@@ -85,4 +85,4 @@ Transformar o Offer Book aprovado em roteiros de longo formato — VSL, webinar,
 [`vsl/vsl-value-before-price-gate`](../../checklists/vsl/vsl-value-before-price-gate.md) · [`vsl/vsl-risk-reversal-gate`](../../checklists/vsl/vsl-risk-reversal-gate.md) · [`vsl/vsl-cta-strength-gate`](../../checklists/vsl/vsl-cta-strength-gate.md). Gate de entrada (HARD STOP): [`offer-book-stack/offer-book-dod-gate`](../../checklists/offer-book-stack/offer-book-dod-gate.md).
 
 ## Handoff
-**Próxima task:** [`voice-pass`](../qa-memory/voice-pass.md) (passe obrigatório do voice-style-guardian). **Contrato de saída:** cada roteiro entregue tem os 3 blocos, valor antes do preço, risco revertido, CTA único e cada claim linkado a prova — pronto para o guardião e, após o veredito APROVADO, para o [`funnel-architect`](../funnel-tech/map-funnel.md) (scripts → páginas) e o [`launch-producer`](../ops/build-run-of-show.md) (webinar → run-of-show).
+**Próxima task:** [`voice-pass`](voice-pass.md) (passe obrigatório do voice-style-guardian). **Contrato de saída:** cada roteiro entregue tem os 3 blocos, valor antes do preço, risco revertido, CTA único e cada claim linkado a prova — pronto para o guardião e, após o veredito APROVADO, para o [`funnel-architect`](../funnel-tech/map-funnel.md) (scripts → páginas) e o [`launch-producer`](../ops/build-run-of-show.md) (webinar → run-of-show).

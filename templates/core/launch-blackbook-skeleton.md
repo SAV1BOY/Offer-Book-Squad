@@ -28,7 +28,7 @@ Este é o segundo núcleo do squad. O **Offer Book** prova que a oferta merece e
 - **{{NOME_DA_OFERTA}}** / **{{PROJECT_TYPE}}** — herdados do [`offer-book-master`](offer-book-master.md). O tipo define quais capítulos são obrigatórios (single-promo dispensa afiliados/PR; full-launch exige tudo).
 - **{{OFFER_BOOK_LINK}}** — o link para o Offer Book aprovado e a data em que cruzou o HARD STOP. É a chave de entrada deste arquivo.
 - **{{COPY_INVENTORY}}** — o inventário de copy (VSL/webinar, sequências de e-mail/SMS, mailers, ads), cada peça com status e link para o template-fonte em `templates/copy/`. Vem de `vsl-webinar-scriptwriter`, `email-sms-sequence-writer`, `direct-mail-insert-writer`, `ad-creative-factory`. Cada claim aqui já passou pelo [`proof-block`](../../lib/components/proof-block.md).
-- **{{VOICE_STATUS}}** — confirmação de que o `voice-style-guardian` aprovou toda a copy na voz [`brand-default-hormozi-style`](../../voice/brand-default-hormozi-style.md).
+- **{{VOICE_STATUS}}** — confirmação de que o `voice-style-guardian` aprovou toda a copy na voz [`brand-default-hormozi-style`](../../voice/profiles/brand-default-hormozi-style.md).
 - **{{FUNNEL_MAP}}** — o mapa de funil sem becos sem saída, com URLs e plano de deliverability. Vem de `funnel-architect` e `tech-links-deliverability-engineer`. Usa [`offer-to-funnel-mapping`](../../frameworks/offer-to-funnel-mapping.md).
 - **{{OPS_RUN_OF_SHOW}}** — o run-of-show por fase (runway → carrinho aberto → fechamento), com responsáveis e horários. Vem de `launch-producer`.
 - **{{EVENTS_LOGISTICS}}** — o calendário de eventos (lives, webinars, aulas) e o inventário de assets. Vem de `events-logistics-coordinator`.
