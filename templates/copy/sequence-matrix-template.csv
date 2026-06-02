@@ -1,0 +1,8 @@
+titulo,timing,subject,canal,lista,gatilho
+E1 Indoutrinacao Historia,D-5 09h,"Por que devs fluentes em leitura travam na entrevista falada",email,lista-quente,inscricao-confirmada
+E2 Conteudo-Prova,D-4 09h,"O metodo Shadowing Tecnico em 1 pagina",email,lista-quente,abriu-e1
+E3 Mecanismo + Prova,D-3 09h,"Como o Rafael saiu de R$8k para US$7k/mes",email,lista-quente,abriu-e2
+E4 Convite Transicao,D-2 09h,"Amanha abro 40 vagas do Aprovado em Ingles",email,lista-quente,nenhum
+E5 Oferta Abre Carrinho,D-1 09h,"Vagas abertas: metodo + 120 falas + roleplay 1:1",email,lista-quente,carrinho-aberto
+E6 Fechamento Manha,D0 09h,"Fecha hoje as 23h59 — e por que sao so 40 vagas",email,clicou-e5-nao-comprou,clicou-e5
+E7 Fechamento Ultimas Horas,D0 20h,"Ultimas 4 horas (depois fecha de verdade)",sms,clicou-e5-nao-comprou,nao-comprou-ate-20h

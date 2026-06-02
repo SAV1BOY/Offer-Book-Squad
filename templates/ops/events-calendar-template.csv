@@ -1,0 +1,4 @@
+data,evento,dono,hosting,entregavel,status
+2026-05-28,aquecimento-da-lista,launch-producer,email-marketing,"sequencia de 3 emails de pre-aquecimento",confirmado
+2026-06-03,webinar-de-abertura,events-logistics-coordinator,zoom-webinar,"run-of-show e sala configurada",confirmado
+2026-06-07,fechamento-do-carrinho,launch-producer,checkout-stripe,"pagina de carrinho com deadline real",planejado

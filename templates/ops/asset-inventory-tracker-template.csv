@@ -1,0 +1,4 @@
+asset,tipo,dono,hosting,data_entrega,status
+vsl-de-abertura,video,vsl-webinar-scriptwriter,vimeo,2026-06-01,entregue
+sequencia-de-carrinho,email,email-sms-sequence-writer,plataforma-de-email,2026-06-02,em-revisao
+pagina-de-checkout,landing-page,funnel-architect,checkout-stripe,2026-06-03,em-producao

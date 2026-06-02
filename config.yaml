@@ -1,0 +1,481 @@
+# ============================================================
+# OFFER BOOK SQUAD — config.yaml (Cérebro de Roteamento)
+# Fonte ÚNICA de verdade. Reserva TODOS os ids (agentes, gates,
+# registries, workflows) antes de qualquer arquivo citá-los.
+# Roteamento: Task -> Agents -> Frameworks -> Checklists -> Templates -> Registry
+# ============================================================
+squad:
+  name: offerbook
+  version: "1.0.0"
+  description: "Offer Book & Launch Blackbook Production Engine"
+  layout: repo-root                 # diretórios na raiz (sem squads/offerbook/)
+  chief_agent: offerbook-chief
+  agents_count: 25
+  pipeline: "Market -> Avatar -> Mechanism -> Value -> Money Model -> Big Idea -> Positioning -> [OFFER BOOK] -> Copy -> Funnel -> Ops -> Affiliate/PR -> [BLACKBOOK] -> Memory"
+  hard_stop: offer-book-stack/offer-book-dod-gate   # nenhuma copy antes do Offer Book passar no DoD
+
+# ============================================================
+# RESERVA DE IDs — todo id existe aqui ANTES de ser citado
+# ============================================================
+agents:                              # id | layer | pode vetar?
+  - { id: offerbook-chief,                 layer: D0, veto: true,  group: command }
+  - { id: offer-squad-architect,           layer: D0, veto: false, group: command }
+  - { id: market-sophistication-analyst,   layer: D1, veto: false, group: intelligence }
+  - { id: avatar-voc-investigator,         layer: D1, veto: false, group: intelligence }
+  - { id: proof-credibility-curator,       layer: D1, veto: false, group: intelligence }
+  - { id: mechanism-architect,             layer: D2, veto: false, group: offer-architecture }
+  - { id: value-equation-engineer,         layer: D2, veto: true,  group: offer-architecture }
+  - { id: money-model-designer,            layer: D2, veto: true,  group: offer-architecture }
+  - { id: pricing-wtp-strategist,          layer: D2, veto: false, group: offer-architecture }
+  - { id: unit-economics-stack-analyst,    layer: D2, veto: false, group: offer-architecture }
+  - { id: big-idea-architect,              layer: D3, veto: true,  group: big-idea }
+  - { id: positioning-lead-strategist,     layer: D3, veto: false, group: big-idea }
+  - { id: vsl-webinar-scriptwriter,        layer: D4, veto: false, group: copy }
+  - { id: email-sms-sequence-writer,       layer: D4, veto: false, group: copy }
+  - { id: direct-mail-insert-writer,       layer: D4, veto: false, group: copy }
+  - { id: ad-creative-factory,             layer: D4, veto: false, group: copy }
+  - { id: voice-style-guardian,            layer: D4, veto: true,  group: copy }
+  - { id: funnel-architect,                layer: D5, veto: false, group: funnel-tech }
+  - { id: tech-links-deliverability-engineer, layer: D5, veto: false, group: funnel-tech }
+  - { id: launch-producer,                 layer: D6, veto: false, group: ops }
+  - { id: events-logistics-coordinator,    layer: D6, veto: false, group: ops }
+  - { id: affiliate-program-architect,     layer: D6, veto: false, group: growth }
+  - { id: pr-brand-strategist,             layer: D6, veto: false, group: growth }
+  - { id: compliance-auditor,              layer: D7, veto: true,  group: qa }
+  - { id: knowledge-librarian,             layer: D7, veto: false, group: memory }
+
+registries:                          # data/registries/*.md
+  - offer-registry
+  - claim-registry
+  - proof-registry
+  - objection-registry
+  - price-test-registry
+  - big-idea-registry
+  - swipe-registry
+  - control-registry
+  - decision-registry
+  - lessons-learned-registry
+
+gate_namespaces:                     # checklists/<ns>/ com 5 gates cada (14 detalhadas)
+  per_agent: [chief, market, avatar, mechanism, value, money-model, pricing, big-idea, vsl, email-sms, ads, funnel, launch, compliance]
+  systemic: [offer-book-stack, blackbook-stack, cross-squad]
+  reserve_only: [architect, proof, unit-econ, positioning, mailer, voice, tech, events, affiliate, pr]  # gates conforme necessidade
+
+workflows:
+  - offer-book-build
+  - full-launch-blackbook
+  - single-promo
+  - offer-ladder
+  - enterprise-deal-book
+  - pre-launch-runway
+  - cart-open-close
+  - affiliate-launch
+  - abandoned-cart-recovery
+  - post-launch-pr
+
+# ============================================================
+# PRINCÍPIOS
+# ============================================================
+principles:
+  - evidence_before_opinion
+  - contradiction_before_conclusion
+  - traceability_before_eloquence
+  - decision_before_ornament
+  - memory_before_repetition
+  - clarity_before_volume
+  - offer_before_persuasion          # sem oferta forte, não escreva
+  - one_big_idea                     # UMA Big Idea por lançamento (Power of One)
+  - truthful_scarcity                # escassez/urgência 100% reais (veto se falsa)
+  - value_equation_test              # toda peça move >=1 alavanca de valor
+  - money_model_spine                # o centro é a sequência, não a oferta
+
+# ============================================================
+# VOZ
+# ============================================================
+voice:
+  default_profile: brand-default-hormozi-style
+  reading_level: "3rd_grade"
+  tense: present
+  voice: active
+  rules: [frases_curtas, linguagem_positiva, sem_adverbios, sem_redundancia]
+  guardian_agent: voice-style-guardian
+
+# ============================================================
+# ROUTING: Task -> Agents -> Frameworks -> Checklists -> Templates -> Registry
+# (paths relativos ao diretório do tipo)
+# ============================================================
+routing:
+  # ---- PLANNING ----
+  intake-and-scope:
+    agents: [offerbook-chief, offer-squad-architect]
+    frameworks: [power-of-one, awareness-x-sophistication]
+    checklists: [chief/chief-project-type-gate, chief/chief-scope-approval-gate]
+    templates: [core/offer-book-master]
+    registry: [decision-registry]
+
+  # ---- INTELLIGENCE (upstream: deepresearch) ----
+  run-market-intel:
+    agents: [market-sophistication-analyst, offer-squad-architect]
+    frameworks: [awareness-x-sophistication, starving-crowd]
+    checklists: [market/market-sophistication-gate, market/market-awareness-gate, market/market-starving-crowd-gate]
+    templates: [strategy/market-brief-template]
+    registry: [offer-registry]
+  build-avatar-voc:
+    agents: [avatar-voc-investigator]
+    frameworks: [avatar-voc-investigator/voc-mining, avatar-voc-investigator/objection-belief-mapping, positioning/jtbd]
+    checklists: [avatar/avatar-voc-verbatim-gate, avatar/avatar-dominant-emotion-gate, avatar/avatar-objection-map-gate]
+    templates: [strategy/avatar-icp-template, strategy/voc-verbatim-bank-template]
+    registry: [objection-registry]
+  curate-proof:
+    agents: [proof-credibility-curator]
+    frameworks: [proof-to-claim-chain]
+    checklists: [proof/proof-claim-backing-gate]
+    templates: [strategy/proof-bank-template]
+    registry: [proof-registry, claim-registry]
+
+  # ---- OFFER ARCHITECTURE ----
+  define-mechanism:
+    agents: [mechanism-architect]
+    frameworks: [unique-mechanism, value-equation]
+    checklists: [mechanism/mechanism-naming-gate, mechanism/mechanism-proof-gate, mechanism/mechanism-one-sentence-gate]
+    templates: [strategy/mechanism-sheet-template]
+    registry: [offer-registry]
+  score-value-equation:
+    agents: [value-equation-engineer]
+    frameworks: [value-equation, value-equation-engineer/dream-outcome-amplification, value-equation-engineer/time-delay-compression, value-equation-engineer/effort-sacrifice-reduction]
+    checklists: [value/value-no-orphan-lever-gate]
+    templates: [strategy/value-equation-template]
+    registry: [offer-registry]
+  set-pricing-wtp:
+    agents: [pricing-wtp-strategist]
+    frameworks: [pricing/van-westendorp, pricing/gabor-granger, pricing/conjoint-cbc, pricing/kano-model, pricing/value-based-pricing, price-anchoring, pricing/packaging-good-better-best, pricing/decoy-effect]
+    checklists: [pricing/pricing-value-derived-gate, pricing/pricing-method-declared-gate, pricing/pricing-packaging-gate]
+    templates: [strategy/pricing-wtp-template]
+    registry: [price-test-registry]
+  model-unit-economics:
+    agents: [unit-economics-stack-analyst]
+    frameworks: [offer-stack-builder, guarantee-design, scarcity-urgency-engine, magic-naming, risk-reversal-ladder]
+    checklists: [unit-economics-checklist, offer-stack-checklist, guarantee-checklist]
+    templates: [strategy/unit-economics-template, offer/offer-stack-template, offer/guarantee-template]
+    registry: [offer-registry]
+  design-money-model:
+    agents: [money-model-designer, value-equation-engineer, pricing-wtp-strategist, unit-economics-stack-analyst]
+    frameworks: [money-model-sequence, money-model-designer/attraction-offer-design, money-model-designer/upsell-downsell-logic, money-model-designer/continuity-design, money-model-designer/offer-ladder-sequencing]
+    checklists: [money-model/money-model-four-parts-gate, money-model/money-model-sequence-gate, money-model/money-model-cta-per-step-gate]
+    templates: [offer/money-model-template, offer/products-and-offers-template]
+    registry: [offer-registry, price-test-registry]
+
+  # ---- BIG IDEA & POSITIONING ----
+  generate-big-idea:
+    agents: [big-idea-architect]
+    frameworks: [big-idea-generator, power-of-one, big-idea-architect/big-idea-ideation-tot, big-idea-architect/big-idea-scoring, big-idea-architect/promise-hook-villain, meta-launch-principle]
+    checklists: [big-idea/big-idea-single-gate, big-idea/big-idea-new-big-credible-gate, big-idea/big-idea-awareness-fit-gate]
+    templates: [strategy/big-idea-template]
+    registry: [big-idea-registry]
+  lock-positioning-lead:
+    agents: [positioning-lead-strategist]
+    frameworks: [positioning/dunford-positioning, positioning/moore-positioning-formula, positioning/category-design, lead-types, awareness-x-sophistication]
+    checklists: [positioning/positioning-awareness-fit]
+    templates: [strategy/positioning-template]
+    registry: [decision-registry]
+
+  # ---- ASSEMBLY (HARD STOP) ----
+  assemble-offer-book:
+    agents: [offerbook-chief, compliance-auditor]
+    frameworks: [proof-to-claim-chain, offer-to-funnel-mapping]
+    checklists: [offer-book-stack/offer-book-dod-gate, chief/chief-offer-book-readiness-gate]
+    templates: [core/offer-book-master]
+    registry: [offer-registry, decision-registry]
+
+  # ---- COPY & CREATIVE ----
+  write-vsl-webinar:
+    agents: [vsl-webinar-scriptwriter, voice-style-guardian]
+    frameworks: [copy/vsl-structure, copy/pastor, copy/pas, copy/slippery-slide, launch/perfect-webinar]
+    checklists: [vsl/vsl-value-before-price-gate, vsl/vsl-risk-reversal-gate, vsl/vsl-cta-strength-gate]
+    templates: [copy/vsl-webinar-script-template, copy/sales-letter-offer-page-template, copy/recap-vsl-template, copy/ty-page-scripts-template]
+    registry: [control-registry]
+  write-email-sms-sequences:
+    agents: [email-sms-sequence-writer, voice-style-guardian]
+    frameworks: [copy/email-sequence-architecture, launch/cart-open-close, launch/abandoned-cart-recovery]
+    checklists: [email-sms/email-step-coverage-gate, email-sms/email-segmentation-gate, email-sms/email-timing-gate]
+    templates: [copy/email-sms-sequences-template, copy/sequence-matrix-template]
+    registry: [control-registry]
+  write-mailers-inserts:
+    agents: [direct-mail-insert-writer, voice-style-guardian]
+    frameworks: [offer-stack-builder, scarcity-urgency-engine]
+    checklists: [mailer-checklist]
+    templates: [copy/mailers-inserts-template]
+    registry: [control-registry]
+  generate-ad-matrix:
+    agents: [ad-creative-factory, voice-style-guardian]
+    frameworks: [copy/hook-frameworks, lead-types, copy/fascination-bullets]
+    checklists: [ads/ads-angle-coverage-gate, ads/ads-claim-backing-gate, ads/ads-variation-gate]
+    templates: [copy/ad-matrix-template]
+    registry: [control-registry, swipe-registry]
+
+  # ---- FUNNEL & TECH ----
+  map-funnel:
+    agents: [funnel-architect]
+    frameworks: [offer-to-funnel-mapping, launch/cart-open-close]
+    checklists: [funnel/funnel-no-dead-end-gate, funnel/funnel-backend-gate]
+    templates: [funnel-tech/funnel-map-template, funnel-tech/page-specs-template]
+    registry: [decision-registry]
+  plan-tech-deliverability:
+    agents: [tech-links-deliverability-engineer]
+    frameworks: [launch/surge-ops]
+    checklists: [tech-deliverability-checklist, launch/launch-fallback-gate]
+    templates: [funnel-tech/links-urls-template, funnel-tech/tech-deliverability-plan-template]
+    registry: [decision-registry]
+
+  # ---- OPS, EVENTS & LOGISTICS ----
+  build-run-of-show:
+    agents: [launch-producer]
+    frameworks: [launch/product-launch-formula, launch/runway-and-phases, launch/surge-ops]
+    checklists: [launch/launch-phase-readiness-gate, launch/launch-surge-gate]
+    templates: [ops/launch-memo-template, ops/launch-phases-template, ops/run-of-show-template, ops/sales-flow-template]
+    registry: [decision-registry]
+  build-events-logistics:
+    agents: [events-logistics-coordinator]
+    frameworks: [money-model-sequence]
+    checklists: [events-logistics-checklist]
+    templates: [ops/events-calendar-template, ops/asset-inventory-tracker-template]
+    registry: [offer-registry]
+
+  # ---- GROWTH, AFFILIATE & PR ----
+  build-affiliate-program:
+    agents: [affiliate-program-architect]
+    frameworks: [launch/affiliate-army]
+    checklists: [affiliate-program-checklist]
+    templates: [growth/affiliate-program-template, growth/affiliate-blackbook-template, growth/affiliate-prizes-template]
+    registry: [decision-registry]
+  build-pr-plan:
+    agents: [pr-brand-strategist]
+    frameworks: [launch/pr-brand-maximization]
+    checklists: [pr-plan-checklist]
+    templates: [growth/pr-plan-template]
+    registry: [decision-registry]
+
+  # ---- QA, COMPLIANCE & MEMORY ----
+  compliance-audit:
+    agents: [compliance-auditor, offerbook-chief]
+    frameworks: [proof-to-claim-chain, scarcity-urgency-engine]
+    checklists: [compliance/compliance-claim-backing-gate, compliance/compliance-scarcity-truth-gate, compliance/compliance-data-privacy-gate]
+    templates: [qa/compliance-checklist-template, qa/faq-template]
+    registry: [decision-registry, claim-registry]
+  assemble-blackbook:
+    agents: [compliance-auditor, offerbook-chief]
+    frameworks: [offer-to-funnel-mapping]
+    checklists: [blackbook-stack/blackbook-dod-gate, chief/chief-blackbook-readiness-gate]
+    templates: [core/launch-blackbook-skeleton]
+    registry: [offer-registry]
+  memory-update:
+    agents: [knowledge-librarian]
+    frameworks: [proof-to-claim-chain]
+    checklists: [final-delivery-checklist]
+    templates: []
+    registry: [control-registry, lessons-learned-registry, swipe-registry]
+
+  # ---- COMPOSITE (project types) ----
+  run-offer-book:
+    runs: [intake-and-scope, run-market-intel, build-avatar-voc, curate-proof, define-mechanism, score-value-equation, set-pricing-wtp, model-unit-economics, design-money-model, generate-big-idea, lock-positioning-lead, assemble-offer-book]
+  run-full-launch:
+    runs: [run-offer-book, write-vsl-webinar, write-email-sms-sequences, write-mailers-inserts, generate-ad-matrix, map-funnel, plan-tech-deliverability, build-run-of-show, build-events-logistics, build-affiliate-program, build-pr-plan, compliance-audit, assemble-blackbook, memory-update]
+  run-single-promo:
+    runs: [run-offer-book, write-vsl-webinar, write-email-sms-sequences, map-funnel, plan-tech-deliverability, compliance-audit, memory-update]
+  run-enterprise-deal-book:
+    runs: [intake-and-scope, run-market-intel, build-avatar-voc, curate-proof, score-value-equation, set-pricing-wtp, model-unit-economics, lock-positioning-lead, assemble-offer-book, write-vsl-webinar, compliance-audit]
+
+# ============================================================
+# CROSS-SQUAD INTEGRATION (bidirecional)
+# ============================================================
+cross_squad:                         # os 12 squads do ecossistema MMOS (este repo é single-squad; vizinhos são integração-por-design)
+  # --- UPSTREAM (entregam PARA o offer book) ---
+  deepresearch_squad:
+    handoff_from: [market sizing, VOC, competitor intel]
+    handoff_to: [research requests, scope]
+    shared_assets: [market-theses, competitive-intelligence, audience-insights]
+  advisory_board_squad:
+    handoff_from: [strategic critique, risk flags]
+    handoff_to: [offer + big idea for stress-test]
+    shared_assets: [strategic-review, risk-assessment]
+  storytelling_squad:
+    handoff_from: [narrative arcs, hero-journey, epiphany-bridge]
+    handoff_to: [big idea + mechanism + proof]
+    shared_assets: [narrative-arcs, proof-points]
+  movement_squad:
+    handoff_from: [community signals, collective-identity angles]
+    handoff_to: [positioning + identity big idea]
+    shared_assets: [identity-belonging, community-language]
+  pre_programming_squad:
+    handoff_from: [product readiness, scope, delivery feasibility]
+    handoff_to: [offer specs that require build or fulfillment]
+    shared_assets: [scope, readiness-review]
+  # --- DOWNSTREAM (o offer book entrega PARA) ---
+  copy_squad:
+    handoff_to: [offer book + big idea, proof]
+    handoff_from: [polished long-form copy, swipe]
+    shared_assets: [market-language, winning-controls]
+  brand_squad:
+    handoff_to: [positioning + big idea]
+    handoff_from: [brand voice, category analysis]
+    shared_assets: [positioning, brand-voice]
+  traffic_squad:
+    handoff_to: [ad matrix + offer, funnel map]
+    handoff_from: [ad performance, winning hooks]
+    shared_assets: [ad-creative, channel-intelligence]
+  design_squad:
+    handoff_to: [page specs + ad matrix, mailer specs]
+    handoff_from: [page/ad/mailer visuals, brand assets]
+    shared_assets: [landing-pages, creative-assets]
+  data_squad:
+    handoff_to: [pricing test design, conversion data]
+    handoff_from: [WTP analysis, cohort/LTV analysis]
+    shared_assets: [pricing-science, cohort-analysis]
+  cybersecurity_squad:
+    handoff_to: [deliverability review, data-collection review]
+    handoff_from: [privacy/compliance assessment, LGPD/GDPR review]
+    shared_assets: [deliverability, data-privacy]
+  c_level_squad:
+    handoff_to: [launch business case + projections]
+    handoff_from: [revenue targets + strategic priority]
+    shared_assets: [revenue-models, launch-objectives]
+  # --- protocolo de toda transição ---
+  contract: templates/cross-squad/handoff-contract-template
+  out_gate: cross-squad/cross-squad-handoff-quality
+  in_gate: cross-squad/cross-squad-asset-validation
+  log: data/handoffs
+  matrix_doc: docs/handoff-matrix.md
+
+# ============================================================
+# QUALITY GATES
+# ============================================================
+quality_gates:
+  mandatory:
+    - market_diagnosis             # sofisticação + consciência declaradas
+    - voc_evidence                 # >=10 verbatims + emoção dominante
+    - mechanism_named_proven       # mecanismo único nomeado e provado
+    - value_equation_pass          # toda alavanca com ação concreta
+    - price_value_derived          # preço deriva de valor com método
+    - unit_economics_known         # LTV:CAC + payback conhecidos
+    - money_model_four_parts       # 4 partes sequenciadas
+    - one_big_idea_locked          # UMA Big Idea nos 5 critérios
+    - truthful_scarcity            # escassez/urgência 100% reais
+    - claim_backing                # nenhum claim sem lastro
+    - compliance_pass              # T&Cs, disclaimers, LGPD/FTC
+    - registry_update              # registries atualizados
+  per_domain:
+    offer_book: [offer-book-checklist, offer-book-stack/offer-book-dod-gate]   # HARD STOP
+    copy: [vsl-script-checklist, email-sequence-checklist, voice/voice-checklist]
+    funnel_tech: [funnel-map-checklist, tech-deliverability-checklist]
+    ops: [run-of-show-checklist, events-logistics-checklist]
+    growth: [affiliate-program-checklist, pr-plan-checklist]
+    blackbook: [launch-blackbook-checklist, blackbook-stack/blackbook-dod-gate, compliance-checklist]
+
+# ============================================================
+# KPIs
+# ============================================================
+kpis:
+  offer_quality: [value_equation_score, money_model_completeness, proof_coverage_rate, big_idea_strength]
+  conversion: [opt_in_rate, vsl_conversion_rate, upsell_take_rate, aov, cart_close_lift]
+  economics: [cac, ltv_cac_ratio, payback_period, front_end_cac_liquidation]
+  efficiency: [time_to_offer_book, time_to_blackbook, copy_throughput]
+  operational: [registry_currency, swipe_reuse_rate, compliance_pass_rate, lessons_learned_frequency]
+
+# ============================================================
+# GOVERNANCE & OPERATING LOOP (HRM) — escala, decide, aprende
+# ============================================================
+score_thresholds:
+  gold: 95                       # nota mínima de "pronto" (qa-runner + scorecard)
+  sota: 98                       # excelência
+  rework_below: 95               # abaixo: loop de melhoria obrigatório
+  per_kpi_min:                   # barras numéricas (go/no-go) — ver data/metrics/
+    proof_coverage_rate: 1.0     # 100% dos claims com prova
+    value_equation_score: 4      # escala 1-5; >=4 para avançar
+    ltv_cac_ratio: 3             # >=3:1
+    front_end_cac_liquidation: 1.0   # atração liquida >=100% do CAC
+    compliance_pass_rate: 1.0
+    money_model_completeness: 2  # >=2 partes (alvo 4)
+
+readiness_rules:                 # go/no-go por marco (gate + score)
+  offer_book_ready:
+    requires: [offer-book-stack/intelligence-complete-gate, offer-book-stack/offer-architecture-gate, offer-book-stack/big-idea-locked-gate]
+    gate: offer-book-stack/offer-book-dod-gate     # ★ HARD STOP
+    min_score: gold
+    decision_by: offerbook-chief
+  blackbook_ready:
+    requires: [blackbook-stack/copy-coverage-gate, blackbook-stack/funnel-tech-gate, blackbook-stack/ops-events-gate, blackbook-stack/growth-affiliate-pr-gate]
+    gate: blackbook-stack/blackbook-dod-gate
+    min_score: gold
+    decision_by: [compliance-auditor, offerbook-chief]
+  ship:
+    requires: [truthful_scarcity, claim_backing, compliance_pass]
+    no_override: [false_claim, false_scarcity]     # nunca liberam
+
+escalation_rules:                # gatilho -> de -> para (detalhe em docs/hrm-governance.md)
+  rules:
+    - { trigger: "gate falha >=2x no mesmo artefato",   from: agente_dono, to: offerbook-chief }
+    - { trigger: "conflito de veto entre agentes",      from: agentes, to: offerbook-chief, via: chief/chief-conflict-resolution-gate }
+    - { trigger: "risco estratégico ou fora de escopo", from: offerbook-chief, to: hrm_central }
+    - { trigger: "score < gold após 2 loops de rework", from: offerbook-chief, to: hrm_central }
+    - { trigger: "claim sem lastro / escassez falsa",   from: compliance-auditor, to: VETO, override: none }
+  doc: docs/hrm-governance.md
+
+delegation_rules:                # task fora do escopo -> squad destino (+ contrato)
+  upstream:                      # quem entrega PARA o offer book
+    - { need: "market sizing / VOC / competitor intel", to: deepresearch_squad }
+    - { need: "stress-test estratégico + risk flags",   to: advisory_board_squad }
+    - { need: "arcos narrativos / hero-journey p/ a big idea", to: storytelling_squad }
+    - { need: "comunidade / identidade coletiva",        to: movement_squad }
+    - { need: "prontidão de produto / escopo de entrega", to: pre_programming_squad }
+  downstream:                    # offer book entrega PARA
+    - { deliver: "polished long-form copy",        to: copy_squad }
+    - { deliver: "ad creative + funnel p/ tráfego", to: traffic_squad }
+    - { deliver: "visuais de página/ad/mailer",     to: design_squad }
+    - { deliver: "positioning + brand voice",       to: brand_squad }
+    - { deliver: "pricing test + cohort analysis",  to: data_squad }
+    - { deliver: "business case + projeções",       to: c_level_squad }
+    - { deliver: "review de deliverability / coleta de dados (LGPD)", to: cybersecurity_squad }
+  contract_required: templates/cross-squad/handoff-contract-template
+  handoff_gate: cross-squad/cross-squad-handoff-quality
+  ingest_gate: cross-squad/cross-squad-asset-validation
+
+improvement_loop:                # RalphLoop / Kaizen (memória -> próxima execução)
+  cadence: per_launch
+  cycle: ["run", "qa-memory/memory-update", "lessons-learned-registry", "data/backlog", "planning/intake-and-scope"]
+  retro_task: qa-memory/memory-update
+  feeds_back_to: planning/intake-and-scope
+  review_agents: [knowledge-librarian, offerbook-chief]
+  principle: memory_before_repetition
+  artifacts: [data/scorecards, data/backlog, data/registries/lessons-learned-registry, data/registries/control-registry]
+  doc: docs/improvement-loop-kaizen.md
+
+owner_conventions:
+  registry_writes: "apenas write_agents declarados no frontmatter do registry"
+  output_naming: "<project>-<deliverable>-v<semver>"
+  decision_logging: "toda decisão/override -> decision-registry (made_by, vetoed_by, linked_registry)"
+  default_owner: offerbook-chief
+
+taxonomy:                        # vocabulário controlado
+  source: lib/taxonomies
+  controlled: [awareness-levels, sophistication-levels, offer-types, lead-types, guarantee-types]
+
+# ============================================================
+# DEFAULTS
+# ============================================================
+defaults:
+  review_agent: offerbook-chief
+  min_checklists: 2
+  registry_on_completion: true
+  output_format: markdown
+  hard_stop_before_copy: true              # bloqueia D4+ até offer-book-dod-gate
+  mandatory_value_equation_test: true
+  mandatory_one_big_idea: true
+  mandatory_truthful_scarcity: true
+  mandatory_compliance_audit: true
+  mandatory_registry_update: true
+  money_model_min_parts: 2                  # mínimo aceitável; alvo = 4
+  score_gate: gold                          # ver score_thresholds
+  escalation_enabled: true                  # ver escalation_rules
+  kaizen_loop: true                         # ver improvement_loop
+  readiness_required: true                  # ver readiness_rules (go/no-go)
+  hrm_layer_above: hrm_central              # camada superior de comando (multi-squad)
