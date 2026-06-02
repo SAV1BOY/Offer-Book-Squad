@@ -42,8 +42,8 @@ Espelham os gates que o guardião fiscaliza. A peça precisa passar nos cinco.
 | `voice/voice-checklist` | Todas as frases passam na régua dura? | Acúmulo de marcas na peça |
 | `voice/voice-reading-level-gate` | A peça inteira fica em 3ª série? | Trecho acima do nível-alvo |
 | `voice/voice-active-present-gate` | Voz ativa e presente em toda parte? | Passiva evitável ou futuro à toa |
-| `voice/voice-no-adverbs-gate` | Zero advérbio floreado? | Qualquer `-mente` ou intensificador vazio |
-| `voice/voice-positive-framing-gate` | Diz o ganho, não só o medo? | Enquadramento negativo dispensável |
+| `voice/voice-no-adverb-gate` | Zero advérbio floreado? | Qualquer `-mente` ou intensificador vazio |
+| `voice/voice-positive-language-gate` | Diz o ganho, não só o medo? | Enquadramento negativo dispensável |
 
 ## O fluxo de aprovação
 

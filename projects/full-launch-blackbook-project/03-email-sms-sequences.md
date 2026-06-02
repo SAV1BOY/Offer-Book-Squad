@@ -52,7 +52,7 @@ A Fase 01 entrega o `artifact.offer-book` aprovado (HARD STOP VERDE). A Fase 02 
 
 ## Gates
 - [`email-sms/email-step-coverage-gate`](../../checklists/email-sms/email-step-coverage-gate.md) · [`email-sms/email-segmentation-gate`](../../checklists/email-sms/email-segmentation-gate.md) · [`email-sms/email-timing-gate`](../../checklists/email-sms/email-timing-gate.md)
-- Os quatro gates de voz via [`voice/voice-checklist`](../../checklists/voice/voice-checklist.md).
+- Os quatro gates de voz via [`voice/voice-checklist`](../../voice/voice-checklist.md).
 - Gate de entrada (HARD STOP): [`offer-book-stack/offer-book-dod-gate`](../../checklists/offer-book-stack/offer-book-dod-gate.md).
 
 ## Critério de Saída

@@ -77,9 +77,9 @@ Roda em D2, quando: (a) há preço por valor e um esboço de escada; (b) pedem o
 CAC, AOV, margem, LTV, payback e LTV:CAC estão calculados (ou estimados com suposição explícita); a liquidação do CAC está **confirmada** (ou reportada como não-fechada com as alavancas propostas); o stack tem valor percebido > preço sem itens órfãos; a garantia é exequível; a escassez é 100% real com motivo documentado; a oferta tem nome MAGIC; os três gates estão verdes. Máximo de 3 ciclos antes de escalar.
 
 ## Gates
-- [`unit-economics-checklist`](../../checklists/unit-econ/unit-economics-checklist.md)
-- [`offer-stack-checklist`](../../checklists/unit-econ/offer-stack-checklist.md)
-- [`guarantee-checklist`](../../checklists/unit-econ/guarantee-checklist.md)
+- [`unit-economics-checklist`](../../checklists/unit-economics-checklist.md)
+- [`offer-stack-checklist`](../../checklists/offer-stack-checklist.md)
+- [`guarantee-checklist`](../../checklists/guarantee-checklist.md)
 
 ## Handoff
 **Próxima task:** [`design-money-model`](design-money-model.md) — dono [`money-model-designer`](../../agents/money-model-designer.md), que recebe o **veredito de liquidação do CAC** e a economia por degrau para **fechar a espinha** (relação iterativa: ele desenha a forma, eu valido a conta, ele fecha). Adiante, o [`offerbook-chief`](../../agents/offerbook-chief.md) recebe os números para o gate `unit_economics_known`; o [`vsl-webinar-scriptwriter`](../../agents/vsl-webinar-scriptwriter.md) e o [`funnel-architect`](../../agents/funnel-architect.md) recebem o offer stack, a garantia, a escassez verdadeira e o nome MAGIC prontos para apresentar. **Garantia:** todo downstream recebe economia conhecida (ou estimada com suposição), liquidação de CAC declarada, stack com valor > preço, garantia exequível e escassez 100% real.

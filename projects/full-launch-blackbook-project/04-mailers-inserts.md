@@ -52,7 +52,7 @@ A Fase 01 entrega o `artifact.offer-book` aprovado (HARD STOP VERDE). A Fase 06 
 
 ## Gates
 - [`mailer-checklist`](../../checklists/mailer-checklist.md)
-- Os quatro gates de voz via [`voice/voice-checklist`](../../checklists/voice/voice-checklist.md).
+- Os quatro gates de voz via [`voice/voice-checklist`](../../voice/voice-checklist.md).
 - Gate de entrada (HARD STOP): [`offer-book-stack/offer-book-dod-gate`](../../checklists/offer-book-stack/offer-book-dod-gate.md).
 
 ## Critério de Saída

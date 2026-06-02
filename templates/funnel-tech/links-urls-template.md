@@ -10,7 +10,7 @@ owner_agent: tech-links-deliverability-engineer
 consumes: [template.funnel-tech.funnel-map, template.funnel-tech.page-specs, template.core.offer-book-master]
 produces: [template.funnel-tech.tech-deliverability-plan]
 frameworks: [offer-to-funnel-mapping, launch/cart-open-close]
-checklists: [funnel/funnel-no-dead-end-gate, tech/tech-link-integrity-gate]
+checklists: [funnel/funnel-no-dead-end-gate, tech/tech-links-utm-gate]
 registries: [decision-registry]
 tags: [template, links, urls, vanity, utm, tracking, funnel-tech]
 ---
@@ -23,7 +23,7 @@ O [`funnel-map`](funnel-map-template.md) diz por onde o lead anda. O [`page-spec
 - **Agente dono:** `tech-links-deliverability-engineer`. Roda na task `plan-tech-deliverability`, logo depois que o [`funnel-map`](funnel-map-template.md) e o [`page-specs`](page-specs-template.md) ficam verdes.
 - **Inputs:** o [`funnel-map`](funnel-map-template.md) (a lista de páginas e os caminhos sim/não), o [`page-specs`](page-specs-template.md) (o texto e o destino de cada CTA) e o [`offer-book-master`](../core/offer-book-master.md) (o nome da oferta e da Big Idea, que dão o slug da vanity URL). O cruzamento oferta→página vem do [`offer-to-funnel-mapping`](../../frameworks/offer-to-funnel-mapping.md).
 - **Quando:** abre quando o mapa de páginas está estável e fecha quando cada CTA tem link final, UTM e teste de clique. É a entrada direta do [`tech-deliverability-plan`](tech-deliverability-plan-template.md) (que cuida de envio, domínio e fallback).
-- **Saída:** preencha as três tabelas (vanity URLs, UTM por CTA, redirecionamentos) e o painel de status. Link quebrado ou destino vazio = beco técnico = [`funnel-no-dead-end-gate`](../../checklists/funnel/funnel-no-dead-end-gate.md) e [`tech-link-integrity-gate`](../../checklists/tech/tech-link-integrity-gate.md) vermelhos.
+- **Saída:** preencha as três tabelas (vanity URLs, UTM por CTA, redirecionamentos) e o painel de status. Link quebrado ou destino vazio = beco técnico = [`funnel-no-dead-end-gate`](../../checklists/funnel/funnel-no-dead-end-gate.md) e [`tech-links-utm-gate`](../../checklists/tech/tech-links-utm-gate.md) vermelhos.
 
 ## Campos & Instruções
 - **{{DOMINIO_RAIZ}}** — o domínio (ou subdomínio) que hospeda o funil (ex.: `go.minhamarca.com`). Define o prefixo de toda vanity URL.
@@ -73,7 +73,7 @@ Links com teste de clique OK (desktop+mobile): {{N_OK}}/{{N_TOTAL}}
 UTM chegando no analytics: {{SIM/NAO}}
 CTAs sem link final: {{LISTA_OU_NENHUM}}
 funnel-no-dead-end-gate: {{STATUS}} — em {{DATA_GATE}}
-tech-link-integrity-gate: {{STATUS}} — em {{DATA_GATE}}
+tech-links-utm-gate: {{STATUS}} — em {{DATA_GATE}}
 ```
 
 ## Exemplo preenchido
@@ -87,7 +87,7 @@ tech-link-integrity-gate: {{STATUS}} — em {{DATA_GATE}}
 > 2. "Quero o Motor 72h" · página VSL · destino `/checkout72h` · source `email` · medium `email` · campaign `lancamento-motor72h` · content `botao-pos-garantia` · link final `go.minhaloja.com/checkout72h?utm_source=email&utm_medium=email&utm_campaign=lancamento-motor72h&utm_content=botao-pos-garantia`.
 > 3. "Sim, instalem para mim" · página Upsell · destino `/obrigado` · source `email` · medium `email` · campaign `lancamento-motor72h` · content `botao-upsell-unico` · link final `go.minhaloja.com/obrigado?utm_source=email&utm_medium=email&utm_campaign=lancamento-motor72h&utm_content=botao-upsell-unico`.
 > **3. REDIRECIONAMENTOS** — Carrinho abre: e-mail #1 da semana → destino `/motor72h`. Carrinho fecha: 5 dias depois, 23h59 → redirect 301 de `/checkout72h` para `/lista-espera`. Redirects antigos: nenhum.
-> **4. STATUS** — Links com teste OK: **8/8**. UTM no analytics: **sim**. CTAs sem link final: **nenhum**. funnel-no-dead-end-gate: **VERDE** — 2026-06-02. tech-link-integrity-gate: **VERDE** — 2026-06-02.
+> **4. STATUS** — Links com teste OK: **8/8**. UTM no analytics: **sim**. CTAs sem link final: **nenhum**. funnel-no-dead-end-gate: **VERDE** — 2026-06-02. tech-links-utm-gate: **VERDE** — 2026-06-02.
 
 ## DoD do entregável
-A malha de Links & URLs está pronta quando: (1) **toda** página do [`funnel-map`](funnel-map-template.md) tem uma vanity URL legível e uma URL de destino real, sem `{{PLACEHOLDER}}` solto; (2) **todo** CTA do [`page-specs`](page-specs-template.md) tem uma linha na tabela de UTM, com `source`, `medium`, `campaign` e `content` preenchidos no padrão `snake_case`/minúsculas, e o `campaign` é o mesmo em todo o lançamento; (3) cada linha tem o link final rastreável montado (destino + query string) pronto para entrar no botão, anúncio ou e-mail; (4) os redirecionamentos de carrinho (abre/fecha) seguem o [`cart-open-close`](../../frameworks/launch/cart-open-close.md) e mandam o "fora da janela" para lista de espera, nunca para beco; (5) cada link passou no teste de clique em desktop e mobile e o UTM chega no analytics — sem isso o [`tech-link-integrity-gate`](../../checklists/tech/tech-link-integrity-gate.md) reprova; (6) nenhum CTA fica sem link final e nenhum destino aponta para beco, mantendo o [`funnel-no-dead-end-gate`](../../checklists/funnel/funnel-no-dead-end-gate.md) verde. Só então a malha alimenta o [`tech-deliverability-plan`](tech-deliverability-plan-template.md), que garante que esses links chegam à caixa de entrada e aguentam o pico.
+A malha de Links & URLs está pronta quando: (1) **toda** página do [`funnel-map`](funnel-map-template.md) tem uma vanity URL legível e uma URL de destino real, sem `{{PLACEHOLDER}}` solto; (2) **todo** CTA do [`page-specs`](page-specs-template.md) tem uma linha na tabela de UTM, com `source`, `medium`, `campaign` e `content` preenchidos no padrão `snake_case`/minúsculas, e o `campaign` é o mesmo em todo o lançamento; (3) cada linha tem o link final rastreável montado (destino + query string) pronto para entrar no botão, anúncio ou e-mail; (4) os redirecionamentos de carrinho (abre/fecha) seguem o [`cart-open-close`](../../frameworks/launch/cart-open-close.md) e mandam o "fora da janela" para lista de espera, nunca para beco; (5) cada link passou no teste de clique em desktop e mobile e o UTM chega no analytics — sem isso o [`tech-links-utm-gate`](../../checklists/tech/tech-links-utm-gate.md) reprova; (6) nenhum CTA fica sem link final e nenhum destino aponta para beco, mantendo o [`funnel-no-dead-end-gate`](../../checklists/funnel/funnel-no-dead-end-gate.md) verde. Só então a malha alimenta o [`tech-deliverability-plan`](tech-deliverability-plan-template.md), que garante que esses links chegam à caixa de entrada e aguentam o pico.

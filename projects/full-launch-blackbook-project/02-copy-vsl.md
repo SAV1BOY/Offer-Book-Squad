@@ -56,7 +56,7 @@ A Fase 01 entrega o `artifact.offer-book` aprovado (HARD STOP VERDE) — é a pr
 
 ## Gates
 - [`vsl/vsl-value-before-price-gate`](../../checklists/vsl/vsl-value-before-price-gate.md) · [`vsl/vsl-risk-reversal-gate`](../../checklists/vsl/vsl-risk-reversal-gate.md) · [`vsl/vsl-cta-strength-gate`](../../checklists/vsl/vsl-cta-strength-gate.md)
-- [`voice/voice-checklist`](../../checklists/voice/voice-checklist.md) e os quatro gates de voz.
+- [`voice/voice-checklist`](../../voice/voice-checklist.md) e os quatro gates de voz.
 - Gate de entrada (HARD STOP): [`offer-book-stack/offer-book-dod-gate`](../../checklists/offer-book-stack/offer-book-dod-gate.md).
 
 ## Critério de Saída

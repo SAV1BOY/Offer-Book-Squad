@@ -51,7 +51,7 @@ A Fase 01 entrega o `artifact.offer-book` aprovado (HARD STOP VERDE), a `artifac
 
 ## Gates
 - [`ads/ads-angle-coverage-gate`](../../checklists/ads/ads-angle-coverage-gate.md) · [`ads/ads-claim-backing-gate`](../../checklists/ads/ads-claim-backing-gate.md) · [`ads/ads-variation-gate`](../../checklists/ads/ads-variation-gate.md)
-- Os quatro gates de voz via [`voice/voice-checklist`](../../checklists/voice/voice-checklist.md).
+- Os quatro gates de voz via [`voice/voice-checklist`](../../voice/voice-checklist.md).
 - Gate de entrada (HARD STOP): [`offer-book-stack/offer-book-dod-gate`](../../checklists/offer-book-stack/offer-book-dod-gate.md).
 
 ## Critério de Saída

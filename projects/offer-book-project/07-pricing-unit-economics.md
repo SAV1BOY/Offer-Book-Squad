@@ -54,7 +54,7 @@ A Fase 05 entrega o `artifact.value-equation-scorecard` (o valor percebido por a
 
 ## Gates
 - [`pricing/pricing-value-derived-gate`](../../checklists/pricing/pricing-value-derived-gate.md) · [`pricing/pricing-method-declared-gate`](../../checklists/pricing/pricing-method-declared-gate.md) · [`pricing/pricing-packaging-gate`](../../checklists/pricing/pricing-packaging-gate.md)
-- [`unit-economics-checklist`](../../checklists/unit-econ/unit-economics-checklist.md) · [`offer-stack-checklist`](../../checklists/unit-econ/offer-stack-checklist.md) · [`guarantee-checklist`](../../checklists/unit-econ/guarantee-checklist.md)
+- [`unit-economics-checklist`](../../checklists/unit-economics-checklist.md) · [`offer-stack-checklist`](../../checklists/offer-stack-checklist.md) · [`guarantee-checklist`](../../checklists/guarantee-checklist.md)
 
 ## Critério de Saída
 Cada ponto de preço tem método e faixa por trás; ≥2 métodos convergem; o preço deriva do valor, não de custo+margem; o packaging tem tier-alvo com âncora; CAC/AOV/margem/LTV/payback/LTV:CAC estão calculados; a liquidação do CAC está confirmada (ou reportada como não-fechada com alavancas propostas); o stack tem valor > preço sem órfãos; a garantia é exequível; a escassez é 100% real com motivo documentado; a oferta tem nome MAGIC; os seis gates estão verdes. Fecha a camada D2. A próxima fase é a [`08-big-idea-positioning`](08-big-idea-positioning.md), que recebe a oferta completa e precificada para destilar a tese e travar a posição.
