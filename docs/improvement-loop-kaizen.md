@@ -49,4 +49,10 @@ O squad **aprende a cada lançamento**. A memória não é arquivo morto: ela **
 - **Por lançamento:** passos [2]–[4] são obrigatórios no D7 (`mandatory_registry_update`, `kaizen_loop: true`).
 - **Periódica (review):** knowledge-librarian + chief revisam o backlog acumulado e promovem os itens de maior ROI (ver [próximos upgrades no audit-report](audit-report.md)).
 
+## Ferramentas vivas do loop
+- **Backlog vivo:** [`data/backlog/improvement-backlog.md`](../data/backlog/improvement-backlog.md) — ROI numérico (`impact × confidence ÷ effort`), ranqueado por `scripts/backlog-prioritize.py`.
+- **Scorecard do lançamento:** [`data/scorecards/example-launch-scorecard.md`](../data/scorecards/example-launch-scorecard.md) — go/no-go via `scripts/readiness-check.py --scorecard`.
+- **KPI snapshot:** [`data/metrics/kpi-snapshot-example.md`](../data/metrics/kpi-snapshot-example.md) — gerado por `scripts/kpi-snapshot.py`; KPI < meta vira item de backlog.
+- **Pre-commit hook:** `scripts/install-hooks.sh` mantém matrizes e qualidade em sync a cada commit.
+
 > Sem este loop, cada lançamento recomeça do zero — o anti-pattern mais caro. Com ele, a vantagem é **composta**: cada lançamento começa do melhor estado do anterior.

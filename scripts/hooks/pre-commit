@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+# pre-commit — Offer Book Squad
+# Mantém as matrizes geradas em sync e BLOQUEIA o commit se o repo cair abaixo do padrão.
+# Instale com: bash scripts/install-hooks.sh  (seta core.hooksPath = scripts/hooks)
+set -uo pipefail
+ROOT="$(git rev-parse --show-toplevel)"
+cd "$ROOT" || exit 1
+
+echo "[pre-commit] regenerando artefatos gerados (traceability-matrix, backlog)..."
+python3 scripts/traceability-matrix.py >/dev/null 2>&1 || true
+python3 scripts/backlog-prioritize.py >/dev/null 2>&1 || true
+# re-stage se mudaram (no-op se idênticos / não rastreados)
+git add docs/traceability-matrix.md data/backlog/improvement-backlog.md 2>/dev/null || true
+
+fail() { echo "[pre-commit] ❌ $1 — commit BLOQUEADO. Rode o comando e corrija."; exit 1; }
+
+echo "[pre-commit] qa-runner --strict..."
+python3 scripts/qa-runner.py --strict --quiet || fail "qa-runner --strict (score/seções/frontmatter)"
+
+echo "[pre-commit] crosslink-graph (0 quebrados)..."
+python3 scripts/crosslink-graph.py >/dev/null 2>&1 || fail "links quebrados (python3 scripts/crosslink-graph.py)"
+
+echo "[pre-commit] id-resolver (bijeção)..."
+python3 scripts/id-resolver.py --check >/dev/null 2>&1 || fail "bijeção id<->path (python3 scripts/id-resolver.py)"
+
+echo "[pre-commit] citation-checker (<=25 palavras)..."
+python3 scripts/citation-checker.py >/dev/null 2>&1 || fail "citações (python3 scripts/citation-checker.py)"
+
+echo "[pre-commit] ✅ padrão GOLD/SOTA mantido — commit liberado."
+exit 0

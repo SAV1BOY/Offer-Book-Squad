@@ -101,18 +101,20 @@ Todos os **12** com `handoff_to`/`handoff_from`/`shared_assets` + contrato + gat
 - **Matrizes geradas** podem dessincronizar sem hook de pre-commit.
 
 ## 11. Next Best Upgrades (Top 10 ROI)
-| # | Upgrade | Esforço | Impacto | Squad(s) |
-|---|---|---|---|---|
-| 1 | Hook pre-commit (qa-runner --strict + regen matrizes) | S | ALTO | este |
-| 2 | readiness-check lê scorecard vivo (não só .qa-report) | S | MÉDIO | este |
-| 3 | Primeiro handoff executável upstream | M | ALTO | deepresearch |
-| 4 | KPI snapshots vivos por lançamento | M | ALTO | data |
-| 5 | Backlog Kaizen com ROI numérico | S | MÉDIO | este |
-| 6 | Autópsia real em `archive/losing-controls` | S | MÉDIO | este |
-| 7 | Fixtures de cenário de falha (gate vermelho/veto) | M | MÉDIO | este |
-| 8 | Variante B2B do offer-book-master + battle cards | M | MÉDIO | advisory/c-level |
-| 9 | Governança multi-squad executável (quando `hrm_central` existir) | L | ALTO | todos |
-| 10 | `compliance-scanner --strict` no CI | S | MÉDIO | cybersecurity |
+> **#1–#5 ✅ IMPLEMENTADOS** (ver [backlog vivo](../data/backlog/improvement-backlog.md), status `done`). #6–#10 abertos, ranqueados por ROI lá.
+
+| # | Upgrade | Esforço | Impacto | Squad(s) | Status |
+|---|---|---|---|---|---|
+| 1 | Hook pre-commit (qa-runner --strict + regen matrizes) | S | ALTO | este | ✅ |
+| 2 | readiness-check lê scorecard vivo (não só .qa-report) | S | MÉDIO | este | ✅ |
+| 3 | Primeiro handoff executável upstream | M | ALTO | deepresearch | ✅ |
+| 4 | KPI snapshots vivos por lançamento | M | ALTO | data | ✅ |
+| 5 | Backlog Kaizen com ROI numérico | S | MÉDIO | este | ✅ |
+| 6 | Autópsia real em `archive/losing-controls` | S | MÉDIO | este | ⏳ |
+| 7 | Fixtures de cenário de falha (gate vermelho/veto) | M | MÉDIO | este | ⏳ |
+| 8 | Variante B2B do offer-book-master + battle cards | M | MÉDIO | advisory/c-level | ⏳ |
+| 9 | Governança multi-squad executável (quando `hrm_central` existir) | L | ALTO | todos | ⏳ |
+| 10 | `compliance-scanner --strict` no CI | S | MÉDIO | cybersecurity | ⏳ |
 
 ## 12. Final Score
 ### Por capacidade (0-100)
