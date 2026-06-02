@@ -1,0 +1,32 @@
+name: QA — Offer Book Squad (GOLD/SOTA gate)
+
+# Espelha o pre-commit hook (scripts/hooks/pre-commit) no servidor.
+# Bloqueia merge se o repo cair abaixo do padrão. Ver docs/quality-gate-cascade.md.
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+    branches: ["**"]
+
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Instalar dependências (stdlib + pyyaml)
+        run: pip install pyyaml
+      - name: qa-runner --strict (frontmatter, seções, links, pisos, score 100)
+        run: python3 scripts/qa-runner.py --strict
+      - name: crosslink-graph (0 links quebrados)
+        run: python3 scripts/crosslink-graph.py
+      - name: id-resolver (bijeção id↔path)
+        run: python3 scripts/id-resolver.py
+      - name: citation-checker (≤25 palavras, blocos de fonte)
+        run: python3 scripts/citation-checker.py
+      - name: compliance-scanner --strict (claim sem prova / escassez falsa em copy viva)
+        run: python3 scripts/compliance-scanner.py --strict
+      - name: coverage-report (informativo)
+        run: python3 scripts/coverage-report.py
