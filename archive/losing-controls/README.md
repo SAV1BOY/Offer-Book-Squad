@@ -32,6 +32,12 @@ Não arquive a copy literal inteira. Arquive a hipótese, a métrica e a lição
 
 Use [`losing-control-autopsy-template.md`](losing-control-autopsy-template.md). A estrutura é fixa: **hipótese → o que falhou → evidência → lição**. Veja [`example-autopsy.md`](example-autopsy.md) para um caso preenchido (ilustrativo). Cada arquivo final nomeia o control (`autopsy-<control_id>.md`).
 
+## Autópsias arquivadas
+Cada uma diagnostica a **causa raiz via o framework violado** e deixa uma lição no [`lessons-learned-registry`](../../data/registries/lessons-learned-registry.md):
+- [`autopsy-cold-vsl-offer-lead.md`](autopsy-cold-vsl-offer-lead.md) — lead de Oferta em tráfego frio (viola `awareness-x-sophistication` × `lead-types`) → `ll-2026q1-lead-awareness-fit`.
+- [`autopsy-false-countdown-scarcity.md`](autopsy-false-countdown-scarcity.md) — contador evergreen falso (viola `truthful_scarcity`) → `ll-2026q1-truthful-scarcity`.
+- [`autopsy-orphan-bonus-stack.md`](autopsy-orphan-bonus-stack.md) — stack inchado de bônus órfãos (viola `value_equation_test`) → `ll-2026q1-no-orphan-bonus`.
+
 ## Lições para reuso
 
 A autópsia tem dois destinos. Primeiro, a lição vira linha no [`lessons-learned-registry`](../../data/registries/lessons-learned-registry.md), categoria `copy`. Segundo, o contraste perdedor-vencedor alimenta o swipe de vencedores: saber por que um ângulo perdeu afia o padrão do que ganha. Um modo de falha recorrente sobe a default ou a um item de checklist via `promoted_to`.
