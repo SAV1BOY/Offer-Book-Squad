@@ -26,7 +26,7 @@ Backlog **vivo** de melhorias do squad (alimenta o [loop Kaizen](../../docs/impr
 | 7 | bk-04 | KPI snapshots vivos por lançamento | audit §11 | 4 | 3 | 0.8 | 1.07 | knowledge-librarian | done |
 | 8 | bk-07 | Fixtures de cenário de falha (gate/veto) | audit §11 | 3 | 3 | 0.7 | 0.70 | offerbook-chief | done |
 | 9 | bk-08 | Variante B2B do offer-book-master + battle cards | audit §11 | 4 | 4 | 0.6 | 0.60 | offer-squad-architect | done |
-| 10 | bk-09 | Governança multi-squad executável (hrm_central) | audit §11 | 5 | 5 | 0.5 | 0.50 | offerbook-chief | open |
+| 10 | bk-09 | Governança multi-squad executável (hrm_central) | audit §11 | 5 | 5 | 0.5 | 0.50 | offerbook-chief | done |
 
 ## Como usar
 1. Adicione um item com `impact`, `effort`, `confidence` (deixe `roi` e `rank` em branco ou `0`).
