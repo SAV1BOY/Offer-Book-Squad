@@ -10,8 +10,8 @@ Legenda: ⬜ pendente · 🟨 em progresso · ✅ concluída (qa-runner verde)
 |---|---|---|---|---|
 | 0  | Foundation & Contracts (raiz + docs + config + árvore) | ~10 | ✅ | `feat(foundation)` |
 | 1  | `lib/taxonomies/` | 5 | ✅ | `feat(taxonomies)` |
-| 2  | `reference/` (com citações web) | ~90 | 🟨 | — |
-| 3  | `frameworks/` | ~95 | ⬜ | — |
+| 2  | `reference/` (com citações web) | ~90 | ✅ | `feat(reference)` |
+| 3  | `frameworks/` | ~95 | 🟨 | — |
 | 4  | `lib/` (components, patterns, utilities) | ~33 | ⬜ | — |
 | 5  | `agents/` + `data/registries/` | 35 | ⬜ | — |
 | 6  | `checklists/` | ~120 | ⬜ | — |
@@ -29,7 +29,12 @@ Legenda: ⬜ pendente · 🟨 em progresso · ✅ concluída (qa-runner verde)
 | 18 | QA de integração (link-check, contagens, reconciliação) | — | ⬜ | — |
 
 ## Próxima ação
-- **Fase 2** — `reference/` (~90, com citações web): `books/` (offers-and-monetization, copywriting, persuasion-psychology, positioning, launches-and-funnels, b2b-enterprise), `psychology/`, `industries/`, `case-studies/`, `swipe-breakdowns/`. Heavy de pesquisa — confirmar autor/título/ano antes de escrever; literal ≤25 palavras.
+- **Fase 3** — `frameworks/` (~95): swarm em andamento (universais, copy, pricing, positioning, launch, reference-intellectual, por-agente). Auditar quando concluir; depois Fase 4 (lib resto).
+
+## Notas de execução (orquestração por swarms)
+- Auditoria automatizada trazida para frente: `scripts/qa-runner.py` (score 0–100, gate 95) e `scripts/coverage-report.py` (contagem vs meta). Demais scripts ficam na Fase 15.
+- Fase 2 entregue por 7 sub-agentes paralelos; **79 arquivos** (meta ~90 — excede o spec literal do mapa ~47; top-up opcional na Fase 18). Auditoria: **100/100**.
+- Sub-agentes às vezes relatam um arquivo como "pré-existente" (confabulação) — verificado em disco: todos existem e passam.
 
 ## Regras de retomada (para qualquer sessão futura)
 1. **Não duplicar:** confira o status aqui antes de criar arquivos.
