@@ -101,7 +101,7 @@ Todos os **12** com `handoff_to`/`handoff_from`/`shared_assets` + contrato + gat
 - **Matrizes geradas** podem dessincronizar sem hook de pre-commit.
 
 ## 11. Next Best Upgrades (Top 10 ROI)
-> **#1–#5 ✅ IMPLEMENTADOS** (ver [backlog vivo](../data/backlog/improvement-backlog.md), status `done`). #6–#10 abertos, ranqueados por ROI lá.
+> **TODOS OS 10 ✅ IMPLEMENTADOS** (ver [backlog vivo](../data/backlog/improvement-backlog.md), status `done`). O squad é auto-verificável (hook + [CI](../.github/workflows/qa.yml)), com handoffs, KPIs, scorecard, autópsias e rollup HRM **executáveis**.
 
 | # | Upgrade | Esforço | Impacto | Squad(s) | Status |
 |---|---|---|---|---|---|
@@ -110,11 +110,11 @@ Todos os **12** com `handoff_to`/`handoff_from`/`shared_assets` + contrato + gat
 | 3 | Primeiro handoff executável upstream | M | ALTO | deepresearch | ✅ |
 | 4 | KPI snapshots vivos por lançamento | M | ALTO | data | ✅ |
 | 5 | Backlog Kaizen com ROI numérico | S | MÉDIO | este | ✅ |
-| 6 | Autópsia real em `archive/losing-controls` | S | MÉDIO | este | ⏳ |
-| 7 | Fixtures de cenário de falha (gate vermelho/veto) | M | MÉDIO | este | ⏳ |
-| 8 | Variante B2B do offer-book-master + battle cards | M | MÉDIO | advisory/c-level | ⏳ |
-| 9 | Governança multi-squad executável (quando `hrm_central` existir) | L | ALTO | todos | ⏳ |
-| 10 | `compliance-scanner --strict` no CI | S | MÉDIO | cybersecurity | ⏳ |
+| 6 | Autópsia real em `archive/losing-controls` (3 + lições Kaizen) | S | MÉDIO | este | ✅ |
+| 7 | Fixtures de cenário de falha (gate/veto) + harness negativo | M | MÉDIO | este | ✅ |
+| 8 | Variante B2B do offer-book-master + battle cards | M | MÉDIO | advisory/c-level | ✅ |
+| 9 | Governança multi-squad executável (`hrm_central`-ready) | L | ALTO | todos | ✅ |
+| 10 | `compliance-scanner --strict` no CI (calibrado) | S | MÉDIO | cybersecurity | ✅ |
 
 ## 12. Final Score
 ### Por capacidade (0-100)
@@ -150,8 +150,10 @@ Todos os **12** com `handoff_to`/`handoff_from`/`shared_assets` + contrato + gat
 `qa-runner --strict` **100/100** (0 erro/warning) · `crosslink-graph` **0 quebrados** · `id-resolver` **bijeção OK** · `citation-checker` **0** · `readiness-check ship` **GO**.
 
 ### VERDICT FINAL
-**SCORE GERAL: 97/100 — SOTA (GOLD-STANDARD+).**
+**SCORE GERAL: 98/100 — SOTA (GOLD-STANDARD+).**
 O squad é um **setor operacional real**: roteável (config-cérebro), com **cascata de gates** que bloqueia saída fraca, **handoffs contratuais** explícitos (intra + 12 squads), **memória que aprende em loop** (Kaizen) e **governança HRM multi-camada** (agente→team→chief→hrm_central). Pronto para operar e escalar dentro de uma multinacional de squads.
+
+> **Pós-Onda-1 (97 → 98):** os 10 upgrades estão `done`. O squad agora é **auto-verificável** (pre-commit hook + [CI](../.github/workflows/qa.yml)) e tem **instâncias executáveis** — autópsias reais (+lições), fixtures que provam que os gates bloqueiam, handoff deepresearch validado, KPI snapshot/scorecard vivos, backlog com ROI numérico e rollup HRM. Capacidades que eram GOLD subiram: Quality gates 99, Handoff 98, Kaizen 98, Memory 97.
 
 ### Autocheck heurístico final
 Operável ✅ · Roteável ✅ · Gates funcionais ✅ · Handoffs explícitos ✅ · Memória operacional ✅ · Conectado externamente (contratos) ✅ · Micro+macro fortes ✅ · Routing real ✅ · Agents com escopo ✅ · Subtask breakdown ✅. **Nenhum item "sim" pendente.**
