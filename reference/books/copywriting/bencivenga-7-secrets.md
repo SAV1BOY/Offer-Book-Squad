@@ -24,13 +24,13 @@ Bencivenga é tratado por muitos como o melhor copywriter vivo da resposta diret
 ## Frameworks/Modelos
 
 ### Proof Beats Persuasion (Prova Vence Persuasão)
-O segredo mestre: substitua adjetivos por **evidência**. Cada claim ganha uma prova — demonstração, dado, depoimento, garantia. Operacionalizamos a amarração claim→prova em [`../../frameworks/proof-to-claim-chain.md`](../../frameworks/proof-to-claim-chain.md), consumido pelo `proof-credibility-curator` (`claim_backing`).
+O segredo mestre: substitua adjetivos por **evidência**. Cada claim ganha uma prova — demonstração, dado, depoimento, garantia. Operacionalizamos a amarração claim→prova em [`../../frameworks/proof-to-claim-chain.md`](../../../frameworks/proof-to-claim-chain.md), consumido pelo `proof-credibility-curator` (`claim_backing`).
 
 ### A Equação de Persuasão (Belief × Desire)
-A venda cresce com a **força do desejo** e a **crença na promessa**, e cai com o **risco percebido** e o **esforço**. Mapeia quase um-para-um nas alavancas da [`../../frameworks/value-equation.md`](../../frameworks/value-equation.md): aumentar sonho/probabilidade, reduzir tempo/esforço — e reverter risco com garantia. Liga-se a [`../../frameworks/guarantee-design.md`](../../frameworks/guarantee-design.md).
+A venda cresce com a **força do desejo** e a **crença na promessa**, e cai com o **risco percebido** e o **esforço**. Mapeia quase um-para-um nas alavancas da [`../../frameworks/value-equation.md`](../../../frameworks/value-equation.md): aumentar sonho/probabilidade, reduzir tempo/esforço — e reverter risco com garantia. Liga-se a [`../../frameworks/guarantee-design.md`](../../../frameworks/guarantee-design.md).
 
 ### Fascination Bullets (Bullets de Fascínio)
-Frases curtas que prometem uma informação valiosa e oculta, criando curiosidade que só a leitura (ou a compra) resolve. São a munição de ganchos e listas de benefícios. Operacionalizamos em [`../../frameworks/copy/fascination-bullets.md`](../../frameworks/copy/fascination-bullets.md), usado pelo `ad-creative-factory`.
+Frases curtas que prometem uma informação valiosa e oculta, criando curiosidade que só a leitura (ou a compra) resolve. São a munição de ganchos e listas de benefícios. Operacionalizamos em [`../../frameworks/copy/fascination-bullets.md`](../../../frameworks/copy/fascination-bullets.md), usado pelo `ad-creative-factory`.
 
 ## Princípios
 - **Prova vence persuasão**: troque adjetivos por demonstrações, dados, depoimentos e garantias.

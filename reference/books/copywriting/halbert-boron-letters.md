@@ -24,13 +24,13 @@ São cartas que Gary Halbert escreveu ao filho Bond enquanto cumpria pena na pri
 ## Frameworks/Modelos
 
 ### Starving Crowd (A Multidão Faminta)
-A vantagem que vence todas: um mercado com desejo intenso, poder de compra e acesso fácil. Antes de polir a oferta, valide a fome. Operacionalizamos isso no diagnóstico de mercado em [`../../frameworks/starving-crowd.md`](../../frameworks/starving-crowd.md), consumido pelo `market-sophistication-analyst`.
+A vantagem que vence todas: um mercado com desejo intenso, poder de compra e acesso fácil. Antes de polir a oferta, valide a fome. Operacionalizamos isso no diagnóstico de mercado em [`../../frameworks/starving-crowd.md`](../../../frameworks/starving-crowd.md), consumido pelo `market-sophistication-analyst`.
 
 ### A-Pile / B-Pile (Pilha A e Pilha B)
-Ao abrir a caixa de correio, as pessoas separam em segundos: a **Pilha A** é a correspondência pessoal e esperada, que se abre; a **Pilha B** é a propaganda óbvia, que vai pro lixo sem abrir. A missão do mailer é **parecer Pilha A** — pessoal, relevante, não-anúncio. Vira regra de formato e abertura do `direct-mail-insert-writer`. Ver [`../../frameworks/copy/hook-frameworks.md`](../../frameworks/copy/hook-frameworks.md).
+Ao abrir a caixa de correio, as pessoas separam em segundos: a **Pilha A** é a correspondência pessoal e esperada, que se abre; a **Pilha B** é a propaganda óbvia, que vai pro lixo sem abrir. A missão do mailer é **parecer Pilha A** — pessoal, relevante, não-anúncio. Vira regra de formato e abertura do `direct-mail-insert-writer`. Ver [`../../frameworks/copy/hook-frameworks.md`](../../../frameworks/copy/hook-frameworks.md).
 
 ### A Sequência "Mercado → Oferta → Copy"
-A ordem inegociável: primeiro o **quem** (lista/mercado faminto), depois o **quê** (oferta para essa fome), só então o **como** (copy). Inverter — começar pela copy bonita — é o erro mais caro. Conecta com [`../../frameworks/awareness-x-sophistication.md`](../../frameworks/awareness-x-sophistication.md).
+A ordem inegociável: primeiro o **quem** (lista/mercado faminto), depois o **quê** (oferta para essa fome), só então o **como** (copy). Inverter — começar pela copy bonita — é o erro mais caro. Conecta com [`../../frameworks/awareness-x-sophistication.md`](../../../frameworks/awareness-x-sophistication.md).
 
 ## Princípios
 - A maior vantagem competitiva não é o produto; é uma **multidão faminta**. Ache a fome antes de cozinhar.

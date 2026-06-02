@@ -46,7 +46,7 @@ A Fase 01 entrega o `artifact.offer-book` e a `artifact.big-idea` (a tese que o 
 - Registry escrito: [`decision-registry`](../../data/registries/decision-registry.md).
 
 ## Gates
-- [`pr-plan-checklist`](../../checklists/pr/pr-plan-checklist.md)
+- [`pr-plan-checklist`](../../checklists/pr-plan-checklist.md)
 
 ## Critério de Saída
 Existe pelo menos um fato lastreado por trás do ângulo (zero PR sobre conquista inventada); o ângulo é verificável e consentido e estende a Big Idea travada; o mapa de canais e a cadência pós-cart estão definidos; os ativos de PR estão cada um lastreado e consentido; os KPIs de marca são mensuráveis; o pr-plan-checklist está verde e o ângulo está registrado. Fecha a camada D6. A próxima fase é a [`12-compliance-and-blackbook-assembly`](12-compliance-and-blackbook-assembly.md), que roda a auditoria final de compliance e monta o Blackbook no ★ HARD STOP de saída.

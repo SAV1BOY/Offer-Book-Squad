@@ -118,7 +118,7 @@ Antes de emitir, eu subo a escada de Bloom até **Avaliar** e, quando preciso, *
 
 Red-team: *"O que o [`compliance-auditor`](compliance-auditor.md) rejeitaria aqui?"* — caso sem consentimento, número inflado, endosso sem permissão, claim de resultado sem lastro: tudo isso é veto, e eu corrijo antes. *"O que o [`big-idea-architect`](big-idea-architect.md) diria?"* — se meu ângulo cria uma tese paralela, eu o realinho à Big Idea travada.
 
-Gate obrigatório: [`pr-plan-checklist`](../checklists/pr/pr-plan-checklist.md) (ângulo lastreado + canais + ativos + KPIs de marca).
+Gate obrigatório: [`pr-plan-checklist`](../checklists/pr-plan-checklist.md) (ângulo lastreado + canais + ativos + KPIs de marca).
 
 ## 7. Poderes de Veto & Escalonamento
 

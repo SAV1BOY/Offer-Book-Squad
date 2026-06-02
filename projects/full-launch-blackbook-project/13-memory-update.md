@@ -48,7 +48,7 @@ A Fase 12 entrega o `artifact.launch-blackbook` fechado e o `decision.compliance
 - Registry escrito: [`swipe-registry`](../../data/registries/swipe-registry.md) — padrões originais (ganchos/sequências/estruturas vencedoras) com categoria e ângulo.
 
 ## Gates
-- [`final-delivery-checklist`](../../checklists/cross-squad/final-delivery-checklist.md)
+- [`final-delivery-checklist`](../../checklists/final-delivery-checklist.md)
 
 ## Critério de Saída
 O blackbook fechado e o compliance-verdict APROVADO foram confirmados; os três registries (control, lessons-learned, swipe) estão atualizados com os ativos do lançamento; cada swipe é redação original e só carrega claim com lastro (zero claim sem prova na memória); cada entrada é rastreável à sua fonte; não há duplicata; o final-delivery-checklist está verde. O ciclo do squad está fechado. A memória atualizada alimenta o próximo lançamento: o chief e o architect a consultam na [`00-brief`](00-brief.md) do próximo caso, os autores reusam o swipe e os controles vencedores viram baseline. Esta é a fase final do projeto full-launch-blackbook.

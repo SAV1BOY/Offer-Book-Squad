@@ -24,13 +24,13 @@ Caples escreveu o anúncio mais famoso da história ("They Laughed When I Sat Do
 ## Frameworks/Modelos
 
 ### O Título é o Anúncio (Headline-First)
-A alavanca de maior impacto. Caples mostra que trocar só o título muda o resultado em múltiplos. A copy começa por gerar e testar muitos títulos. Operacionalizamos a geração e o teste de títulos em [`../../frameworks/copy/hook-frameworks.md`](../../frameworks/copy/hook-frameworks.md), consumido pelo `ad-creative-factory`.
+A alavanca de maior impacto. Caples mostra que trocar só o título muda o resultado em múltiplos. A copy começa por gerar e testar muitos títulos. Operacionalizamos a geração e o teste de títulos em [`../../frameworks/copy/hook-frameworks.md`](../../../frameworks/copy/hook-frameworks.md), consumido pelo `ad-creative-factory`.
 
 ### As 4 Qualidades do Título Vencedor
 Títulos fortes costumam carregar pelo menos uma de quatro qualidades: **interesse próprio** (benefício direto), **notícia** (novidade, "novo", "agora"), **curiosidade** e **forma rápida/fácil**. Viram a checklist de ângulo de manchete do `ad-creative-factory`. Conecta com os níveis de consciência de [`../../../lib/taxonomies/awareness-levels.md`](../../../lib/taxonomies/awareness-levels.md).
 
 ### Cultura de Teste (Split-Test)
-Decida por dados: rode variações, meça a resposta, mantenha o vencedor (o "control") e tente bater. Vira o ciclo de teste do `control-registry` e a disciplina de variação em [`../../frameworks/awareness-x-sophistication.md`](../../frameworks/awareness-x-sophistication.md).
+Decida por dados: rode variações, meça a resposta, mantenha o vencedor (o "control") e tente bater. Vira o ciclo de teste do `control-registry` e a disciplina de variação em [`../../frameworks/awareness-x-sophistication.md`](../../../frameworks/awareness-x-sophistication.md).
 
 ## Princípios
 - O **título é o anúncio**: muda só ele e o resultado muda em múltiplos, não em pontos.

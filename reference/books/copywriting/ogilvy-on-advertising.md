@@ -24,13 +24,13 @@ Ogilvy une duas tradições que muitos tratam como rivais: o rigor mensurável d
 ## Frameworks/Modelos
 
 ### A Big Idea
-O conceito central que carrega a campanha: grande, simples, distinto e durável. Ogilvy a trata como condição de sucesso, não enfeite. Operacionalizamos a destilação de UMA ideia em [`../../frameworks/big-idea-generator.md`](../../frameworks/big-idea-generator.md) e [`../../frameworks/power-of-one.md`](../../frameworks/power-of-one.md), consumidos pelo `big-idea-architect` (que reprova múltiplas ideias).
+O conceito central que carrega a campanha: grande, simples, distinto e durável. Ogilvy a trata como condição de sucesso, não enfeite. Operacionalizamos a destilação de UMA ideia em [`../../frameworks/big-idea-generator.md`](../../../frameworks/big-idea-generator.md) e [`../../frameworks/power-of-one.md`](../../../frameworks/power-of-one.md), consumidos pelo `big-idea-architect` (que reprova múltiplas ideias).
 
 ### Pesquisa Antes da Criação
-A Big Idea e a copy derivam de fatos: estudo do produto, do consumidor e dos controles que já venderam. "Os consumidores não são idiotas; são sua esposa." Vira a exigência de VOC e prova do `avatar-voc-investigator` e do `proof-credibility-curator`, ligada a [`../../frameworks/proof-to-claim-chain.md`](../../frameworks/proof-to-claim-chain.md).
+A Big Idea e a copy derivam de fatos: estudo do produto, do consumidor e dos controles que já venderam. "Os consumidores não são idiotas; são sua esposa." Vira a exigência de VOC e prova do `avatar-voc-investigator` e do `proof-credibility-curator`, ligada a [`../../frameworks/proof-to-claim-chain.md`](../../../frameworks/proof-to-claim-chain.md).
 
 ### Headline + Brand Image
-O título é a peça mais lida e deve entregar **benefício** (idealmente com a marca dentro); cada anúncio constrói uma **imagem de marca** consistente no tempo. Conecta com a geração de manchetes em [`../../frameworks/copy/hook-frameworks.md`](../../frameworks/copy/hook-frameworks.md) e com o posicionamento do `positioning-lead-strategist`.
+O título é a peça mais lida e deve entregar **benefício** (idealmente com a marca dentro); cada anúncio constrói uma **imagem de marca** consistente no tempo. Conecta com a geração de manchetes em [`../../frameworks/copy/hook-frameworks.md`](../../../frameworks/copy/hook-frameworks.md) e com o posicionamento do `positioning-lead-strategist`.
 
 ## Princípios
 - Sem uma **Big Idea**, a propaganda passa despercebida; UMA ideia grande carrega a campanha.

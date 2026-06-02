@@ -24,13 +24,13 @@ Kennedy é o sistematizador do marketing de resposta direta moderno. A tese cent
 ## Frameworks/Modelos
 
 ### Message–Market–Match (Mensagem-Mercado-Mídia)
-O triângulo de diagnóstico: alinhe a mensagem ao mercado e ao canal. Errar o mercado ou o canal invalida a melhor copy. Operacionalizamos o casamento mensagem-mercado em [`../../frameworks/awareness-x-sophistication.md`](../../frameworks/awareness-x-sophistication.md) e a escolha de canal em [`../../frameworks/offer-to-funnel-mapping.md`](../../frameworks/offer-to-funnel-mapping.md), consumidos por `positioning-lead-strategist` e `funnel-architect`.
+O triângulo de diagnóstico: alinhe a mensagem ao mercado e ao canal. Errar o mercado ou o canal invalida a melhor copy. Operacionalizamos o casamento mensagem-mercado em [`../../frameworks/awareness-x-sophistication.md`](../../../frameworks/awareness-x-sophistication.md) e a escolha de canal em [`../../frameworks/offer-to-funnel-mapping.md`](../../../frameworks/offer-to-funnel-mapping.md), consumidos por `positioning-lead-strategist` e `funnel-architect`.
 
 ### A Oferta como Motor da Carta
-A carta inteira existe para entregar **uma oferta irresistível** com clareza: o que é, o que custa, o que se ganha, por que agora. O CTA é único e explícito. Conecta com o empilhamento de oferta em [`../../frameworks/offer-stack-builder.md`](../../frameworks/offer-stack-builder.md) e a estrutura de página de venda da `vsl-webinar-scriptwriter`.
+A carta inteira existe para entregar **uma oferta irresistível** com clareza: o que é, o que custa, o que se ganha, por que agora. O CTA é único e explícito. Conecta com o empilhamento de oferta em [`../../frameworks/offer-stack-builder.md`](../../../frameworks/offer-stack-builder.md) e a estrutura de página de venda da `vsl-webinar-scriptwriter`.
 
 ### Razão para Agir Agora (Urgência com Motivo)
-Kennedy exige um **motivo verdadeiro** para a resposta imediata — prazo, limite, consequência de adiar — nunca um "compre já" vazio. Vira a régua de urgência verdadeira do `compliance-auditor` via [`../../frameworks/scarcity-urgency-engine.md`](../../frameworks/scarcity-urgency-engine.md).
+Kennedy exige um **motivo verdadeiro** para a resposta imediata — prazo, limite, consequência de adiar — nunca um "compre já" vazio. Vira a régua de urgência verdadeira do `compliance-auditor` via [`../../frameworks/scarcity-urgency-engine.md`](../../../frameworks/scarcity-urgency-engine.md).
 
 ## Princípios
 - Case **mensagem, mercado e mídia**; o elo mais fraco define o resultado da campanha.

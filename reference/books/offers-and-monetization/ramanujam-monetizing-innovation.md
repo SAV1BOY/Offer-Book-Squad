@@ -24,7 +24,7 @@ A maioria dos produtos novos fracassa não por má engenharia, mas por má monet
 ## Frameworks/Modelos
 
 ### WTP-First (Disposição a Pagar Antes do Produto)
-O princípio mestre: levante a WTP **antes** de desenvolver. Converse com clientes sobre valor e preço cedo e com frequência, segmente por quanto cada grupo paga e desenhe o produto para esses bolsos. Operacionalizamos a sondagem de WTP em [`../../frameworks/pricing/value-based-pricing.md`](../../frameworks/pricing/value-based-pricing.md), com métodos diretos em [`../../frameworks/pricing/van-westendorp.md`](../../frameworks/pricing/van-westendorp.md) e [`../../frameworks/pricing/gabor-granger.md`](../../frameworks/pricing/gabor-granger.md).
+O princípio mestre: levante a WTP **antes** de desenvolver. Converse com clientes sobre valor e preço cedo e com frequência, segmente por quanto cada grupo paga e desenhe o produto para esses bolsos. Operacionalizamos a sondagem de WTP em [`../../frameworks/pricing/value-based-pricing.md`](../../../frameworks/pricing/value-based-pricing.md), com métodos diretos em [`../../frameworks/pricing/van-westendorp.md`](../../../frameworks/pricing/van-westendorp.md) e [`../../frameworks/pricing/gabor-granger.md`](../../../frameworks/pricing/gabor-granger.md).
 
 ### As 4 Falhas de Monetização
 O mapa de erros que o squad usa como checklist de diagnóstico:
@@ -33,7 +33,7 @@ O mapa de erros que o squad usa como checklist de diagnóstico:
 3. **Hidden Gem (Joia Escondida)** — um campeão em potencial que nunca chega direito ao mercado, geralmente por cair fora do "core" do negócio. *Antídoto:* reconhecer e priorizar o ativo.
 4. **Undead (Morto-vivo)** — produto lançado num mercado que **não o quer**; nasce sem demanda e arrasta recursos. *Antídoto:* validar desejo e WTP antes de lançar.
 
-Esse mapa alimenta o diagnóstico em [`../../frameworks/pricing/packaging-good-better-best.md`](../../frameworks/pricing/packaging-good-better-best.md).
+Esse mapa alimenta o diagnóstico em [`../../frameworks/pricing/packaging-good-better-best.md`](../../../frameworks/pricing/packaging-good-better-best.md).
 
 ### Segmentação por Valor + Empacotamento (Good-Better-Best)
 Clientes diferentes têm WTP diferente. Em vez de um preço único, desenhe **pacotes e versões** (bundling, *leaders/fillers/killers*) que capturam cada faixa. Vira a tabela de empacotamento do `pricing-wtp-strategist`.
@@ -57,4 +57,4 @@ Clientes diferentes têm WTP diferente. Em vez de um preço único, desenhe **pa
 - [`nagle-strategy-tactics-pricing.md`](nagle-strategy-tactics-pricing.md) — a teoria de preço por valor que complementa a prática de WTP.
 - [`hormozi-100m-offers.md`](hormozi-100m-offers.md) — "cobre pelo valor, não pelo custo", o mesmo eixo aplicado à oferta.
 - [`hormozi-100m-money-models.md`](hormozi-100m-money-models.md) — onde a WTP segmentada vira o preço de cada degrau da escada.
-- [`../../lib/taxonomies/offer-types.md`](../../lib/taxonomies/offer-types.md) — tipos de oferta que o empacotamento por valor distribui.
+- [`../../lib/taxonomies/offer-types.md`](../../../lib/taxonomies/offer-types.md) — tipos de oferta que o empacotamento por valor distribui.

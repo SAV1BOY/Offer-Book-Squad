@@ -65,7 +65,7 @@ Roda em D6, no flanco pós-venda: ativa quando o lançamento foi executado (ou e
 - KPIs de marca mensuráveis (não vaidade); o pr-plan-checklist verde; ângulo registrado.
 
 ## Gates
-[`pr-plan-checklist`](../../checklists/pr/pr-plan-checklist.md).
+[`pr-plan-checklist`](../../checklists/pr-plan-checklist.md).
 
 ## Handoff
 **Próxima task:** [`compliance-audit`](../qa-memory/compliance-audit.md) — dono [`compliance-auditor`](../../agents/compliance-auditor.md), que recebe o ângulo, os ativos e a prova social para auditoria de consentimento/veracidade (a prova social usada em PR passa pela barreira final). Também entrega ao [`knowledge-librarian`](../../agents/knowledge-librarian.md) o que vira memória (ângulos vencedores, KPIs de marca como baseline). **Garantia:** um plano de PR onde cada ângulo nasce de um fato verificável e consentido, estende a Big Idea travada, e vem com KPIs de marca mensuráveis — nunca buzz sobre conquista inventada.

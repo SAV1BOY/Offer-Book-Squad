@@ -24,13 +24,13 @@ Collier escreveu cartas de venda que moveram milhões em mercadoria por mala-dir
 ## Frameworks/Modelos
 
 ### Enter the Conversation (Entrar na Conversa Mental)
-O princípio mestre: comece a copy no ponto onde o pensamento do leitor já está, não onde você quer vender. Exige mapear o estado mental dominante. Operacionalizamos isso na mineração de VOC em [`../../frameworks/avatar-voc-investigator/voc-mining.md`](../../frameworks/avatar-voc-investigator/voc-mining.md), consumido pelo `avatar-voc-investigator`.
+O princípio mestre: comece a copy no ponto onde o pensamento do leitor já está, não onde você quer vender. Exige mapear o estado mental dominante. Operacionalizamos isso na mineração de VOC em [`../../frameworks/avatar-voc-investigator/voc-mining.md`](../../../frameworks/avatar-voc-investigator/voc-mining.md), consumido pelo `avatar-voc-investigator`.
 
 ### A Linguagem do Leitor (Verbatim)
-Use as palavras exatas do prospect — suas frases, suas metáforas, suas objeções — para que a copy soe como pensamento próprio, não como pitch. Vira o banco de VOC verbatim que abastece toda a copy e o mapeamento em [`../../frameworks/avatar-voc-investigator/objection-belief-mapping.md`](../../frameworks/avatar-voc-investigator/objection-belief-mapping.md).
+Use as palavras exatas do prospect — suas frases, suas metáforas, suas objeções — para que a copy soe como pensamento próprio, não como pitch. Vira o banco de VOC verbatim que abastece toda a copy e o mapeamento em [`../../frameworks/avatar-voc-investigator/objection-belief-mapping.md`](../../../frameworks/avatar-voc-investigator/objection-belief-mapping.md).
 
 ### Começar pelo Estado Mental (Awareness Fit)
-Onde a carta abre depende do que o leitor já sabe e sente. Cruza diretamente com os estados de consciência de Schwartz. Conecta com [`../../../lib/taxonomies/awareness-levels.md`](../../../lib/taxonomies/awareness-levels.md) e a matriz [`../../frameworks/awareness-x-sophistication.md`](../../frameworks/awareness-x-sophistication.md).
+Onde a carta abre depende do que o leitor já sabe e sente. Cruza diretamente com os estados de consciência de Schwartz. Conecta com [`../../../lib/taxonomies/awareness-levels.md`](../../../lib/taxonomies/awareness-levels.md) e a matriz [`../../frameworks/awareness-x-sophistication.md`](../../../frameworks/awareness-x-sophistication.md).
 
 ## Princípios
 - **Entre na conversa** que já corre na mente do leitor; continue o pensamento dele, não o seu.

@@ -27,10 +27,10 @@ Este é o livro mais avançado já escrito sobre copy de resposta direta, e a ba
 Do **inconsciente** ao **mais consciente**, o estado determina o ponto de partida e o tipo de lead. Inconsciente exige história e identidade; mais consciente quer preço, bônus e CTA. Já implementamos a taxonomia completa em [`../../../lib/taxonomies/awareness-levels.md`](../../../lib/taxonomies/awareness-levels.md), consumida pelo `market-sophistication-analyst`.
 
 ### Os 5 Estágios de Sofisticação de Mercado
-Do **primeiro a fazer o claim** ao **mercado exausto de tudo**. Estágio 1: diga o claim. Estágio 2: amplie-o. Estágio 3: introduza o **mecanismo** (o *como*). Estágio 4: eleve o mecanismo (mais fácil, mais rápido). Estágio 5: migre para identidade e experiência. Vive em [`../../../lib/taxonomies/sophistication-levels.md`](../../../lib/taxonomies/sophistication-levels.md), e dispara a escolha de mecanismo em [`../../frameworks/unique-mechanism.md`](../../frameworks/unique-mechanism.md).
+Do **primeiro a fazer o claim** ao **mercado exausto de tudo**. Estágio 1: diga o claim. Estágio 2: amplie-o. Estágio 3: introduza o **mecanismo** (o *como*). Estágio 4: eleve o mecanismo (mais fácil, mais rápido). Estágio 5: migre para identidade e experiência. Vive em [`../../../lib/taxonomies/sophistication-levels.md`](../../../lib/taxonomies/sophistication-levels.md), e dispara a escolha de mecanismo em [`../../frameworks/unique-mechanism.md`](../../../frameworks/unique-mechanism.md).
 
 ### Canalização do Desejo de Massa (Mass Desire)
-Desejo de massa = a soma de uma esperança ou medo já presente no mercado. A copy o **identifica, mensura (intensidade, urgência, escopo) e canaliza** para o produto. Cruzar consciência × sofisticação produz a matriz de decisão de lead, que implementamos em [`../../frameworks/awareness-x-sophistication.md`](../../frameworks/awareness-x-sophistication.md).
+Desejo de massa = a soma de uma esperança ou medo já presente no mercado. A copy o **identifica, mensura (intensidade, urgência, escopo) e canaliza** para o produto. Cruzar consciência × sofisticação produz a matriz de decisão de lead, que implementamos em [`../../frameworks/awareness-x-sophistication.md`](../../../frameworks/awareness-x-sophistication.md).
 
 ## Princípios
 - A copy não cria desejo; ela **canaliza** um desejo de massa que já existe. Mostre o desejo, não invente.

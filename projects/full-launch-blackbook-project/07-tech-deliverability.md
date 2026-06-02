@@ -48,7 +48,7 @@ A Fase 06 entrega o `artifact.funnel-map`, as `artifact.page-specs` e o `decisio
 - Registry escrito: [`decision-registry`](../../data/registries/decision-registry.md).
 
 ## Gates
-- [`tech-deliverability-checklist`](../../checklists/tech/tech-deliverability-checklist.md)
+- [`tech-deliverability-checklist`](../../checklists/tech-deliverability-checklist.md)
 - [`launch/launch-fallback-gate`](../../checklists/launch/launch-fallback-gate.md)
 
 ## Critério de Saída

@@ -48,7 +48,7 @@ A Fase 08 entrega o `artifact.run-of-show` aprovado (datas, horários, donos, fa
 - Registry escrito: [`offer-registry`](../../data/registries/offer-registry.md).
 
 ## Gates
-- [`events-logistics-checklist`](../../checklists/events/events-logistics-checklist.md)
+- [`events-logistics-checklist`](../../checklists/events-logistics-checklist.md)
 
 ## Critério de Saída
 O run-of-show aprovado e o money model presente foram confirmados; cada evento tem sala/plataforma, link canônico, ensaio e fallback; cada oferta do money model tem caminho de fulfillment plugado no funil; a ordem de entrega respeita a escada; todo limite de escassez bate com um número real no tracker (zero limite sem lastro); o events-logistics-checklist está verde e as ofertas estão registradas como active. A próxima fase é a [`10-affiliate-program`](10-affiliate-program.md), que recebe o calendário e o inventário para recrutar e armar o exército de afiliados.

@@ -93,7 +93,7 @@ Se faltam URLs/QR, **degrado** com placeholders e sinalizo ao tech-engineer. Se 
 
 ### 3.4 Convergência H↔L / Critério de Parada
 
-H reavalia cada peça: o insert casa com o **degrau** correto? O QR está fora de dobra, com quiet zone e contraste? As specs estão completas (formato, dimensões, sangria)? A urgência é verdadeira? O CTA físico→digital é único e de baixa fricção? Se não, volto ao L. **Critério de parada (DoD):** o [`mailer-checklist`](../checklists/mailer/mailer-checklist.md) verde + as peças prontas para o [`voice-style-guardian`](voice-style-guardian.md) e para produção.
+H reavalia cada peça: o insert casa com o **degrau** correto? O QR está fora de dobra, com quiet zone e contraste? As specs estão completas (formato, dimensões, sangria)? A urgência é verdadeira? O CTA físico→digital é único e de baixa fricção? Se não, volto ao L. **Critério de parada (DoD):** o [`mailer-checklist`](../checklists/mailer-checklist.md) verde + as peças prontas para o [`voice-style-guardian`](voice-style-guardian.md) e para produção.
 
 ## 4. Frameworks que Aplico
 
@@ -117,7 +117,7 @@ Antes de emitir, subo a escada de Bloom até **Avaliar/Recriar**:
 4. **Avaliar:** a urgência é **real**? O gancho da frente para a mão? O insert ascende ao degrau certo?
 5. **Criar:** se o formato não tem cut-through suficiente, **troco o formato** dentro do orçamento.
 
-Red-team: *"O que o [`compliance-auditor`](compliance-auditor.md) vetaria? (urgência falsa, claim sem lastro) O que o [`voice-style-guardian`](voice-style-guardian.md) reprovaria?"* Gate: [`mailer-checklist`](../checklists/mailer/mailer-checklist.md).
+Red-team: *"O que o [`compliance-auditor`](compliance-auditor.md) vetaria? (urgência falsa, claim sem lastro) O que o [`voice-style-guardian`](voice-style-guardian.md) reprovaria?"* Gate: [`mailer-checklist`](../checklists/mailer-checklist.md).
 
 ## 7. Poderes de Veto & Escalonamento
 

@@ -75,7 +75,7 @@ Transformar o Offer Book aprovado em peças físicas — mailers de save-the-dat
 - Mailer-checklist verde; peças registradas no `control-registry` e encaminhadas ao voice-pass.
 
 ## Gates
-[`mailer-checklist`](../../checklists/mailer/mailer-checklist.md). Gate de entrada (HARD STOP): [`offer-book-stack/offer-book-dod-gate`](../../checklists/offer-book-stack/offer-book-dod-gate.md).
+[`mailer-checklist`](../../checklists/mailer-checklist.md). Gate de entrada (HARD STOP): [`offer-book-stack/offer-book-dod-gate`](../../checklists/offer-book-stack/offer-book-dod-gate.md).
 
 ## Handoff
 **Próxima task:** [`voice-pass`](../qa-memory/voice-pass.md) (passe obrigatório do voice-style-guardian). **Contrato de saída:** cada peça tem copy + specs de produção completas, QR/CTA físico→digital coordenado, urgência real e (no insert) o degrau correto — pronta para o guardião e, após o veredito APROVADO, para o [`funnel-architect`](../funnel-tech/map-funnel.md) (destinos dos QR → páginas), o [`tech-links-deliverability-engineer`](../funnel-tech/plan-tech-deliverability.md) (URLs/UTM → rastreio) e o [`events-logistics-coordinator`](../ops/build-events-logistics.md) (save-the-date → logística do evento).

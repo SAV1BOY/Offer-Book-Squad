@@ -48,7 +48,7 @@ A Fase 07 do offer-book (incorporada na Fase 01) entrega o `artifact.unit-econom
 - Registry escrito: [`decision-registry`](../../data/registries/decision-registry.md) (o blackbook referencia o [`swipe-registry`](../../data/registries/swipe-registry.md)).
 
 ## Gates
-- [`affiliate-program-checklist`](../../checklists/affiliate/affiliate-program-checklist.md)
+- [`affiliate-program-checklist`](../../checklists/affiliate-program-checklist.md)
 
 ## Critério de Saída
 A unit economics foi usada como teto antes de definir percentuais; comissão + prêmios cabem no teto (LTV:CAC saudável após pagar afiliados); as cohorts estão definidas; o funil de afiliado está pronto para promover (links, swipe, datas, disclosure); a disclosure está presente em toda peça; o swipe de fechamento usa escassez verdadeira; o leaderboard motiva volume sem incentivar engano; o affiliate-program-checklist está verde. A próxima fase é a [`11-pr-plan`](11-pr-plan.md), que recebe os parceiros de topo que também geram PR e co-marketing.

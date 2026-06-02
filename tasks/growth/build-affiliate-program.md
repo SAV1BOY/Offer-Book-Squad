@@ -70,7 +70,7 @@ Roda em D6: ativa quando o Offer Book está aprovado, a unit economics é conhec
 - Leaderboard motiva volume sem incentivar engano; o affiliate-program-checklist verde; estrutura registrada.
 
 ## Gates
-[`affiliate-program-checklist`](../../checklists/affiliate/affiliate-program-checklist.md).
+[`affiliate-program-checklist`](../../checklists/affiliate-program-checklist.md).
 
 ## Handoff
 **Próxima task:** [`build-pr-plan`](build-pr-plan.md) — dono [`pr-brand-strategist`](../../agents/pr-brand-strategist.md), que recebe os parceiros de topo que também geram PR/co-marketing. Também entrega ao [`compliance-auditor`](../qa-memory/compliance-audit.md) o swipe e as regras para auditoria de claims e disclosure, e ao [`knowledge-librarian`](../../agents/knowledge-librarian.md) o que vira memória. **Garantia:** um programa onde a comissão cabe na economia, os parceiros são curados, o funil está pronto para promover sem fricção, e cada peça de swipe já carrega a disclosure de afiliação obrigatória.

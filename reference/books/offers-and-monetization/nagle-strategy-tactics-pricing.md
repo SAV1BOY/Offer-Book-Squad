@@ -24,13 +24,13 @@ Este é o tratado de referência do **preço por valor**. A tese central ataca t
 ## Frameworks/Modelos
 
 ### Value-Based Pricing (Preço Baseado em Valor)
-O método central: medir o **valor econômico** (valor de referência da melhor alternativa + valor de diferenciação) e capturar uma fatia dele no preço. Substitui custo e concorrência como base. Operacionalizamos isso em [`../../frameworks/pricing/value-based-pricing.md`](../../frameworks/pricing/value-based-pricing.md), que orienta o `pricing-wtp-strategist`.
+O método central: medir o **valor econômico** (valor de referência da melhor alternativa + valor de diferenciação) e capturar uma fatia dele no preço. Substitui custo e concorrência como base. Operacionalizamos isso em [`../../frameworks/pricing/value-based-pricing.md`](../../../frameworks/pricing/value-based-pricing.md), que orienta o `pricing-wtp-strategist`.
 
 ### Value Cascade (Cascata Estratégia → Tática)
-Preço não é um número solto; desce de uma cascata: **criar** valor → **comunicar** valor → **estabelecer** a estrutura/política de preço → **persuadir** (convencer o cliente do valor) → **precificar** o nível final. Pular um degrau (ex.: definir o número sem comunicar o valor) quebra a captura. Mapeia para a comunicação preço-valor em [`../../frameworks/price-anchoring.md`](../../frameworks/price-anchoring.md).
+Preço não é um número solto; desce de uma cascata: **criar** valor → **comunicar** valor → **estabelecer** a estrutura/política de preço → **persuadir** (convencer o cliente do valor) → **precificar** o nível final. Pular um degrau (ex.: definir o número sem comunicar o valor) quebra a captura. Mapeia para a comunicação preço-valor em [`../../frameworks/price-anchoring.md`](../../../frameworks/price-anchoring.md).
 
 ### Gestão da Sensibilidade ao Preço & Custos Relevantes
-Antes de mexer no preço, entenda os **efeitos de sensibilidade** (efeito do valor único, do custo compartilhado, do gasto total, da comparação difícil) e use só **custos incrementais e evitáveis** para decidir margem. Vira disciplina de unit economics no `unit-economics-stack-analyst`. Ver [`../../frameworks/pricing/packaging-good-better-best.md`](../../frameworks/pricing/packaging-good-better-best.md).
+Antes de mexer no preço, entenda os **efeitos de sensibilidade** (efeito do valor único, do custo compartilhado, do gasto total, da comparação difícil) e use só **custos incrementais e evitáveis** para decidir margem. Vira disciplina de unit economics no `unit-economics-stack-analyst`. Ver [`../../frameworks/pricing/packaging-good-better-best.md`](../../../frameworks/pricing/packaging-good-better-best.md).
 
 ## Princípios
 - Precifique pelo **valor**, não pelo custo nem pela concorrência; custo é piso, valor é teto.

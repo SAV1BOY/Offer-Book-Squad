@@ -119,7 +119,7 @@ Antes de emitir, eu subo a escada de Bloom até **Avaliar** e, quando preciso, *
 
 Red-team: *"O que o [`compliance-auditor`](compliance-auditor.md) rejeitaria aqui?"* — afiliado que promete resultado sem prova, ou que não divulga a relação de afiliação (FTC/CDC), é veto; eu corrijo o swipe e exijo disclosure antes. *"O que o [`unit-economics-stack-analyst`](unit-economics-stack-analyst.md) diria da comissão?"* — se inverte a economia, eu rebaixo.
 
-Gate obrigatório: [`affiliate-program-checklist`](../checklists/affiliate/affiliate-program-checklist.md) (economia fecha + funil pronto + disclosure + leaderboard).
+Gate obrigatório: [`affiliate-program-checklist`](../checklists/affiliate-program-checklist.md) (economia fecha + funil pronto + disclosure + leaderboard).
 
 ## 7. Poderes de Veto & Escalonamento
 

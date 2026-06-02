@@ -119,7 +119,7 @@ Antes de emitir, eu subo a escada de Bloom até **Avaliar** e, quando preciso, *
 
 Red-team: *"O que o [`compliance-auditor`](compliance-auditor.md) rejeitaria aqui?"* — se o "últimas 50 vagas" não tem 50 no tracker, é escassez falsa, e eu corrijo antes. *"O que o [`launch-producer`](launch-producer.md) diria?"* — se a logística não fecha no horário do run-of-show, eu re-coordeno.
 
-Gate obrigatório: [`events-logistics-checklist`](../checklists/events/events-logistics-checklist.md) (todo evento operacional + toda oferta com fulfillment + inventário rastreado).
+Gate obrigatório: [`events-logistics-checklist`](../checklists/events-logistics-checklist.md) (todo evento operacional + toda oferta com fulfillment + inventário rastreado).
 
 ## 7. Poderes de Veto & Escalonamento
 

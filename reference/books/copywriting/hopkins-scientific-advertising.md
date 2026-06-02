@@ -24,13 +24,13 @@ tags: [copywriting, hopkins, salesmanship-in-print, measurement, reason-why, tes
 ## Frameworks/Modelos
 
 ### Salesmanship in Print (Venda em Letra de Fôrma)
-A lente que rege tudo: trate cada anúncio como um vendedor que precisa **fechar**, não impressionar. Mede-se por venda, não por aplauso. Operacionalizamos isso na régua de "cada peça serve a uma decisão" (`decision_before_ornament`) e na estrutura de venda da `vsl-webinar-scriptwriter` via [`../../frameworks/copy/slippery-slide.md`](../../frameworks/copy/slippery-slide.md).
+A lente que rege tudo: trate cada anúncio como um vendedor que precisa **fechar**, não impressionar. Mede-se por venda, não por aplauso. Operacionalizamos isso na régua de "cada peça serve a uma decisão" (`decision_before_ornament`) e na estrutura de venda da `vsl-webinar-scriptwriter` via [`../../frameworks/copy/slippery-slide.md`](../../../frameworks/copy/slippery-slide.md).
 
 ### Reason-Why (A Razão Específica)
-Dê o **porquê** concreto de o produto ser superior — um detalhe verdadeiro e específico que vira prova. Quando ninguém no setor explicou um processo comum, explicá-lo primeiro o torna "seu" (pré-emptiva). Vira insumo do `mechanism-architect` e da cadeia em [`../../frameworks/proof-to-claim-chain.md`](../../frameworks/proof-to-claim-chain.md).
+Dê o **porquê** concreto de o produto ser superior — um detalhe verdadeiro e específico que vira prova. Quando ninguém no setor explicou um processo comum, explicá-lo primeiro o torna "seu" (pré-emptiva). Vira insumo do `mechanism-architect` e da cadeia em [`../../frameworks/proof-to-claim-chain.md`](../../../frameworks/proof-to-claim-chain.md).
 
 ### Test & Measure (Cupom Codificado)
-Decida por dados: cada anúncio carrega um cupom rastreável; mantém-se o que vende. Antecede o split-test moderno e alimenta o `control-registry`. Conecta com [`../../frameworks/awareness-x-sophistication.md`](../../frameworks/awareness-x-sophistication.md) e a disciplina de teste de Caples.
+Decida por dados: cada anúncio carrega um cupom rastreável; mantém-se o que vende. Antecede o split-test moderno e alimenta o `control-registry`. Conecta com [`../../frameworks/awareness-x-sophistication.md`](../../../frameworks/awareness-x-sophistication.md) e a disciplina de teste de Caples.
 
 ## Princípios
 - Propaganda é **venda multiplicada**; julgue cada peça pela venda, não pela beleza.

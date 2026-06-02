@@ -68,7 +68,7 @@ Roda em D7, por último: ativa quando a [`assemble-blackbook`](assemble-blackboo
 - O final-delivery-checklist verde; o ciclo do squad fechado.
 
 ## Gates
-[`final-delivery-checklist`](../../checklists/cross-squad/final-delivery-checklist.md).
+[`final-delivery-checklist`](../../checklists/final-delivery-checklist.md).
 
 ## Handoff
 **Fim do ciclo.** A memória atualizada alimenta o **próximo** lançamento: o [`offerbook-chief`](../../agents/offerbook-chief.md) e o [`offer-squad-architect`](../../agents/offer-squad-architect.md) consultam o `lessons-learned-registry` na [`intake-and-scope`](../planning/intake-and-scope.md) (memória antes de repetição), os autores de copy reusam o `swipe-registry`, e os controles vencedores do `control-registry` viram baseline. **Contrato:** nenhuma memória parcial ou não-conforme entra nos registries — só ativos de um lançamento fechado, aprovado no compliance e rastreáveis à fonte.

@@ -70,7 +70,7 @@ Roda em D6, **depois** do run-of-show: ativa quando o run-of-show do [`launch-pr
 - O events-logistics-checklist verde; ofertas registradas como `active` no `offer-registry` com caminho de entrega.
 
 ## Gates
-[`events-logistics-checklist`](../../checklists/events/events-logistics-checklist.md).
+[`events-logistics-checklist`](../../checklists/events-logistics-checklist.md).
 
 ## Handoff
 **Próximas tasks:** [`build-affiliate-program`](../growth/build-affiliate-program.md) — recebe o calendário de eventos onde afiliados podem participar e o inventário disponível para promoções; [`build-pr-plan`](../growth/build-pr-plan.md) — recebe os eventos que geram pauta de PR. Também entrega ao [`compliance-auditor`](../qa-memory/compliance-audit.md) o inventory tracker para auditoria de escassez real e ao [`knowledge-librarian`](../../agents/knowledge-librarian.md) o que vira memória. **Garantia:** um calendário com logística confirmada, um tracker onde cada limite é um número real, e um plano de fulfillment onde cada oferta vendida tem como ser entregue e resgatada.

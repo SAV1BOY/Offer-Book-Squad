@@ -24,13 +24,13 @@ Sugarman vendeu produtos caros por mala-direta e anúncio impresso longo (JS&A, 
 ## Frameworks/Modelos
 
 ### The Slippery Slide (A Escorrega)
-A estrutura de fluxo: título → subtítulo → primeira frase curtíssima → cada frase puxando a próxima. Mede-se pelo **atrito**: qualquer trecho que faz parar, some. Operacionalizamos isso na estrutura de VSL e carta em [`../../frameworks/copy/slippery-slide.md`](../../frameworks/copy/slippery-slide.md), usada pelo `vsl-webinar-scriptwriter`.
+A estrutura de fluxo: título → subtítulo → primeira frase curtíssima → cada frase puxando a próxima. Mede-se pelo **atrito**: qualquer trecho que faz parar, some. Operacionalizamos isso na estrutura de VSL e carta em [`../../frameworks/copy/slippery-slide.md`](../../../frameworks/copy/slippery-slide.md), usada pelo `vsl-webinar-scriptwriter`.
 
 ### Seeds of Curiosity (Sementes de Curiosidade)
-Frases-ponte que prometem algo logo à frente ("mas há mais", "deixe-me explicar", "a segunda razão vai te surpreender") e impedem o leitor de sair. Viram conectores de ritmo no `email-sms-sequence-writer` e nos ganchos de [`../../frameworks/copy/hook-frameworks.md`](../../frameworks/copy/hook-frameworks.md).
+Frases-ponte que prometem algo logo à frente ("mas há mais", "deixe-me explicar", "a segunda razão vai te surpreender") e impedem o leitor de sair. Viram conectores de ritmo no `email-sms-sequence-writer` e nos ganchos de [`../../frameworks/copy/hook-frameworks.md`](../../../frameworks/copy/hook-frameworks.md).
 
 ### Os Gatilhos Psicológicos
-Um repertório de gatilhos de compra — entre eles **envolvimento/posse** (fazer o leitor imaginar usando), **honestidade**, **curiosidade**, **senso de urgência**, **prova/credibilidade**, **ligação ao desejo** e **resolução de objeções no fluxo**. Cada gatilho é uma alavanca emocional com justificativa lógica. Mapeiam para a [`../../frameworks/value-equation.md`](../../frameworks/value-equation.md) e para os princípios de Cialdini.
+Um repertório de gatilhos de compra — entre eles **envolvimento/posse** (fazer o leitor imaginar usando), **honestidade**, **curiosidade**, **senso de urgência**, **prova/credibilidade**, **ligação ao desejo** e **resolução de objeções no fluxo**. Cada gatilho é uma alavanca emocional com justificativa lógica. Mapeiam para a [`../../frameworks/value-equation.md`](../../../frameworks/value-equation.md) e para os princípios de Cialdini.
 
 ## Princípios
 - A função de cada frase é fazer ler a **próxima**; mantenha a escorrega lisa, sem atrito.

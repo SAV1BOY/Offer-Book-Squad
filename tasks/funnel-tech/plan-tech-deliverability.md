@@ -71,7 +71,7 @@ Roda em D5, **depois** do funil: ativa quando (a) o [`funnel-architect`](../../a
 - Cada ponto crítico com plano B **testado**; o checklist técnico e o gate de fallback verdes; tudo registrado.
 
 ## Gates
-[`tech-deliverability-checklist`](../../checklists/tech/tech-deliverability-checklist.md) · [`launch/launch-fallback-gate`](../../checklists/launch/launch-fallback-gate.md).
+[`tech-deliverability-checklist`](../../checklists/tech-deliverability-checklist.md) · [`launch/launch-fallback-gate`](../../checklists/launch/launch-fallback-gate.md).
 
 ## Handoff
 **Próxima task:** [`build-run-of-show`](../ops/build-run-of-show.md) — dono [`launch-producer`](../../agents/launch-producer.md). **Contrato:** o produtor recebe o `tech-deliverability-plan` + `links-urls` + plano de fallback para entrar no run-of-show e na surge-ops do dia (capacidade confirmada, URLs canônicas, limites de envio). Também entrega ao [`events-logistics-coordinator`](../ops/build-events-logistics.md) as integrações de logística/3PL e ao [`compliance-auditor`](../qa-memory/compliance-audit.md) os links/rastreamento para checagem de privacidade. **Garantia:** funil testado sob carga, integrado, à prova de loop, com links rastreados, e-mail autenticado/aquecido e fallback por ponto crítico — ou um flag explícito de `pendente`/`bloqueado` com o risco nomeado.

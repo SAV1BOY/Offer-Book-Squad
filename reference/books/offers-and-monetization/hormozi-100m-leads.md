@@ -24,16 +24,16 @@ Uma oferta imbatível não serve para nada se ninguém a vê. Este livro é o mo
 ## Frameworks/Modelos
 
 ### Core Four (Os Quatro Núcleos)
-Toda divulgação cai em quatro quadrantes, cruzando **público quente vs. frio** com **um-para-um vs. um-para-muitos**: (1) contatar quem te conhece, (2) postar conteúdo para quem te segue, (3) abordagem fria direta, (4) anúncios pagos para frios. Domina-se um, depois soma-se o seguinte. Nosso `ad-creative-factory` mapeia ângulos por canal usando [`../../frameworks/copy/hook-frameworks.md`](../../frameworks/copy/hook-frameworks.md); a seleção de canal informa o `funnel-architect` em [`../../frameworks/offer-to-funnel-mapping.md`](../../frameworks/offer-to-funnel-mapping.md).
+Toda divulgação cai em quatro quadrantes, cruzando **público quente vs. frio** com **um-para-um vs. um-para-muitos**: (1) contatar quem te conhece, (2) postar conteúdo para quem te segue, (3) abordagem fria direta, (4) anúncios pagos para frios. Domina-se um, depois soma-se o seguinte. Nosso `ad-creative-factory` mapeia ângulos por canal usando [`../../frameworks/copy/hook-frameworks.md`](../../../frameworks/copy/hook-frameworks.md); a seleção de canal informa o `funnel-architect` em [`../../frameworks/offer-to-funnel-mapping.md`](../../../frameworks/offer-to-funnel-mapping.md).
 
 ### Lead Magnet (Ímã de Leads)
-Estrutura de quatro passos: revelar o problema, prometer a solução, entregar valor real e abrir o caminho natural para a oferta paga. O ímã deve ser tão bom que o prospect pagaria por ele. Conecta com o desenho de oferta de atração em [`../../frameworks/money-model-designer/attraction-offer-design.md`](../../frameworks/money-model-designer/attraction-offer-design.md).
+Estrutura de quatro passos: revelar o problema, prometer a solução, entregar valor real e abrir o caminho natural para a oferta paga. O ímã deve ser tão bom que o prospect pagaria por ele. Conecta com o desenho de oferta de atração em [`../../frameworks/money-model-designer/attraction-offer-design.md`](../../../frameworks/money-model-designer/attraction-offer-design.md).
 
 ### "More, Better, New" (Mais, Melhor, Novo)
-O motor de escala. Para crescer leads: faça **mais** do que já funciona, melhore a **qualidade/conversão** do que faz, ou abra **novos** canais e públicos — nessa ordem de prioridade, porque "mais" e "melhor" são mais baratos que "novo". Vira o critério de escala do `launch-producer` em [`../../frameworks/launch/runway-and-phases.md`](../../frameworks/launch/runway-and-phases.md).
+O motor de escala. Para crescer leads: faça **mais** do que já funciona, melhore a **qualidade/conversão** do que faz, ou abra **novos** canais e públicos — nessa ordem de prioridade, porque "mais" e "melhor" são mais baratos que "novo". Vira o critério de escala do `launch-producer` em [`../../frameworks/launch/runway-and-phases.md`](../../../frameworks/launch/runway-and-phases.md).
 
 ### Lead Getters (alavancas de terceiros)
-Quatro formas de fazer outros gerarem leads por você: clientes (indicação), funcionários, agências e afiliados. Alimenta o `affiliate-program-architect` via [`../../frameworks/launch/affiliate-army.md`](../../frameworks/launch/affiliate-army.md).
+Quatro formas de fazer outros gerarem leads por você: clientes (indicação), funcionários, agências e afiliados. Alimenta o `affiliate-program-architect` via [`../../frameworks/launch/affiliate-army.md`](../../../frameworks/launch/affiliate-army.md).
 
 ## Princípios
 - Leads não bastam; persiga **leads engajados** — quem agiu, não quem só viu.
@@ -54,4 +54,4 @@ Quatro formas de fazer outros gerarem leads por você: clientes (indicação), f
 - [`hormozi-100m-offers.md`](hormozi-100m-offers.md) — a oferta que o fluxo de leads alimenta.
 - [`hormozi-100m-money-models.md`](hormozi-100m-money-models.md) — onde o lead magnet vira oferta de atração na escada.
 - [`../copywriting/halbert-boron-letters.md`](../copywriting/halbert-boron-letters.md) — o "starving crowd" como pré-condição de leads baratos.
-- [`../../lib/taxonomies/offer-types.md`](../../lib/taxonomies/offer-types.md) · [`../../lib/taxonomies/awareness-levels.md`](../../lib/taxonomies/awareness-levels.md)
+- [`../../lib/taxonomies/offer-types.md`](../../../lib/taxonomies/offer-types.md) · [`../../lib/taxonomies/awareness-levels.md`](../../../lib/taxonomies/awareness-levels.md)
