@@ -288,27 +288,63 @@ routing:
 # ============================================================
 # CROSS-SQUAD INTEGRATION (bidirecional)
 # ============================================================
-cross_squad:
+cross_squad:                         # os 12 squads do ecossistema MMOS (este repo é single-squad; vizinhos são integração-por-design)
+  # --- UPSTREAM (entregam PARA o offer book) ---
   deepresearch_squad:
-    handoff_from_research: [market sizing -> data/research, VOC + competitor intel -> data/research]
+    handoff_from: [market sizing, VOC, competitor intel]
+    handoff_to: [research requests, scope]
     shared_assets: [market-theses, competitive-intelligence, audience-insights]
+  advisory_board_squad:
+    handoff_from: [strategic critique, risk flags]
+    handoff_to: [offer + big idea for stress-test]
+    shared_assets: [strategic-review, risk-assessment]
+  storytelling_squad:
+    handoff_from: [narrative arcs, hero-journey, epiphany-bridge]
+    handoff_to: [big idea + mechanism + proof]
+    shared_assets: [narrative-arcs, proof-points]
+  movement_squad:
+    handoff_from: [community signals, collective-identity angles]
+    handoff_to: [positioning + identity big idea]
+    shared_assets: [identity-belonging, community-language]
+  pre_programming_squad:
+    handoff_from: [product readiness, scope, delivery feasibility]
+    handoff_to: [offer specs that require build or fulfillment]
+    shared_assets: [scope, readiness-review]
+  # --- DOWNSTREAM (o offer book entrega PARA) ---
   copy_squad:
-    handoff_to_copy: [offer book + big idea -> copy/reference, proof -> copy/data]
+    handoff_to: [offer book + big idea, proof]
+    handoff_from: [polished long-form copy, swipe]
     shared_assets: [market-language, winning-controls]
   brand_squad:
+    handoff_to: [positioning + big idea]
+    handoff_from: [brand voice, category analysis]
     shared_assets: [positioning, brand-voice]
   traffic_squad:
+    handoff_to: [ad matrix + offer, funnel map]
+    handoff_from: [ad performance, winning hooks]
     shared_assets: [ad-creative, channel-intelligence]
   design_squad:
+    handoff_to: [page specs + ad matrix, mailer specs]
+    handoff_from: [page/ad/mailer visuals, brand assets]
     shared_assets: [landing-pages, creative-assets]
   data_squad:
+    handoff_to: [pricing test design, conversion data]
+    handoff_from: [WTP analysis, cohort/LTV analysis]
     shared_assets: [pricing-science, cohort-analysis]
+  cybersecurity_squad:
+    handoff_to: [deliverability review, data-collection review]
+    handoff_from: [privacy/compliance assessment, LGPD/GDPR review]
+    shared_assets: [deliverability, data-privacy]
   c_level_squad:
+    handoff_to: [launch business case + projections]
+    handoff_from: [revenue targets + strategic priority]
     shared_assets: [revenue-models, launch-objectives]
-  advisory_board_squad:
-    handoff_to_advisory: [offer + big idea for stress-test -> advisory/tasks]
-    handoff_from_advisory: [strategic critique + risk flags -> data/decisions]
-    shared_assets: [strategic-review, risk-assessment]
+  # --- protocolo de toda transição ---
+  contract: templates/cross-squad/handoff-contract-template
+  out_gate: cross-squad/cross-squad-handoff-quality
+  in_gate: cross-squad/cross-squad-asset-validation
+  log: data/handoffs
+  matrix_doc: docs/handoff-matrix.md
 
 # ============================================================
 # QUALITY GATES
@@ -388,6 +424,9 @@ delegation_rules:                # task fora do escopo -> squad destino (+ contr
   upstream:                      # quem entrega PARA o offer book
     - { need: "market sizing / VOC / competitor intel", to: deepresearch_squad }
     - { need: "stress-test estratégico + risk flags",   to: advisory_board_squad }
+    - { need: "arcos narrativos / hero-journey p/ a big idea", to: storytelling_squad }
+    - { need: "comunidade / identidade coletiva",        to: movement_squad }
+    - { need: "prontidão de produto / escopo de entrega", to: pre_programming_squad }
   downstream:                    # offer book entrega PARA
     - { deliver: "polished long-form copy",        to: copy_squad }
     - { deliver: "ad creative + funnel p/ tráfego", to: traffic_squad }
@@ -395,6 +434,7 @@ delegation_rules:                # task fora do escopo -> squad destino (+ contr
     - { deliver: "positioning + brand voice",       to: brand_squad }
     - { deliver: "pricing test + cohort analysis",  to: data_squad }
     - { deliver: "business case + projeções",       to: c_level_squad }
+    - { deliver: "review de deliverability / coleta de dados (LGPD)", to: cybersecurity_squad }
   contract_required: templates/cross-squad/handoff-contract-template
   handoff_gate: cross-squad/cross-squad-handoff-quality
   ingest_gate: cross-squad/cross-squad-asset-validation

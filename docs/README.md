@@ -39,6 +39,7 @@ tags: [docs, index, navigation]
 - [`quality-gate-cascade.md`](quality-gate-cascade.md) — o DAG completo dos quality gates (6 níveis).
 - [`improvement-loop-kaizen.md`](improvement-loop-kaizen.md) — o loop de aprendizado (memória → próximo lançamento).
 - [`traceability-matrix.md`](traceability-matrix.md) — task → agents → frameworks → checklists → templates → registries → metrics (gerada por script).
+- [`handoff-matrix.md`](handoff-matrix.md) — handoffs explícitos: intra-squad (agente→agente, por camada) + cross-squad (os 12 squads MMOS).
 - [`audit-report.md`](audit-report.md) — relatório da auditoria interna total (score por camada + verdict).
 
 ## Mapa rápido do repositório

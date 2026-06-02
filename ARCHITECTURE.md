@@ -179,7 +179,7 @@ O squad é um **setor** numa multinacional de squads, em 4 camadas: agentes (L1)
 ## 10. Recebendo & entregando handoffs (input acceptance)
 
 **Entrada:** todo input (de squad upstream ou de fase anterior) só é aceito se passa o **input acceptance** — campos presentes + qualidade mínima por campo — definido no contrato ([`templates/cross-squad/handoff-contract-template.md`](templates/cross-squad/handoff-contract-template.md)) e validado por [`cross-squad-asset-validation`](checklists/cross-squad/cross-squad-asset-validation.md). Input fraco é **devolvido**, não ingerido.
-**Saída:** todo output que deixa o squad passa por [`cross-squad-handoff-quality`](checklists/cross-squad/cross-squad-handoff-quality.md), carrega o contrato e é logado em [`data/handoffs/`](data/handoffs/README.md) + `decision-registry`. Quem entrega para quem está em `config.yaml` `delegation_rules`.
+**Saída:** todo output que deixa o squad passa por [`cross-squad-handoff-quality`](checklists/cross-squad/cross-squad-handoff-quality.md), carrega o contrato e é logado em [`data/handoffs/`](data/handoffs/README.md) + `decision-registry`. Quem entrega para quem está em `config.yaml` `delegation_rules` e na matriz completa [`docs/handoff-matrix.md`](docs/handoff-matrix.md) (`upstream`=handoff_from, `downstream`=handoff_to; os 12 squads do ecossistema MMOS).
 
 ## 11. Ambiguidade, baixa confiança & conflito
 

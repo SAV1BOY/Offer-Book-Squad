@@ -1,7 +1,7 @@
 {
  "dir": ".",
- "mapped": 638,
- "unique_ids": 638,
+ "mapped": 639,
+ "unique_ids": 639,
  "collisions": [],
  "missing_id": [],
  "mismatch": [],
@@ -264,6 +264,7 @@
   "doc.failure-paths-and-gate-recovery": "docs/failure-paths-and-gate-recovery.md",
   "doc.faq": "docs/faq.md",
   "doc.glossary": "docs/glossary.md",
+  "doc.handoff-matrix": "docs/handoff-matrix.md",
   "doc.hrm-governance": "docs/hrm-governance.md",
   "doc.improvement-loop-kaizen": "docs/improvement-loop-kaizen.md",
   "doc.methodology-hrm-cot-tot-bloom": "docs/methodology-hrm-cot-tot-bloom.md",

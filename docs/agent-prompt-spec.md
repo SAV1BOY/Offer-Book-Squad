@@ -47,6 +47,8 @@ tags: [<...>]
 ```
 Todo id deve estar **reservado em `config.yaml`** e resolver (bijeção verificada pelo `qa-runner`).
 
+> **Termos de handoff:** `upstream` = *handoff_from* (quem me alimenta) e `downstream` = *handoff_to* (quem eu alimento). A matriz canônica de todos os handoffs (intra-squad agente→agente + cross-squad dos 12) está em [`handoff-matrix.md`](handoff-matrix.md).
+
 ---
 
 ## O esqueleto (12 seções, nesta ordem)
