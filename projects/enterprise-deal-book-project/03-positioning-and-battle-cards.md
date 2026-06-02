@@ -38,7 +38,7 @@ A [`02-value-and-pricing-packaging`](02-value-and-pricing-packaging.md) entrega 
 3. Conecte o insight à força única com o mecanismo de [`unique-mechanism.md`](../../frameworks/unique-mechanism.md): o reframe leva, por lógica, à sua solução.
 4. Destile UMA tese de reframe com [`big-idea-generator`](../../frameworks/big-idea-generator.md) e [`power-of-one`](../../frameworks/power-of-one.md). Múltiplas teses = reprovação.
 5. Mapeie a categoria e o "não fazer nada" como concorrente com [`positioning/category-design`](../../frameworks/positioning/category-design.md): o status quo derruba mais negócios que o rival direto.
-6. Monte uma battle card por concorrente e pelo status quo: a objeção típica, a refutação, a prova diferenciadora de [`proof-to-claim-chain`](../../frameworks/proof-to-claim-chain.md).
+6. Monte uma battle card por concorrente e pelo status quo com o [`battle-cards-template`](../../templates/strategy/battle-cards-template.md) (parte do [`offer-book-master-b2b`](../../templates/core/offer-book-master-b2b.md)): a objeção típica, a refutação, a prova diferenciadora de [`proof-to-claim-chain`](../../frameworks/proof-to-claim-chain.md).
 7. Personalize a munição por papel da DMU: o que o CFO, o técnico e o usuário precisam ouvir contra cada alternativa.
 8. Trave o posicionamento e as battle cards. Atualize o `big-idea-registry` e o `decision-registry`.
 

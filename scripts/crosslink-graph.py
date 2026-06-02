@@ -17,7 +17,7 @@ from __future__ import annotations
 import argparse, json, os, re, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SKIP_DIRS = {".git", "node_modules", "__pycache__", ".venv", "venv", "env"}
+SKIP_DIRS = {".git", "node_modules", "__pycache__", ".venv", "venv", "env", "fixtures"}
 # .md "raiz/entrada" que não precisam ser apontados por ninguém (não contam como órfãos):
 ENTRYPOINTS = {"README.md", "ARCHITECTURE.md", "BUILD-PROGRESS.md"}
 

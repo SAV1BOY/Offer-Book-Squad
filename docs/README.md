@@ -35,6 +35,7 @@ tags: [docs, index, navigation]
 
 ## Governança HRM & operação
 - [`hrm-governance.md`](hrm-governance.md) — as 4 camadas HRM, escalonamento, comando central, go/no-go.
+- [`hrm-central-spec.md`](hrm-central-spec.md) — interface executável do HRM Central (Squad Rollup, go/no-go sistêmico) + `scripts/hrm-rollup.py`.
 - [`team-coordination.md`](team-coordination.md) — os 10 grupos funcionais (teams/swarms): líder, sequência, gate intermediário.
 - [`quality-gate-cascade.md`](quality-gate-cascade.md) — o DAG completo dos quality gates (6 níveis).
 - [`improvement-loop-kaizen.md`](improvement-loop-kaizen.md) — o loop de aprendizado (memória → próximo lançamento).

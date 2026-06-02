@@ -23,6 +23,11 @@ env/
 /.coverage-report.json
 /.crosslink-graph.json
 /.build-manifest.json
+/.citation-report.json
+/.compliance-report.json
+/.id-resolver.json
+/.*-report.json
+/.*-resolver.json
 *.tmp
 
 # ─── Secrets (never commit live keys) ────────────────────────────────

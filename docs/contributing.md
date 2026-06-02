@@ -37,6 +37,7 @@ Manter os ~600 arquivos coerentes exige disciplina. Siga este fluxo.
 - Commits descritivos por camada (`feat(<camada>): ...`).
 - Branch de feature; nunca commitar copy/escassez falsa (o `compliance-auditor` veta).
 - **Hooks (uma vez):** `bash scripts/install-hooks.sh` ativa o pre-commit, que regenera as matrizes geradas e roda `qa-runner --strict` + `crosslink-graph` + `id-resolver` + `citation-checker`, **bloqueando** qualquer commit abaixo do padrão GOLD.
+- **CI:** [`.github/workflows/qa.yml`](../.github/workflows/qa.yml) espelha o hook no servidor (+ `compliance-scanner --strict`), bloqueando merge abaixo do padrão. `compliance-scanner` só falha em **copy viva** (frontmatter `compliance_scan: live` ou fora dos dirs de sistema); metodologia/templates são informativos.
 
 ## 5. Princípios que não se quebram
 `offer_before_persuasion` · `one_big_idea` · `truthful_scarcity` · `value_equation_test` · `money_model_spine`. Quando em dúvida, leia [`ARCHITECTURE.md`](../ARCHITECTURE.md) e [`docs/methodology-hrm-cot-tot-bloom.md`](methodology-hrm-cot-tot-bloom.md).

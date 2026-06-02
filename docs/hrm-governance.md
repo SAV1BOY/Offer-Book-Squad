@@ -57,4 +57,6 @@ Três marcos, cada um = gate + `min_score: gold` (`readiness_rules`):
 - Distribui prioridade/metas (recebe do `c_level_squad`) e decide se um lançamento entra na fila.
 - Aciona o **Kaizen** entre squads (ver [`improvement-loop-kaizen`](improvement-loop-kaizen.md)).
 
+**Interface executável:** a spec completa do comando central está em [`hrm-central-spec`](hrm-central-spec.md). Este squad já é **hrm_central-ready**: emite seu **Squad Rollup** padrão via `python scripts/hrm-rollup.py --case <id>` → [`data/hrm/`](../data/hrm/README.md), pronto para o go/no-go sistêmico.
+
 > Princípio: o sistema falha **fechado** (bloqueia entrega ruim) e **aprende em loop** (memória → próximo intake). Nenhuma camada aprova sozinha algo abaixo de `gold`.

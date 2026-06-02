@@ -27,7 +27,32 @@ except Exception:
     HAVE_YAML = False
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SKIP_DIRS = {".git", "node_modules", "__pycache__", ".venv", "venv", "env"}
+SKIP_DIRS = {".git", "node_modules", "__pycache__", ".venv", "venv", "env", "fixtures"}
+
+# Diretórios de SISTEMA/METODOLOGIA: discutem claims/escassez como exemplo/regra,
+# não fazem claims vivos ao cliente. Em --strict são informativos (não falham).
+# Copy VIVA (que DEVE passar no --strict) = fora destes dirs, OU frontmatter
+# `compliance_scan: live`. Opt-out explícito: `compliance_exempt: true`.
+EXEMPT_TOPDIRS = {
+    "reference", "frameworks", "agents", "docs", "lib", "checklists",
+    "workflows", "tasks", "projects", "authority", "archive", "swipe",
+    "swipe-sources", "data", "voice", "phrases", "scripts", "templates",
+}
+SCAN_LIVE_RE = re.compile(r"^compliance_scan:\s*live\b", re.MULTILINE)
+EXEMPT_FLAG_RE = re.compile(r"^compliance_exempt:\s*true\b", re.MULTILINE)
+
+
+def is_exempt(rel: str, raw: str) -> bool:
+    """Copy viva (não-exempt) falha em --strict; sistema/metodologia é informativo."""
+    head = raw[:1200]
+    if SCAN_LIVE_RE.search(head):
+        return False                       # opt-in explícito: tratar como copy viva
+    if EXEMPT_FLAG_RE.search(head):
+        return True                        # opt-out explícito
+    top = rel.split("/")[0]
+    if top == rel:                         # arquivo na raiz (README/ARCHITECTURE/...) = sistema
+        return True
+    return top in EXEMPT_TOPDIRS
 
 FM_RE = re.compile(r"^---\s*\n.*?\n---\s*\n", re.DOTALL)
 FENCE_RE = re.compile(r"```.*?```", re.DOTALL)
@@ -77,7 +102,9 @@ def strip_noise(text: str) -> str:
 
 def scan_file(path: str) -> dict:
     rel = os.path.relpath(path, ROOT).replace(os.sep, "/")
-    text = strip_noise(open(path, encoding="utf-8").read())
+    raw = open(path, encoding="utf-8").read()
+    exempt = is_exempt(rel, raw)
+    text = strip_noise(raw)
     unproven, scarcity = [], []
     for i, line in enumerate(text.splitlines(), 1):
         s = line.strip()
@@ -89,7 +116,8 @@ def scan_file(path: str) -> dict:
         if SCARCITY_RE.search(s) and not TRUTH_QUALIFIER_RE.search(s):
             scarcity.append({"line": i, "text": s[:90]})
     flags = len(unproven) + len(scarcity)
-    return {"rel": rel, "flags": flags, "unproven_claims": unproven, "scarcity": scarcity}
+    return {"rel": rel, "flags": flags, "exempt": exempt,
+            "unproven_claims": unproven, "scarcity": scarcity}
 
 
 def main():
@@ -106,12 +134,13 @@ def main():
 
     results = [scan_file(p) for p in sorted(iter_md(target))]
     flagged = [r for r in results if r["flags"]]
+    strict_fail = [r for r in flagged if not r["exempt"]]
     total_claims = sum(len(r["unproven_claims"]) for r in results)
     total_scarcity = sum(len(r["scarcity"]) for r in results)
 
     label = f" — {a.dir}" if a.dir != "." else ""
     print(f"\n=== COMPLIANCE-SCANNER{label} (heurístico) ===")
-    print(f"arquivos: {len(results)} · arquivos sinalizados: {len(flagged)}")
+    print(f"arquivos: {len(results)} · sinalizados: {len(flagged)} ({len(strict_fail)} em copy viva / escopo estrito)")
     print(f"claims sem prova (suspeitos): {total_claims} · escassez/urgência suspeita: {total_scarcity}")
     if not a.quiet:
         for r in flagged[:60]:
@@ -130,10 +159,21 @@ def main():
                   open(os.path.join(ROOT, ".compliance-report.json"), "w"),
                   ensure_ascii=False, indent=1)
 
-    # Informativo por padrão; --strict transforma flags em falha.
-    ok = (not a.strict) or (len(flagged) == 0)
-    verdict = "OK ✅" if not flagged else ("REVISAR ⚠ (informativo)" if not a.strict else "FALHA ❌")
-    print(f"\nRESULTADO: {verdict} · {len(flagged)} arquivo(s) sinalizado(s)\n")
+    # --strict só FALHA em copy VIVA (não-exempt); sistema/metodologia é informativo.
+    if a.strict and strict_fail and not a.quiet:
+        print("  — falhas em escopo estrito (copy viva):")
+        for r in strict_fail[:30]:
+            print(f"    ✗ {r['rel']} — claims:{len(r['unproven_claims'])} escassez:{len(r['scarcity'])}")
+    ok = (not a.strict) or (len(strict_fail) == 0)
+    if not flagged:
+        verdict = "OK ✅"
+    elif not a.strict:
+        verdict = "REVISAR ⚠ (informativo)"
+    elif strict_fail:
+        verdict = "FALHA ❌"
+    else:
+        verdict = "OK ✅ (flags só em dirs de sistema/metodologia — informativo)"
+    print(f"\nRESULTADO: {verdict} · {len(flagged)} sinalizado(s) · {len(strict_fail)} em escopo estrito\n")
     sys.exit(0 if ok else 1)
 
 

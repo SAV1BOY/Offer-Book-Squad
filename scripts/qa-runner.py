@@ -41,7 +41,7 @@ WORD_FLOOR = {
     "registry": 90, "component": 120, "pattern": 150, "utility": 120,
     "taxonomy": 200, "doc": 150,
 }
-SKIP_DIRS = {".git", "node_modules", "__pycache__", ".venv", "venv"}
+SKIP_DIRS = {".git", "node_modules", "__pycache__", ".venv", "venv", "fixtures"}
 # arquivos md sem frontmatter permitidos (infra de repo):
 NO_FRONTMATTER_OK = {"README.md", "ARCHITECTURE.md", "BUILD-PROGRESS.md"}
 
