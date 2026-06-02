@@ -1,0 +1,4 @@
+etapa,gatilho,oferta,cta,redirecionamento
+captura-de-lead,clique-no-anuncio,ATR-01,"Quero meu diagnostico por R$27",pagina-de-checkout
+checkout-com-upsell,conclusao-do-diagnostico,CORE-01,"Quero o Motor 72h",oferta-de-upsell-no-pico
+upsell-no-pico,clique-no-upsell,UP-01,"Sim, instalem para mim",pagina-de-obrigado

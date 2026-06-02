@@ -69,5 +69,5 @@ As cifras de conversão por etapa **não são auditadas aqui** — o agregado de
 ¹ Growth Models, *Behind the curtain of a $1B newsletter business*: <https://growthmodels.co/agora-growth-study/>, acesso 2026-06-02.
 ² beehiiv Blog, *Agora Financial's Blueprint for Email Marketers*: <https://blog.beehiiv.com/p/agora-financial-case-study>, acesso 2026-06-02.
 ³ Game of Conversions, *Agora Financial — How To Nail A Prediction Lead*: <https://gameofconversions.com/agora-financial-how-to-nail-a-prediction-lead-a-breakdown/>, acesso 2026-06-02.
-> Métricas de conversão por etapa marcadas como **padrão representativo do mercado**, não auditadas.
+> **Fonte:** agregados públicos via Growth Models e beehiiv (ver notas ¹²³). Métricas de conversão por etapa marcadas como **padrão representativo do mercado**, não auditadas.
 > **Anti-verbatim:** estrutura e princípios em redação original. Citação literal ≤ 25 palavras, atribuída.

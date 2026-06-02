@@ -63,5 +63,5 @@ As taxas por etapa são **padrão representativo do mercado**, não cifras de um
 
 ## Fontes
 ¹ Guinness World Records — *Fastest-selling non-fiction book*: <https://www.guinnessworldrecords.com/world-records/78599-fastest-selling-non-fiction-book>; cobertura do lançamento (cifra de faturamento não auditada): <https://selfpublishing.com/alex-hormozi-book-launch/>, acesso 2026-06-02.
-> Taxas por etapa do funil marcadas como **padrão representativo do mercado**, não auditadas.
+> **Fonte:** Guinness World Records (2025) e cobertura do lançamento (ver nota ¹). Taxas por etapa do funil marcadas como **padrão representativo do mercado**, não auditadas.
 > **Anti-verbatim:** estrutura e princípios em redação original. Citação literal ≤ 25 palavras, atribuída.

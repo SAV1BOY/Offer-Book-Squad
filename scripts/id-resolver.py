@@ -45,6 +45,8 @@ SUBDIR_SINGULAR = {
     ("data", "registries"): "registry",
     ("voice", "profiles"): "profile",
     ("reference", "swipe-breakdowns"): "swipe-breakdown",
+    ("reference", "case-studies"): "case",
+    ("reference", "industries"): "industry",
 }
 
 
@@ -56,9 +58,15 @@ def derive_id(relpath: str) -> str:
     if parts[-1].lower() == "readme":
         parts[-1] = "readme"
     top = parts[0]
+    # templates: o sufixo "-template" é redundante no id (o type já é 'template').
+    if top == "templates" and parts[-1].endswith("-template"):
+        parts[-1] = parts[-1][: -len("-template")]
     # Caso especial: lib/taxonomies/X -> taxonomy.X (descarta o prefixo lib).
     if len(parts) >= 2 and (top, parts[1]) == ("lib", "taxonomies"):
         return ".".join(["taxonomy"] + parts[2:])
+    # Caso especial: reference/books/<tema>/X -> reference.book.X (colapsa o tema).
+    if top == "reference" and len(parts) >= 2 and parts[1] == "books":
+        return ".".join(["reference", "book", parts[-1]])
     out = [PREFIX_MAP.get(top, top)]
     if len(parts) >= 2 and (top, parts[1]) in SUBDIR_SINGULAR:
         out.append(SUBDIR_SINGULAR[(top, parts[1])])

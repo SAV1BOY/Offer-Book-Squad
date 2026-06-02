@@ -16,7 +16,7 @@ tags: [swipe, teardown, launch, money-model, cfa, upsell, continuity, hormozi, g
 
 # Teardown: Lançamento $100M Money Models (Hormozi, 2025)
 
-> **Este arquivo é o padrão-ouro da pasta.** Disseca a *estrutura* de um lançamento-recorde, não a copy. Use-o como gabarito de profundidade para os outros teardowns.
+> **Este arquivo é o padrão-ouro da pasta.** Disseca a *estrutura* de um lançamento-recorde, não a copy — gabarito para os outros teardowns.
 
 ## O que é
 Arquétipo: **lançamento de produto-âncora barato que existe para financiar a aquisição de clientes caros** — um "Launch Black Book" em forma viva. O produto na vitrine (um livro de US$30) não é o negócio; é a **oferta de atração** no topo de uma escada. O evento foi desenhado para converter um livro de margem baixa numa máquina de aquisição financiada pelo cliente (CFA): o caixa do dia paga a mídia do dia e ainda recruta compradores para ofertas de continuidade de alto valor. O lançamento entrou para o Guinness como o livro de não-ficção mais vendido em 24 horas, com **2.917.443 cópias** (Las Vegas, 17 ago. 2025). Não estudamos aqui as palavras — estudamos o **esqueleto econômico e sequencial** que qualquer squad pode remontar com outro produto.

@@ -63,5 +63,5 @@ As taxas e comissões (exceto o número Guinness) são **padrão representativo 
 
 ## Fontes
 ¹ Guinness World Records — *Fastest-selling non-fiction book* (Hormozi, 2.917.443 cópias, 17 ago. 2025): <https://www.guinnessworldrecords.com/world-records/78599-fastest-selling-non-fiction-book>, acesso 2026-06-02.
-> Comissões e taxas de etapa (exceto o número Guinness) marcadas como **padrão representativo do mercado**, não auditadas. Apoio metodológico: Jeff Walker, *Launch* (2014); Russell Brunson, *Expert Secrets* (2017/2020).
+> **Fonte:** Guinness World Records (2025); apoio metodológico de Jeff Walker, *Launch* (2014) e Russell Brunson, *Expert Secrets* (2017/2020). Comissões e taxas de etapa (exceto o número Guinness): **padrão representativo do mercado**, não auditadas.
 > **Anti-verbatim:** estrutura e princípios em redação original. Citação literal ≤ 25 palavras, atribuída.
