@@ -23,7 +23,7 @@ except Exception:
     print("ERRO: pyyaml necessário (pip install pyyaml)"); sys.exit(2)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SKIP_DIRS = {".git", "node_modules", "__pycache__", ".venv", "venv", "env"}
+SKIP_DIRS = {".git", "node_modules", "__pycache__", ".venv", "venv", "env", "fixtures"}
 
 # Dirs que exigem proveniência (ARCHITECTURE §7; style-guide §3).
 CITABLE_PREFIXES = ("reference/", "frameworks/reference-intellectual/", "swipe/", "swipe-sources/")

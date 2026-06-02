@@ -27,7 +27,7 @@ except Exception:
     HAVE_YAML = False
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SKIP_DIRS = {".git", "node_modules", "__pycache__", ".venv", "venv", "env"}
+SKIP_DIRS = {".git", "node_modules", "__pycache__", ".venv", "venv", "env", "fixtures"}
 
 # Diretórios de SISTEMA/METODOLOGIA: discutem claims/escassez como exemplo/regra,
 # não fazem claims vivos ao cliente. Em --strict são informativos (não falham).

@@ -26,5 +26,8 @@ python3 scripts/id-resolver.py --check >/dev/null 2>&1 || fail "bijeção id<->p
 echo "[pre-commit] citation-checker (<=25 palavras)..."
 python3 scripts/citation-checker.py >/dev/null 2>&1 || fail "citações (python3 scripts/citation-checker.py)"
 
+echo "[pre-commit] gate-fixtures (gates bloqueiam artefatos ruins)..."
+python3 scripts/gate-fixtures-test.py >/dev/null 2>&1 || fail "gate-fixtures-test (regressão: um gate deixou passar)"
+
 echo "[pre-commit] ✅ padrão GOLD/SOTA mantido — commit liberado."
 exit 0

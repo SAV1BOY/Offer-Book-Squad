@@ -28,5 +28,7 @@ jobs:
         run: python3 scripts/citation-checker.py
       - name: compliance-scanner --strict (claim sem prova / escassez falsa em copy viva)
         run: python3 scripts/compliance-scanner.py --strict
+      - name: gate-fixtures-test (gates bloqueiam artefatos ruins — testes negativos)
+        run: python3 scripts/gate-fixtures-test.py
       - name: coverage-report (informativo)
         run: python3 scripts/coverage-report.py
