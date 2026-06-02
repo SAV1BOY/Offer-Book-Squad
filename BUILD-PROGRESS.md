@@ -9,8 +9,8 @@ Legenda: ⬜ pendente · 🟨 em progresso · ✅ concluída (qa-runner verde)
 | Fase | Camada | Meta arq. | Status | Commit |
 |---|---|---|---|---|
 | 0  | Foundation & Contracts (raiz + docs + config + árvore) | ~10 | ✅ | `feat(foundation)` |
-| 1  | `lib/taxonomies/` | 5 | 🟨 | — |
-| 2  | `reference/` (com citações web) | ~90 | ⬜ | — |
+| 1  | `lib/taxonomies/` | 5 | ✅ | `feat(taxonomies)` |
+| 2  | `reference/` (com citações web) | ~90 | 🟨 | — |
 | 3  | `frameworks/` | ~95 | ⬜ | — |
 | 4  | `lib/` (components, patterns, utilities) | ~33 | ⬜ | — |
 | 5  | `agents/` + `data/registries/` | 35 | ⬜ | — |
@@ -29,7 +29,7 @@ Legenda: ⬜ pendente · 🟨 em progresso · ✅ concluída (qa-runner verde)
 | 18 | QA de integração (link-check, contagens, reconciliação) | — | ⬜ | — |
 
 ## Próxima ação
-- **Fase 1** — `lib/taxonomies/` (5): `offer-types`, `lead-types` (6), `guarantee-types` (13), `awareness-levels` (5), `sophistication-levels` (5). Vocabulário compartilhado que todo arquivo referencia.
+- **Fase 2** — `reference/` (~90, com citações web): `books/` (offers-and-monetization, copywriting, persuasion-psychology, positioning, launches-and-funnels, b2b-enterprise), `psychology/`, `industries/`, `case-studies/`, `swipe-breakdowns/`. Heavy de pesquisa — confirmar autor/título/ano antes de escrever; literal ≤25 palavras.
 
 ## Regras de retomada (para qualquer sessão futura)
 1. **Não duplicar:** confira o status aqui antes de criar arquivos.
@@ -40,4 +40,4 @@ Legenda: ⬜ pendente · 🟨 em progresso · ✅ concluída (qa-runner verde)
 6. **Commit por camada** com a mensagem da tabela; **push** com retry/backoff; manter o **PR draft** atualizado.
 
 ## Log de sessões
-- **2026-06-02** — Sessão 1: árvore de 124 diretórios criada; **Fase 0 concluída** (`.gitignore`, `README`, `ARCHITECTURE.md`, `config.yaml` (cérebro de roteamento + reserva de ids), `swipe.config`, `BUILD-PROGRESS.md`, `docs/agent-prompt-spec.md`, `docs/style-guide.md`). YAML validado. Próximo: Fase 1.
+- **2026-06-02** — Sessão 1: árvore de 124 diretórios criada; **Fase 0 concluída** (`.gitignore`, `README`, `ARCHITECTURE.md`, `config.yaml` (cérebro de roteamento + reserva de ids), `swipe.config`, `BUILD-PROGRESS.md`, `docs/agent-prompt-spec.md`, `docs/style-guide.md`). YAML validado. PR draft #1 aberto. **Fase 1 concluída** (`lib/taxonomies/`: awareness-levels, sophistication-levels, lead-types, offer-types, guarantee-types — com citações Schwartz/Hormozi/Masterson). Próximo: Fase 2.
