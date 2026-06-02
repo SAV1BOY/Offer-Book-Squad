@@ -113,11 +113,10 @@ def check_file(path: str, ids: dict, strict: bool = False) -> dict:
         if fid in ids and ids[fid] != rel:
             issues.append(f"id duplicado com {ids[fid]}")
         ids.setdefault(fid, rel)
-        if slug.replace("-", "") in str(fid).replace("-", "").replace(".", ""):
-            got["id"] = weights["id"]
-        else:
-            warns.append(f"id {fid!r} não reflete o filename {slug!r}")
-            got["id"] = weights["id"] * 0.5
+        # id presente e único basta aqui; a bijeção id<->path (convenção
+        # namespace.slug) é validada autoritativamente por scripts/id-resolver.py.
+        got["id"] = weights["id"]
+        _ = slug
     else:
         issues.append("id ausente")
 

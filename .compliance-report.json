@@ -1,0 +1,3236 @@
+{
+ "dir": ".",
+ "files": 621,
+ "flagged": 210,
+ "total_unproven": 300,
+ "total_scarcity": 132,
+ "results": [
+  {
+   "rel": "ARCHITECTURE.md",
+   "flags": 3,
+   "unproven_claims": [
+    {
+     "line": 17,
+     "text": "- e só então vira copy, funil, evento, afiliados e logística — com escassez **100% verdade"
+    },
+    {
+     "line": 142,
+     "text": "Hormozi (*$100M Offers* 2021, *Leads* 2023, *Money Models* 2025) · Schwartz (*Breakthrough"
+    }
+   ],
+   "scarcity": [
+    {
+     "line": 79,
+     "text": "- **Compliance Auditor** é a última barreira e pode **vetar** claim sem lastro ou escassez"
+    }
+   ]
+  },
+  {
+   "rel": "README.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 5,
+     "text": "Sistema de agentes de IA, frameworks, checklists, templates e playbooks de **direct respon"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "agents/affiliate-program-architect.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 5,
+     "text": "Você é o **Affiliate Program Architect**, o general do exército de afiliados. Você encarna"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "agents/compliance-auditor.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 5,
+     "text": "Você é o **Compliance Auditor**, a última barreira antes da entrega. Você encarna o advoga"
+    }
+   ]
+  },
+  {
+   "rel": "agents/email-sms-sequence-writer.md",
+   "flags": 2,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 37,
+     "text": "- **Cart-close:** sequência de fechamento — **uma objeção por e-mail**, escassez/urgência "
+    },
+    {
+     "line": 46,
+     "text": "*Pensamento:* carrinho abriu. *Ação:* aplico [`launch/cart-open-close`](../frameworks/laun"
+    }
+   ]
+  },
+  {
+   "rel": "agents/events-logistics-coordinator.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 84,
+     "text": "Red-team: *\"O que o [`compliance-auditor`](compliance-auditor.md) rejeitaria aqui?\"* — se "
+    }
+   ]
+  },
+  {
+   "rel": "agents/launch-producer.md",
+   "flags": 4,
+   "unproven_claims": [
+    {
+     "line": 45,
+     "text": "**(A) Arquitetura do lançamento.** Gero ≥3 formatos: (1) **PLF clássico** (3 vídeos de pré"
+    },
+    {
+     "line": 57,
+     "text": "**(B) Janela e cadência de carrinho.** Gero ≥3 janelas: (1) carrinho 4 dias com 3 e-mails/"
+    },
+    {
+     "line": 61,
+     "text": "Depois que L executa, o H reavalia: a sequência respeita a **ordem da espinha** do money m"
+    },
+    {
+     "line": 84,
+     "text": "4. **Avaliar:** a escassez agendada é **100% verdadeira**? O pico tem capacidade confirmad"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "agents/money-model-designer.md",
+   "flags": 4,
+   "unproven_claims": [
+    {
+     "line": 5,
+     "text": "Você é o **Money Model Designer**, o **dono da espinha** do squad. Você encarna a tese de "
+    },
+    {
+     "line": 48,
+     "text": "- **Config 1 — \"Tripwire agressivo\":** atração = ebook R$27 → upsell programa R$497 → upse"
+    },
+    {
+     "line": 49,
+     "text": "- **Config 2 — \"Challenge de entrada\":** atração = desafio pago R$97 → núcleo R$697 → down"
+    },
+    {
+     "line": 50,
+     "text": "- **Config 3 — \"Free+frete + assinatura\":** atração = amostra free+frete → núcleo R$397 → "
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "agents/pricing-wtp-strategist.md",
+   "flags": 6,
+   "unproven_claims": [
+    {
+     "line": 32,
+     "text": "- *Pensamento:* qual a faixa que o avatar acha \"barato demais / caro demais / caro mas jus"
+    },
+    {
+     "line": 33,
+     "text": "- *Pensamento:* a R$497, R$697, R$997 — onde a curva de aceitação cai? *Ação:* `gabor-gran"
+    },
+    {
+     "line": 47,
+     "text": "- **van Westendorp:** faixa aceitável R$390–690, indiferença ~R$520. (Bom para piso/teto.)"
+    },
+    {
+     "line": 48,
+     "text": "- **Gabor-Granger:** aceitação cai forte >R$700; ótima R$497–597. (Bom para revenue-maximi"
+    },
+    {
+     "line": 49,
+     "text": "- **Conjoint (CBC):** \"1:1\" e \"garantia estendida\" carregam o maior part-worth; sem eles, "
+    },
+    {
+     "line": 50,
+     "text": "Cruzo: os três **convergem** na faixa R$500–600 para o tier médio → fixo **R$597** como \"b"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "agents/proof-credibility-curator.md",
+   "flags": 2,
+   "unproven_claims": [
+    {
+     "line": 55,
+     "text": "- **Candidata C — dado agregado** (\"92% melhoram\", com base amostral)."
+    },
+    {
+     "line": 128,
+     "text": "- **Número sem base** (dado \"87% melhoram\" sem n nem metodologia) → marco como não usável "
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "agents/unit-economics-stack-analyst.md",
+   "flags": 2,
+   "unproven_claims": [
+    {
+     "line": 32,
+     "text": "- *Pensamento:* o CAC é R$120; a atração entra a R$27. *Ação:* somo a receita do front-end"
+    },
+    {
+     "line": 33,
+     "text": "- *Pensamento:* o stack precisa fazer R$597 parecer barato. *Ação:* aplico `offer-stack-bu"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "agents/value-equation-engineer.md",
+   "flags": 2,
+   "unproven_claims": [
+    {
+     "line": 33,
+     "text": "- *Pensamento:* a promessa \"perca 10kg em 7 dias\" sobe o Sonho? *Ação:* checo a Probabilid"
+    },
+    {
+     "line": 109,
+     "text": "- **Alavanca abandonada** (ninguém serve \"Tempo\") → recomendo um componente novo para cobr"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "agents/voice-style-guardian.md",
+   "flags": 2,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 60,
+     "text": "**Exemplo A — auditoria de um e-mail de carrinho.** Entra (do `email-sms-sequence-writer`)"
+    },
+    {
+     "line": 108,
+     "text": "**Exemplo preenchido:** PEÇA: ad-0207 (ad) · VEREDITO: REPROVADO · NÍVEL: ~7ª série (acima"
+    }
+   ]
+  },
+  {
+   "rel": "archive/version-history/README.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 31,
+     "text": "- [`deprecated-offers/`](../deprecated-offers/README.md) — quando a última versão é a apos"
+    }
+   ]
+  },
+  {
+   "rel": "checklists/affiliate/affiliate-prizes-aligned-gate.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 4,
+     "text": "Este gate prova que **a comissão e os prêmios do programa cabem dentro do teto que a unit "
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "checklists/blackbook-stack/blackbook-dod-gate.md",
+   "flags": 2,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 4,
+     "text": "Este gate prova que o **Launch Blackbook está pronto para execução ponta-a-ponta**. É a úl"
+    },
+    {
+     "line": 7,
+     "text": "- **owner_agent:** `compliance-auditor` (a última barreira; pode **vetar** qualquer claim "
+    }
+   ]
+  },
+  {
+   "rel": "checklists/blackbook-stack/growth-affiliate-pr-gate.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 4,
+     "text": "Este gate prova que **o programa de afiliados e o plano de PR estão prontos para amplifica"
+    }
+   ]
+  },
+  {
+   "rel": "checklists/cart-close-checklist.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 27,
+     "text": "Item vermelho → a sequência volta ao `email-sms-sequence-writer` com o defeito nomeado e *"
+    }
+   ]
+  },
+  {
+   "rel": "checklists/chief/chief-scope-approval-gate.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 4,
+     "text": "Este gate prova que o escopo do caso cabe em **uma frase** e foi aprovado pelo `offerbook-"
+    }
+   ]
+  },
+  {
+   "rel": "checklists/compliance-checklist.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 7,
+     "text": "- **owner_agent:** `compliance-auditor` (autoridade de veto; última barreira do squad); o "
+    }
+   ]
+  },
+  {
+   "rel": "checklists/compliance/compliance-scarcity-truth-gate.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 14,
+     "text": "1. **Deadline que fecha.** Verificar: cada prazo de fato encerra a oferta no run-of-show; "
+    }
+   ]
+  },
+  {
+   "rel": "checklists/email-sms/email-segmentation-gate.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 17,
+     "text": "4. **Coerência segmento×conteúdo.** Verificar: nenhum segmento recebe uma mensagem incoere"
+    }
+   ]
+  },
+  {
+   "rel": "checklists/email-sms/email-step-coverage-gate.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 17,
+     "text": "4. **Cart-close.** Verificar: existe a sequência de fechamento (penúltimo dia, último dia,"
+    }
+   ]
+  },
+  {
+   "rel": "checklists/email-sms/email-subject-gate.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 4,
+     "text": "Este gate prova que cada e-mail-chave tem um **subject que abre — sem clickbait — e que ba"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "checklists/email-sms/email-timing-gate.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 19,
+     "text": "6. **Lembretes no tempo útil.** Verificar: lembretes de show-up e de últimas horas chegam "
+    }
+   ]
+  },
+  {
+   "rel": "checklists/email-sms/email-urgency-coherence-gate.md",
+   "flags": 2,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 16,
+     "text": "3. **Coerência e-mail × SMS.** Verificar: o SMS de últimas horas e o e-mail de fechamento "
+    },
+    {
+     "line": 18,
+     "text": "5. **Sem deadline falso.** Verificar: nenhum \"fecha hoje\" que reabre, nenhum cronômetro qu"
+    }
+   ]
+  },
+  {
+   "rel": "checklists/final-delivery-checklist.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 4,
+     "text": "Este checklist prova que o pacote está **pronto para entrega e execução** — completo, nave"
+    }
+   ]
+  },
+  {
+   "rel": "checklists/funnel/funnel-no-dead-end-gate.md",
+   "flags": 2,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 15,
+     "text": "2. **Página de obrigado viva.** Verificar: a página de obrigado convida à continuidade ou "
+    },
+    {
+     "line": 18,
+     "text": "5. **Fim de sequência com saída.** Verificar: a última mensagem de cada sequência aponta p"
+    }
+   ]
+  },
+  {
+   "rel": "checklists/launch-blackbook-checklist.md",
+   "flags": 3,
+   "unproven_claims": [
+    {
+     "line": 21,
+     "text": "8. **Escassez 100% verdadeira na execução.** Como verificar: cada prazo/limite usado em co"
+    }
+   ],
+   "scarcity": [
+    {
+     "line": 4,
+     "text": "Este checklist prova que o **Launch Blackbook está completo** — o pacote de execução ponta"
+    },
+    {
+     "line": 7,
+     "text": "- **owner_agent:** `compliance-auditor` (última barreira; pode vetar claim sem lastro ou e"
+    }
+   ]
+  },
+  {
+   "rel": "checklists/launch/launch-objective-gate.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 14,
+     "text": "1. **Tese em uma frase.** Verificar: o memo resume o lançamento em uma frase (\"Prove no we"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "checklists/launch/launch-surge-gate.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 14,
+     "text": "1. **Tráfego projetado.** Verificar: o plano estima o pico (ex.: 3x o tráfego médio) na ja"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "checklists/mechanism/mechanism-one-sentence-gate.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 4,
+     "text": "Este gate prova que o `mechanism-architect` comprimiu o mecanismo em **uma frase** que o a"
+    }
+   ]
+  },
+  {
+   "rel": "checklists/money-model/money-model-cac-liquidation-gate.md",
+   "flags": 3,
+   "unproven_claims": [
+    {
+     "line": 4,
+     "text": "Este gate prova o critério eliminatório da espinha: a **oferta de atração (mais o upsell i"
+    },
+    {
+     "line": 11,
+     "text": "A receita de margem da atração mais o upsell imediato cobre o CAC dentro da janela alvo (m"
+    },
+    {
+     "line": 17,
+     "text": "4. **Cobertura dentro da janela.** Verificar: atração+upsell imediato cobrem o CAC dentro "
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "checklists/money-model/money-model-cta-per-step-gate.md",
+   "flags": 2,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 20,
+     "text": "7. **CTAs encadeiam ponta a ponta.** Verificar: seguindo os CTAs do primeiro ao último deg"
+    },
+    {
+     "line": 23,
+     "text": "Para marcar ✅: linkar a tabela de espinha no `offer-registry` com a coluna `cta` por degra"
+    }
+   ]
+  },
+  {
+   "rel": "checklists/money-model/money-model-sequence-gate.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 20,
+     "text": "7. **Janela dos 30 dias mirada.** Verificar: a ordem busca liquidar o CAC no front-end den"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "checklists/offer-book-checklist.md",
+   "flags": 2,
+   "unproven_claims": [
+    {
+     "line": 11,
+     "text": "Os checklists de D1–D3 estão verdes, a escassez é 100% verdadeira, nenhum claim está órfão"
+    },
+    {
+     "line": 24,
+     "text": "11. **Escassez 100% verdadeira.** Como verificar: cada elemento de escassez aponta para li"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "checklists/offer-book-stack/offer-book-dod-gate.md",
+   "flags": 2,
+   "unproven_claims": [
+    {
+     "line": 11,
+     "text": "Os três gates D1–D3 estão verdes, a escassez é 100% verdadeira, nenhum claim está órfão, e"
+    },
+    {
+     "line": 18,
+     "text": "5. **Escassez 100% verdadeira.** Verificar: cada elemento de escassez/urgência aponta para"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "checklists/offer-quality-scorecard-checklist.md",
+   "flags": 2,
+   "unproven_claims": [
+    {
+     "line": 11,
+     "text": "A oferta soma **≥ 80/100** no scorecard, com **nenhuma dimensão abaixo de 60%** do seu pes"
+    },
+    {
+     "line": 31,
+     "text": "6. **Nenhuma dimensão < 60% do peso.** Como verificar: checar cada dimensão isolada; uma d"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "checklists/offer-stack-checklist.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 11,
+     "text": "A pilha traz garantia exequível, bônus que somam valor real, escassez/urgência 100% verdad"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "checklists/positioning/positioning-descends-to-copy-gate.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 4,
+     "text": "Este gate prova que a posição e o lead travados **descem inteiros para a copy** — que os a"
+    }
+   ]
+  },
+  {
+   "rel": "checklists/pr-plan-checklist.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 4,
+     "text": "Este checklist prova que o plano de PR tem **um ângulo memorável e mede a coisa certa**. E"
+    }
+   ]
+  },
+  {
+   "rel": "checklists/proof/proof-claim-backing-gate.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 19,
+     "text": "6. **Número com base.** Verificar: todo dado/estatística tem n e metodologia documentados "
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "checklists/tech/tech-deliverability-gate.md",
+   "flags": 2,
+   "unproven_claims": [
+    {
+     "line": 4,
+     "text": "Este gate prova que **o e-mail do lançamento chega na caixa de entrada, com autenticação c"
+    },
+    {
+     "line": 18,
+     "text": "5. **Rampa de aquecimento.** Verificar: há rampa gradual (ex.: 7–14 dias) proporcional ao "
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "checklists/value/value-dream-outcome-gate.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 4,
+     "text": "Este gate prova que o `value-equation-engineer` amplificou o **Sonho** (resultado desejado"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "checklists/value/value-time-gate.md",
+   "flags": 3,
+   "unproven_claims": [
+    {
+     "line": 4,
+     "text": "Este gate prova que o `value-equation-engineer` comprimiu o **Atraso de tempo** — antecipo"
+    },
+    {
+     "line": 14,
+     "text": "1. **Primeiro resultado nomeado.** Verificar: o scorecard nomeia um primeiro ganho concret"
+    },
+    {
+     "line": 16,
+     "text": "3. **Quick-win mapeado a componente.** Verificar: existe um componente da oferta que entre"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "checklists/voice/voice-active-present-gate.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 25,
+     "text": "Item vermelho → veredito **REPROVADO**. O [`voice-style-guardian`](../../agents/voice-styl"
+    }
+   ]
+  },
+  {
+   "rel": "checklists/voice/voice-no-adverb-gate.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 4,
+     "text": "Este gate prova que **a peça não usa advérbio floreado nem palavra redundante**. Ele exist"
+    }
+   ]
+  },
+  {
+   "rel": "checklists/voice/voice-positive-language-gate.md",
+   "flags": 2,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 15,
+     "text": "2. **Manda agir.** Verificar: a chamada diz a ação positiva (\"garanta hoje\"), não só o que"
+    },
+    {
+     "line": 25,
+     "text": "Item vermelho → veredito **REPROVADO**. O [`voice-style-guardian`](../../agents/voice-styl"
+    }
+   ]
+  },
+  {
+   "rel": "checklists/vsl/vsl-cta-strength-gate.md",
+   "flags": 2,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 4,
+     "text": "Este gate prova que o roteiro fecha com **um único pedido, claro e forte**. O fim de uma V"
+    },
+    {
+     "line": 19,
+     "text": "6. **Slippery slide deságua nele.** Verificar: o último beat puxa direto para a ação — nen"
+    }
+   ]
+  },
+  {
+   "rel": "data/benchmarks/conversion-benchmarks-by-industry.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 7,
+     "text": "Este arquivo dá ao squad os **pisos de mercado** para julgar conversão. Ele responde: \"4,1"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "data/conversion-data/funnel-metrics-template.md",
+   "flags": 3,
+   "unproven_claims": [
+    {
+     "line": 40,
+     "text": "- `opt_in_rate` = optins ÷ visitantes = 38% _(ex.)_."
+    },
+    {
+     "line": 41,
+     "text": "- `vsl_conversion_rate` = compras ÷ espectadores = 4,1% _(ex.)_."
+    },
+    {
+     "line": 42,
+     "text": "- `upsell_take_rate` = aceites ÷ compras = 22% _(ex.)_."
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "data/decisions/decision-log-template.md",
+   "flags": 3,
+   "unproven_claims": [
+    {
+     "line": 27,
+     "text": "**R$ 2497 com bônus empilhados** — no topo da faixa, com valor empilhado para sustentar o "
+    },
+    {
+     "line": 31,
+     "text": "- **R$ 1997 sem bônus** — mais volume, menos margem por venda."
+    },
+    {
+     "line": 32,
+     "text": "- **R$ 1750 (piso PMC)** — maximiza volume, mas corrói margem e sinaliza \"barato demais\"."
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "data/pricing-tests/van-westendorp-example.md",
+   "flags": 3,
+   "unproven_claims": [
+    {
+     "line": 21,
+     "text": "- Oferta descrita: Mentoria 90 Dias com mecanismo \"equilíbrio hormonal pós-40\"."
+    },
+    {
+     "line": 37,
+     "text": "**Faixa de Aceitação (Range of Acceptable Prices):** ~R$ 1750 a ~R$ 2400 (entre PMC e PME)"
+    },
+    {
+     "line": 41,
+     "text": "Recomendação: **R$ 2497** com bônus empilhados, no topo da faixa, porque o valor empilhado"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "data/registries/claim-registry.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 34,
+     "text": "**Leem**: `compliance-auditor` (última barreira — gate `compliance/compliance-claim-backin"
+    }
+   ]
+  },
+  {
+   "rel": "data/research/example-market-thesis.md",
+   "flags": 3,
+   "unproven_claims": [
+    {
+     "line": 11,
+     "text": "- TAM (amostra): ~30 milhões de mulheres 40+ no Brasil."
+    },
+    {
+     "line": 12,
+     "text": "- SAM (amostra): ~6 milhões com renda e intenção de compra digital."
+    },
+    {
+     "line": 13,
+     "text": "- SOM (amostra): ~120 mil alcançáveis em 12 meses por tráfego pago."
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "docs/changelog.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 21,
+     "text": "- Citações em redação original (literal ≤25 palavras); escassez 100% verdadeira; claims co"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "docs/compliance-policy.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 3,
+     "text": "Esta política é **vinculante** para todo artefato do squad. O [`compliance-auditor`](../ag"
+    }
+   ]
+  },
+  {
+   "rel": "frameworks/big-idea-architect/big-idea-ideation-tot.md",
+   "flags": 3,
+   "unproven_claims": [
+    {
+     "line": 25,
+     "text": "- **Ramo Promessa** — a ideia é o resultado ousado e específico (ex.: \"fluente em entrevis"
+    },
+    {
+     "line": 43,
+     "text": "- **Ramo Mecanismo** → \"Shadowing Técnico: o método de imitação que te faz falar inglês de"
+    },
+    {
+     "line": 45,
+     "text": "- **Ramo Promessa** → \"Passe na entrevista em inglês da sua vaga dos sonhos em 60 dias — f"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "frameworks/big-idea-architect/promise-hook-villain.md",
+   "flags": 2,
+   "unproven_claims": [
+    {
+     "line": 39,
+     "text": "- **Promessa**: \"Passe na entrevista em inglês da sua vaga em dólar em 60 dias — falando c"
+    },
+    {
+     "line": 42,
+     "text": "- **Frase-Big-Idea fundida**: \"Você trava na entrevista em inglês não porque seu inglês é "
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "frameworks/big-idea-generator.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 38,
+     "text": "- Candidatas geradas (amostra): (a) \"fluência em 30 dias\", (b) \"inglês com IA\", (c) **\"voc"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "frameworks/copy/aida.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 38,
+     "text": "- **Ação**: \"Entre no 'Aprovado em Inglês' hoje. Vagas limitadas a 40 por turma para mante"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "frameworks/copy/close-frameworks.md",
+   "flags": 4,
+   "unproven_claims": [
+    {
+     "line": 42,
+     "text": "- **Recapitulação**: \"Você leva o método das Janelas Calmas, o mapa por idade, o grupo de "
+    },
+    {
+     "line": 46,
+     "text": "- **Fecho de objeções**: \"'Já tentei tudo' — a Camila também, e o filho dela melhorou em 9"
+    }
+   ],
+   "scarcity": [
+    {
+     "line": 7,
+     "text": "**Use** no final de toda peça de venda: VSL, carta, página de oferta, último e-mail de uma"
+    },
+    {
+     "line": 25,
+     "text": "5. **Feche as objeções finais** — responda as 3-5 últimas objeções do mapa, cada uma com p"
+    }
+   ]
+  },
+  {
+   "rel": "frameworks/copy/email-sequence-architecture.md",
+   "flags": 3,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 10,
+     "text": "**Não use** o mesmo e-mail para a lista inteira sem segmentar — quem comprou recebendo \"úl"
+    },
+    {
+     "line": 56,
+     "text": "- **Sem segmentação.** Mandar \"últimas horas\" para quem já comprou queima a confiança e ge"
+    },
+    {
+     "line": 59,
+     "text": "- **Timing plano.** Frequência igual do início ao fim subaproveita o fechamento. Acelere n"
+    }
+   ]
+  },
+  {
+   "rel": "frameworks/copy/fascination-bullets.md",
+   "flags": 3,
+   "unproven_claims": [
+    {
+     "line": 31,
+     "text": "5. **Ancore no específico**: número, prazo, nome. \"Em 7 dias\", \"na página 34\", \"o método d"
+    },
+    {
+     "line": 47,
+     "text": "- Feature \"checklist de venda\" → **\"Como cobrar R$300 por ensaio na primeira semana — mesm"
+    },
+    {
+     "line": 48,
+     "text": "- Bullet que mata objeção (\"preciso de câmera cara\"): **\"Por que a câmera de R$15 mil perd"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "frameworks/copy/hook-frameworks.md",
+   "flags": 2,
+   "unproven_claims": [
+    {
+     "line": 27,
+     "text": "- **Estatística chocante** — \"87% dos autônomos não fazem ideia de quanto realmente lucram"
+    },
+    {
+     "line": 45,
+     "text": "- **Pergunta na dor**: \"Você fatura R$10 mil por mês e ainda assim a conta não fecha. Por "
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "frameworks/copy/one-sentence-persuasion.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 40,
+     "text": "- **Acalma o medo**: \"Sem planilha complicada e sem virar contador. São 3 contas e 1 toque"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "frameworks/copy/pas.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 40,
+     "text": "- **Fecho**: \"Comece o Caixa no Azul hoje. Primeira semana grátis. Se em 30 dias você não "
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "frameworks/copy/pastor.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 43,
+     "text": "- **Oferta**: \"Você leva o método das Janelas Calmas, o mapa de sono por idade, o grupo de"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "frameworks/copy/slippery-slide.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 45,
+     "text": "- A última frase (\"Deixa eu te mostrar\") é a semente que puxa para o próximo beat (a demon"
+    }
+   ]
+  },
+  {
+   "rel": "frameworks/copy/vsl-structure.md",
+   "flags": 3,
+   "unproven_claims": [
+    {
+     "line": 47,
+     "text": "- **Promessa**: \"Em 60 dias você responde qualquer pergunta de entrevista em inglês sem ge"
+    },
+    {
+     "line": 50,
+     "text": "- **Value Stack**: \"Você leva o método Shadowing Técnico, 120 falas de entrevista por stac"
+    },
+    {
+     "line": 51,
+     "text": "- **Preço + Garantia**: \"Hoje, R$597. E se não passar numa entrevista em 60 dias, seguimos"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "frameworks/guarantee-design.md",
+   "flags": 2,
+   "unproven_claims": [
+    {
+     "line": 40,
+     "text": "- **Tipo (3)**: \"Aprovado na entrevista em 60 dias ou seguimos juntos de graça até você se"
+    },
+    {
+     "line": 41,
+     "text": "- **Condições**: 60 dias, mínimo de 8 simulações concluídas, 1 entrevista real tentada."
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "frameworks/launch/abandoned-cart-recovery.md",
+   "flags": 2,
+   "unproven_claims": [
+    {
+     "line": 42,
+     "text": "- **Downsell (dia seguinte)**: parcelamento em 12x para quem travou no preço à vista."
+    }
+   ],
+   "scarcity": [
+    {
+     "line": 49,
+     "text": "- **Pressão falsa.** Inventar \"última vaga\" para quem abandonou destrói confiança e é veto"
+    }
+   ]
+  },
+  {
+   "rel": "frameworks/launch/affiliate-army.md",
+   "flags": 3,
+   "unproven_claims": [
+    {
+     "line": 38,
+     "text": "- **Economia**: 40% de comissão no núcleo; upsell do simulador 1:1 liquida o custo do parc"
+    },
+    {
+     "line": 39,
+     "text": "- **Recrutamento**: convite 3 semanas antes, mostrando 6% de conversão na lista própria co"
+    }
+   ],
+   "scarcity": [
+    {
+     "line": 46,
+     "text": "- **Recrutar tarde.** Parceiros têm agenda própria; convite de última hora não cabe na pis"
+    }
+   ]
+  },
+  {
+   "rel": "frameworks/launch/cart-open-close.md",
+   "flags": 4,
+   "unproven_claims": [
+    {
+     "line": 4,
+     "text": "A janela em que se pode comprar é o motor da urgência. Você **abre o carrinho** com um eve"
+    },
+    {
+     "line": 43,
+     "text": "- **Resultado**: ~55% das vendas chegam no sábado; o botão some à meia-noite de verdade e "
+    }
+   ],
+   "scarcity": [
+    {
+     "line": 42,
+     "text": "- **Close Cart (sábado)**: 09h \"últimas horas\", 18h \"última chamada\", 23h \"fecha em 1h\". C"
+    },
+    {
+     "line": 47,
+     "text": "- **Fechamento fraco.** Um único e-mail no último dia deixa dinheiro na mesa — a maioria c"
+    }
+   ]
+  },
+  {
+   "rel": "frameworks/launch/perfect-webinar.md",
+   "flags": 2,
+   "unproven_claims": [
+    {
+     "line": 37,
+     "text": "- **Promessa**: \"Como passar na entrevista técnica em inglês em 60 dias — mesmo travando h"
+    },
+    {
+     "line": 42,
+     "text": "- **The Stack**: programa + simulador 1:1 + 50 frases + clube → valor somado R$5.300, preç"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "frameworks/launch/product-launch-formula.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 41,
+     "text": "- **Open Cart (terça)**: webinar com o pitch e a Grand Slam Offer; carrinho aberto 5 dias."
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "frameworks/launch/runway-and-phases.md",
+   "flags": 5,
+   "unproven_claims": [
+    {
+     "line": 21,
+     "text": "2. **Defina a duração da janela de venda** (Open→Close): tipicamente 4-7 dias. Ticket maio"
+    },
+    {
+     "line": 22,
+     "text": "3. **Dimensione a pista de pré-lançamento** (3-12 dias antes da abertura): lista fria + me"
+    },
+    {
+     "line": 38,
+     "text": "- **Pós-fechamento → trás**: janela de venda terça(10) a sábado(15) = 5 dias."
+    },
+    {
+     "line": 39,
+     "text": "- **Pista de pré-lançamento**: lista morna + mecanismo novo → 9 dias. PLC1 dia 1, PLC2 dia"
+    },
+    {
+     "line": 44,
+     "text": "- **Resultado**: 9 dias de pista deixam o público aquecido; cada fase só avança após seu c"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "frameworks/launch/surge-ops.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 40,
+     "text": "- **Fallbacks**: link de checkout reserva e provedor de e-mail de backup, com gatilho \"err"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "frameworks/lead-types.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 39,
+     "text": "- **Segmento quente (compradores da Atração)**: consciência 5. **Lead de Oferta**: *\"Turma"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "frameworks/magic-naming.md",
+   "flags": 5,
+   "unproven_claims": [
+    {
+     "line": 22,
+     "text": "3. **Fixe o Interval honesto**: \"em 60 dias\", \"em um fim de semana\". Tempo curto e crível "
+    },
+    {
+     "line": 40,
+     "text": "- **Interval**: \"60 dias\" (honesto: é o tempo real ao resultado)."
+    },
+    {
+     "line": 43,
+     "text": "- **Combinação**: **\"Aprovado em Inglês: o Programa de Shadowing Técnico que prepara o dev"
+    },
+    {
+     "line": 44,
+     "text": "- **Variações**: troca o Container por \"Intensivo de 60 dias\" (mais urgência) ou a Magneti"
+    },
+    {
+     "line": 47,
+     "text": "- **Prometer Interval falso.** \"Fluente em 7 dias\" derruba a credibilidade e abre objeção;"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "frameworks/money-model-designer/attraction-offer-design.md",
+   "flags": 3,
+   "unproven_claims": [
+    {
+     "line": 43,
+     "text": "- **Arquétipo escolhido**: **win-your-money-back** — \"termine os 30 desafios de entrevista"
+    },
+    {
+     "line": 44,
+     "text": "- **Captura**: cartão na entrada de R$97; cobra e devolve em crédito ao cumprir o marco."
+    },
+    {
+     "line": 45,
+     "text": "- **Upsell imediato**: no checkout, o \"Simulador de Entrevista 1:1\" por R$397."
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "frameworks/money-model-designer/continuity-design.md",
+   "flags": 2,
+   "unproven_claims": [
+    {
+     "line": 37,
+     "text": "Oferta de amostra: curso de inglês para profissionais de TI. Núcleo: programa de 60 dias."
+    },
+    {
+     "line": 39,
+     "text": "- **Formato**: \"Clube de Conversação\" mensal (R$97/mês) com salas semanais ao vivo."
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "frameworks/money-model-designer/offer-ladder-sequencing.md",
+   "flags": 7,
+   "unproven_claims": [
+    {
+     "line": 4,
+     "text": "A escada de ofertas é a **espinha** do Money Model: a ordem deliberada em que o cliente so"
+    },
+    {
+     "line": 33,
+     "text": "- Cálculo de liquidação de CAC e payload de payback (<30 dias quando viável)."
+    },
+    {
+     "line": 38,
+     "text": "- **Degrau 1 — Atração** (R$97, win-your-money-back): \"30 desafios de entrevista\". Gatilho"
+    },
+    {
+     "line": 39,
+     "text": "- **Degrau 2 — Núcleo** (R$1.997): programa de 60 dias. Gatilho: webinar/checkout."
+    },
+    {
+     "line": 40,
+     "text": "- **Degrau 3 — Upsell** (R$397, no pico): \"Simulador 1:1\". Gatilho: compra do núcleo."
+    },
+    {
+     "line": 41,
+     "text": "- **Degrau 4 — Downsell** (12x sem juros): parcelamento do núcleo. Gatilho: recusa por pre"
+    },
+    {
+     "line": 42,
+     "text": "- **Degrau 5 — Continuidade** (R$97/mês): \"Clube de Conversação\". Gatilho: fim dos 60 dias"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "frameworks/money-model-designer/upsell-downsell-logic.md",
+   "flags": 7,
+   "unproven_claims": [
+    {
+     "line": 41,
+     "text": "Oferta de amostra: curso de inglês para profissionais de TI. Núcleo: programa de 60 dias p"
+    },
+    {
+     "line": 42,
+     "text": "- **Pico (após o sim)**: upsell **acesso/proximidade** = \"Simulador de Entrevista 1:1\" por"
+    },
+    {
+     "line": 44,
+     "text": "- **Downsell (no \"não\" por preço)**: parcelamento do núcleo em 12x sem juros."
+    },
+    {
+     "line": 45,
+     "text": "- **Downsell mais profundo**: versão \"faça você mesmo\" sem 1:1 por R$697, para quem ainda "
+    },
+    {
+     "line": 46,
+     "text": "- **Continuidade**: ambos caem no \"Clube de Conversação\" recorrente após 60 dias."
+    },
+    {
+     "line": 47,
+     "text": "- **Resultado**: o AOV sobe ~30% com o upsell no pico; o parcelamento recupera recusas de "
+    }
+   ],
+   "scarcity": [
+    {
+     "line": 31,
+     "text": "8. **Conecte à continuidade**: o último passo natural empurra para a recorrência ([`contin"
+    }
+   ]
+  },
+  {
+   "rel": "frameworks/money-model-sequence.md",
+   "flags": 7,
+   "unproven_claims": [
+    {
+     "line": 4,
+     "text": "Você não vende **uma** oferta. Você vende uma **sequência**: o quê, quando e em que ordem "
+    },
+    {
+     "line": 20,
+     "text": "1. **Fixe a meta econômica**: defina o \"CAC a liquidar\" e a janela (ex.: front-end paga o "
+    },
+    {
+     "line": 38,
+     "text": "- **Atração**: e-book \"50 frases de entrevista técnica\" por R$27 (free+frete na versão imp"
+    },
+    {
+     "line": 39,
+     "text": "- **Núcleo**: programa \"Aprovado em Inglês\" (R$1.997) — entrega o mecanismo \"Shadowing Téc"
+    },
+    {
+     "line": 40,
+     "text": "- **Upsell** (no checkout): \"Simulador de Entrevista 1:1\" (R$897) — done-with-you no pico "
+    },
+    {
+     "line": 41,
+     "text": "- **Downsell** (no \"não\" do núcleo): mesmo programa em 12× sem o 1:1 (R$1.997 parcelado) —"
+    },
+    {
+     "line": 42,
+     "text": "- **Continuidade**: \"Clube de Conversação\" (R$97/mês) — recorrência que ergue o LTV."
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "frameworks/offer-stack-builder.md",
+   "flags": 5,
+   "unproven_claims": [
+    {
+     "line": 38,
+     "text": "- \"Não sei o vocabulário de entrevista\" → **Banco de 200 frases técnicas** (valor ancorado"
+    },
+    {
+     "line": 39,
+     "text": "- \"Travo na hora de falar\" → **Simulador de entrevista 1:1** (valor R$1.500). Sobe Probabi"
+    },
+    {
+     "line": 40,
+     "text": "- \"Não tenho tempo\" → **Trilha de 20 min/dia** (valor R$300). Derruba Tempo e Esforço."
+    },
+    {
+     "line": 43,
+     "text": "- **Resultado**: valor empilhado ≈ R$2.800; preço R$1.997. O delta é óbvio sem mexer no pr"
+    }
+   ],
+   "scarcity": [
+    {
+     "line": 25,
+     "text": "6. **Sequencie a pilha** do item-âncora (maior valor percebido) ao item de fechamento (rem"
+    }
+   ]
+  },
+  {
+   "rel": "frameworks/offer-to-funnel-mapping.md",
+   "flags": 6,
+   "unproven_claims": [
+    {
+     "line": 38,
+     "text": "- **Atração** (e-book R$27) → *página de captura + checkout simples*; *sequência*: 3 e-mai"
+    },
+    {
+     "line": 39,
+     "text": "- **Núcleo** (programa R$1.997) → *VSL + página de vendas + checkout*; *sequências*: aquec"
+    },
+    {
+     "line": 40,
+     "text": "- **Upsell** (simulador 1:1 R$897) → *página de upsell 1-clique* pós-checkout; sem nova co"
+    },
+    {
+     "line": 42,
+     "text": "- **Continuidade** (clube R$97/mês) → *página de assinatura + portal*; *sequência*: onboar"
+    }
+   ],
+   "scarcity": [
+    {
+     "line": 22,
+     "text": "3. **Mapeie cada degrau para suas sequências**: aquecimento (pré-carrinho), carrinho abert"
+    },
+    {
+     "line": 39,
+     "text": "- **Núcleo** (programa R$1.997) → *VSL + página de vendas + checkout*; *sequências*: aquec"
+    }
+   ]
+  },
+  {
+   "rel": "frameworks/offer/grand-slam-offer.md",
+   "flags": 5,
+   "unproven_claims": [
+    {
+     "line": 42,
+     "text": "- **Pilha**: programa + banco de 200 frases + simulador 1:1 + trilha 20 min/dia (valor emp"
+    },
+    {
+     "line": 43,
+     "text": "- **Garantia**: \"aprovado em 60 dias ou seguimos juntos\" (serviço condicional)."
+    },
+    {
+     "line": 44,
+     "text": "- **Escassez real**: cohort de 40 (limite de 1:1), carrinho de 5 dias."
+    },
+    {
+     "line": 45,
+     "text": "- **Nome**: \"Aprovado em Inglês — o Intensivo de Shadowing Técnico para devs, em 60 dias.\""
+    },
+    {
+     "line": 46,
+     "text": "- **Preço ancorado**: R$1.997 (vs R$5.000 em aulas particulares; vs US$4.000/mês não ganho"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "frameworks/offer/offer-diagnosis.md",
+   "flags": 2,
+   "unproven_claims": [
+    {
+     "line": 39,
+     "text": "Oferta de amostra herdada: \"Curso de Inglês Completo — fluência garantida, R$1.997\". Diagn"
+    },
+    {
+     "line": 44,
+     "text": "- **Garantia**: \"fluência garantida\" é vaga e inexequível. **Bandeira vermelha** → trocar "
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "frameworks/offer/value-stacking.md",
+   "flags": 4,
+   "unproven_claims": [
+    {
+     "line": 39,
+     "text": "- **Simulador 1:1**: custo de entrega ~R$200 (tempo do mentor); valor = a diferença entre "
+    },
+    {
+     "line": 40,
+     "text": "- **Trilha 20 min/dia**: custo ~R$0; valor = economia de tempo e constância; âncora R$300."
+    },
+    {
+     "line": 41,
+     "text": "- **Valor empilhado**: R$2.800. **Custo total de entrega**: ~R$200/aluno. **Preço (de WTP)"
+    },
+    {
+     "line": 42,
+     "text": "- **Derivação**: o preço vem do valor empilhado e da WTP do dev (que paga R$2.000+ por uma"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "frameworks/positioning/4-monetization-failures.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 39,
+     "text": "- **Minivation?** Preço pensado em R$497 \"para vender fácil\". WTP medida (Gabor-Granger) m"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "frameworks/positioning/perceived-value-stack.md",
+   "flags": 2,
+   "unproven_claims": [
+    {
+     "line": 43,
+     "text": "- **Funcional**: \"passa na entrevista técnica em inglês\" + \"fala com fluidez técnica em 60"
+    },
+    {
+     "line": 47,
+     "text": "- **Comunicação**: a página empilha as quatro camadas (R$96k de ganho + confiança + identi"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "frameworks/power-of-one.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 39,
+     "text": "- **UMA promessa**: \"aprovado na entrevista técnica em inglês em 60 dias\"."
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "frameworks/price-anchoring.md",
+   "flags": 8,
+   "unproven_claims": [
+    {
+     "line": 36,
+     "text": "Oferta de amostra: curso de inglês para profissionais de TI. Preço-alvo (de WTP): R$1.997."
+    },
+    {
+     "line": 37,
+     "text": "- **Âncora 1 (valor empilhado)**: a pilha soma R$2.800 (banco de frases R$497 + simulador "
+    },
+    {
+     "line": 38,
+     "text": "- **Âncora 2 (alternativa cara honesta)**: um professor particular de inglês de negócios c"
+    },
+    {
+     "line": 39,
+     "text": "- **Âncora 3 (custo da inação)**: perder a vaga remota = ~US$ 4.000/mês não ganhos. O preç"
+    },
+    {
+     "line": 40,
+     "text": "- **Revelação**: \"Tudo isso — valor R$2.800, equivalente a R$5.000 em aulas particulares —"
+    },
+    {
+     "line": 41,
+     "text": "- **Isca (pacotes)**: o pacote \"só gravações\" (R$1.497, sem 1:1) existe para fazer o pacot"
+    },
+    {
+     "line": 42,
+     "text": "- **Resultado**: o mesmo R$1.997 parece barato — sem nenhuma âncora falsa."
+    },
+    {
+     "line": 45,
+     "text": "- **Preço \"de\" fictício.** \"De R$5.000 por R$1.997\" sem nunca ter vendido a R$5.000 é frau"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "frameworks/pricing/conjoint-cbc.md",
+   "flags": 4,
+   "unproven_claims": [
+    {
+     "line": 27,
+     "text": "7. **Rode o simulador de mercado.** Monte pacotes candidatos (seu Good-Better-Best e os do"
+    },
+    {
+     "line": 40,
+     "text": "- Atributos: **suporte** (gravado / grupo / 1:1), **garantia** (7 dias / aprovado-ou-gráti"
+    },
+    {
+     "line": 41,
+     "text": "- 320 respostas, 12 telas cada. Utilidades mostram: **garantia \"aprovado-ou-grátis\"** tem "
+    },
+    {
+     "line": 42,
+     "text": "- Simulador: pacote **Better** (grupo + garantia forte, R$1.490) captura 38% de share; **B"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "frameworks/pricing/decoy-effect.md",
+   "flags": 5,
+   "unproven_claims": [
+    {
+     "line": 39,
+     "text": "Oferta de amostra: curso de inglês para profissionais de TI. Alvo = pacote \"Elite\" (R$3.99"
+    },
+    {
+     "line": 40,
+     "text": "- Linha original: \"Pro\" R$1.990 (5h 1:1) e \"Elite\" R$3.990 (20h 1:1 + simulação com recrut"
+    },
+    {
+     "line": 41,
+     "text": "- **Decoy adicionado — \"Pro Plus\" R$3.490 (10h 1:1, sem simulação com recrutador).**"
+    },
+    {
+     "line": 42,
+     "text": "- Comparação: o Pro Plus custa quase o mesmo que o Elite (R$500 a menos) mas entrega bem m"
+    },
+    {
+     "line": 43,
+     "text": "- Resultado A/B: a escolha do \"Elite\" subiu de 22% para 41%; o ticket médio da linha subiu"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "frameworks/pricing/gabor-granger.md",
+   "flags": 6,
+   "unproven_claims": [
+    {
+     "line": 19,
+     "text": "1. **Defina os pontos de preço** a testar dentro da faixa (ex.: R$990, R$1.290, R$1.490, R"
+    },
+    {
+     "line": 38,
+     "text": "- Testamos R$990 / R$1.290 / R$1.490 / R$1.790 / R$1.990 com 160 respostas do ICP \"dev ple"
+    },
+    {
+     "line": 39,
+     "text": "- Take-rate: 62% / 51% / 44% / 33% / 24%."
+    },
+    {
+     "line": 40,
+     "text": "- Receita relativa (preço × take): 614 / 658 / 656 / 591 / 478 → **pico em R$1.290-R$1.490"
+    },
+    {
+     "line": 41,
+     "text": "- Margem: com custo de entrega R$300, o lucro relativo vira (preço−300)×take → pico desloc"
+    },
+    {
+     "line": 42,
+     "text": "- Decisão: tabela do núcleo em **R$1.490**. O segmento \"dev sênior\" mostrou take-rate 40% "
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "frameworks/pricing/packaging-good-better-best.md",
+   "flags": 5,
+   "unproven_claims": [
+    {
+     "line": 27,
+     "text": "5. **Desenhe o Better como o alvo.** É onde você quer a maioria. Coloca a melhor relação v"
+    },
+    {
+     "line": 43,
+     "text": "- **Good — \"Self\" (R$990)**: plataforma + comunidade (must-be). Sem 1:1. Porta de entrada "
+    },
+    {
+     "line": 44,
+     "text": "- **Better — \"Pro\" (R$1.990)**: tudo do Self + 5h de 1:1 + garantia aprovado-ou-grátis (at"
+    },
+    {
+     "line": 45,
+     "text": "- **Best — \"Elite\" (R$3.990)**: tudo do Pro + 20h de 1:1 + simulação com recrutador real +"
+    },
+    {
+     "line": 46,
+     "text": "- Resultado: a maioria escolhe o \"Pro\" porque parece o equilíbrio óbvio; o \"Elite\" ancora "
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "frameworks/pricing/price-elasticity.md",
+   "flags": 7,
+   "unproven_claims": [
+    {
+     "line": 4,
+     "text": "Elasticidade mede **quanto a demanda muda quando o preço muda**. É a variação % das unidad"
+    },
+    {
+     "line": 43,
+     "text": "- Dois testes: a R$1.490 vende 100 vagas/mês; a R$1.790 vende 88."
+    },
+    {
+     "line": 44,
+     "text": "- %ΔP ≈ +18,4%; %ΔQ ≈ -12,8% → **E ≈ -0,70 (inelástico)**."
+    },
+    {
+     "line": 45,
+     "text": "- Efeito receita: 100×1.490 = R$149k → 88×1.790 = R$157,5k. **Subir preço aumentou receita"
+    },
+    {
+     "line": 46,
+     "text": "- Lucro (custo R$300/aluno): (1.490-300)×100 = R$119k → (1.790-300)×88 = R$131k. **Lucro t"
+    },
+    {
+     "line": 48,
+     "text": "- Decisão: há espaço para subir mais. Próximo teste a R$1.990. E reforçar a unicidade na c"
+    },
+    {
+     "line": 51,
+     "text": "- **Tratar elasticidade como constante.** Ela é local e muda longe do preço atual. Não ext"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "frameworks/pricing/value-based-pricing.md",
+   "flags": 6,
+   "unproven_claims": [
+    {
+     "line": 24,
+     "text": "5. **Decida a fatia de captura.** Você não cobra 100% do EVA — deixa um \"excedente do clie"
+    },
+    {
+     "line": 39,
+     "text": "- **Alternativa**: app de idiomas a R$50/mês × 12 = R$600/ano, mas não prepara para entrev"
+    },
+    {
+     "line": 40,
+     "text": "- **Diferenciação monetizada**: a vaga remota internacional paga ~R$8.000/mês a mais que a"
+    },
+    {
+     "line": 41,
+     "text": "- **EVA**: referência R$600 + diferenciação enorme (dezenas de milhares). O teto lógico é "
+    },
+    {
+     "line": 42,
+     "text": "- **Captura**: cobrar uma fração pequena do ganho. Preço de R$1.490-R$2.990 captura ~5-9% "
+    },
+    {
+     "line": 49,
+     "text": "- **Capturar 100% do EVA.** Sem excedente, o cliente não tem motivo para trocar. Deixe gan"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "frameworks/pricing/van-westendorp.md",
+   "flags": 3,
+   "unproven_claims": [
+    {
+     "line": 46,
+     "text": "- Curvas cruzam assim: **PMC ≈ R$690**, **OPP ≈ R$1.490**, **IPP ≈ R$1.800**, **PME ≈ R$2."
+    },
+    {
+     "line": 47,
+     "text": "- Leitura: abaixo de R$690 o curso \"soa fraco\"; acima de R$2.600 vira caro demais. A faixa"
+    },
+    {
+     "line": 48,
+     "text": "- Decisão: ancoramos o núcleo perto do OPP (R$1.490-R$1.800), deixando espaço para um upse"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "frameworks/proof-to-claim-chain.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 39,
+     "text": "- *\"O Shadowing Técnico destrava a fala sob pressão\"* (claim do mecanismo) → **Prova**: gr"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "frameworks/reference-intellectual/hormozi-offers-leads-models.md",
+   "flags": 4,
+   "unproven_claims": [
+    {
+     "line": 4,
+     "text": "Hormozi escreveu três livros que o squad lê como **um sistema só**, não três volumes solto"
+    },
+    {
+     "line": 25,
+     "text": "5. **Imponha o CFA (Aquisição Financiada pelo Cliente).** Calcule a janela de payback: o l"
+    },
+    {
+     "line": 39,
+     "text": "- **Grand Slam Offer (atração)**: \"Encha terça e quarta em 30 dias — ou eu trabalho de gra"
+    },
+    {
+     "line": 43,
+     "text": "- **CFA**: a atração custa R$ 400 de tráfego por cliente; o upsell de R$ 1.500 com 70% de "
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "frameworks/reference-intellectual/hrm-hierarchical-reasoning.md",
+   "flags": 2,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 32,
+     "text": "- O **critério de parada** explícito do agente (qual DoD/gate encerra o loop)."
+    },
+    {
+     "line": 46,
+     "text": "- **Loop sem critério de parada.** Sem um DoD mensurável, o agente itera para sempre ou pa"
+    }
+   ]
+  },
+  {
+   "rel": "frameworks/reference-intellectual/kennedy-no-bs.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 43,
+     "text": "- **Oferta + CTA**: \"Recupere 10 horários por semana em 30 dias — agende sua demo\" (um úni"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "frameworks/reference-intellectual/ramanujam-monetizing-innovation.md",
+   "flags": 4,
+   "unproven_claims": [
+    {
+     "line": 42,
+     "text": "- **Sondagem de WTP**: entrevistas (Van Westendorp) revelam que agências pequenas pagam at"
+    },
+    {
+     "line": 43,
+     "text": "- **Falha evitada — Minivation**: o instinto do fundador era cobrar R$ 99 \"para todo mundo"
+    },
+    {
+     "line": 45,
+     "text": "- **Segmentação/empacotamento**: **Good** (R$ 149, relatórios básicos) · **Better** (R$ 44"
+    }
+   ],
+   "scarcity": [
+    {
+     "line": 50,
+     "text": "- **Preço como última etapa.** Colar a etiqueta no fim é a origem do fracasso; o preço é o"
+    }
+   ]
+  },
+  {
+   "rel": "frameworks/reference-intellectual/voss-never-split-difference.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 23,
+     "text": "3. **Espelhe (mirroring).** Ecoe a fala do mercado — as últimas palavras, os termos exatos"
+    }
+   ]
+  },
+  {
+   "rel": "frameworks/risk-reversal-ladder.md",
+   "flags": 2,
+   "unproven_claims": [
+    {
+     "line": 44,
+     "text": "- **Degrau 1 (atual no lançamento-piloto)**: \"aprovado em 60 dias **ou seguimos juntos** a"
+    },
+    {
+     "line": 45,
+     "text": "- **Simulação degrau 4 (dobro)**: \"não passou? devolvo o dobro\" — exigiria taxa de aprovaç"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "frameworks/scarcity-urgency-engine.md",
+   "flags": 5,
+   "unproven_claims": [
+    {
+     "line": 39,
+     "text": "- **Escassez real**: a turma é por **cohort** — 40 alunos, porque cada um recebe 8 simulaç"
+    },
+    {
+     "line": 40,
+     "text": "- **Urgência real**: o carrinho abre por **5 dias** e fecha porque a turma começa junto nu"
+    }
+   ],
+   "scarcity": [
+    {
+     "line": 9,
+     "text": "**Não use** escassez falsa, nunca: contador que reinicia, \"últimas vagas\" perpétuas, \"só h"
+    },
+    {
+     "line": 43,
+     "text": "- **Resultado**: a urgência move a decisão sem nenhuma mentira. Se fabricasse \"só restam 3"
+    },
+    {
+     "line": 46,
+     "text": "- **Contador que reinicia / \"só hoje\" perpétuo.** Mentira clássica — veto e perda de confi"
+    }
+   ]
+  },
+  {
+   "rel": "frameworks/value-equation-engineer/dream-outcome-amplification.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 42,
+     "text": "- **Lastro**: 3 alunos aprovados em vagas remotas reais sustentam a promessa."
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "frameworks/value-equation-engineer/time-delay-compression.md",
+   "flags": 2,
+   "unproven_claims": [
+    {
+     "line": 9,
+     "text": "**Não use** prometendo prazos que a entrega não cumpre — \"resultado em 7 dias\" sem lastro "
+    },
+    {
+     "line": 42,
+     "text": "- **Dois tempos**: \"fale com confiança numa entrevista em 7 dias; aprovado em 60\"."
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "frameworks/value-equation.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 43,
+     "text": "- **Resultado**: valor percebido sobe sem mexer no preço; a promessa vira \"aprovado na ent"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "lib/components/cta-block.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 6,
+     "text": "A regra de ouro: **um CTA, uma ação**. Dar duas opções divide a atenção e baixa a taxa. Es"
+    }
+   ]
+  },
+  {
+   "rel": "lib/components/guarantee-block.md",
+   "flags": 2,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 9,
+     "text": "- Depois do valor, **antes** do preço — é onde derruba a última muralha de medo."
+    },
+    {
+     "line": 19,
+     "text": "Preencha cada `{{...}}`. O último campo é o trava-segurança: sem o \"sim\" da operação, o bl"
+    }
+   ]
+  },
+  {
+   "rel": "lib/components/proof-block.md",
+   "flags": 2,
+   "unproven_claims": [
+    {
+     "line": 13,
+     "text": "Não use prova genérica para claim específico. Se o claim diz \"30 dias\", a prova precisa mo"
+    },
+    {
+     "line": 29,
+     "text": "A prova é específica, casa com o claim (15% prometido vs 21% provado), tem rastro e força "
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "lib/components/scarcity-block.md",
+   "flags": 2,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 6,
+     "text": "Este bloco força você a declarar o **motivo verdadeiro** do limite antes de usá-lo. Se voc"
+    },
+    {
+     "line": 13,
+     "text": "Nunca use contador falso, \"últimas vagas\" perpétuo, ou \"preço sobe hoje\" que nunca sobe. I"
+    }
+   ]
+  },
+  {
+   "rel": "lib/components/value-stack-block.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 29,
+     "text": "Cada item tem nome próprio, resolve uma dor nomeada, e tem valor com lastro. A soma alta t"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "lib/patterns/close-patterns.md",
+   "flags": 3,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 4,
+     "text": "O fechamento é a sequência que leva o leitor da última hesitação até a ação — e que recupe"
+    },
+    {
+     "line": 6,
+     "text": "A ordem importa. Valor primeiro, depois reversão de risco, depois escassez verdadeira, dep"
+    },
+    {
+     "line": 16,
+     "text": "6. **Trate as 3 últimas objeções** — preço, ceticismo, tempo — cada uma com [prova](../com"
+    }
+   ]
+  },
+  {
+   "rel": "lib/patterns/continuity-patterns.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 6,
+     "text": "A premissa do squad: o centro é a sequência (princípio `money_model_spine`), e a continuid"
+    }
+   ]
+  },
+  {
+   "rel": "lib/patterns/upsell-patterns.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 32,
+     "text": "Cada upsell responde a uma pergunta que a compra criou. O AOV sobe de R$ 497 para até R$ 9"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "lib/taxonomies/guarantee-types.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 33,
+     "text": "13. **Performance / revenue-share** — você só ganha se o cliente ganhar (% do resultado, e"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "lib/taxonomies/lead-types.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 22,
+     "text": "Abre com o **maior benefício** (\"Em 30 dias, você vai...\"). A promessa precisa ser grande "
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "lib/taxonomies/sophistication-levels.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 21,
+     "text": "Concorrentes copiaram. Você **eleva**: \"Emagreça em 30 dias sem dieta\". Mantém o claim, so"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "lib/utilities/roi-calculator.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 18,
+     "text": "- `roi_multiplo` = ganho_esperado / preco_oferta (ex.: \"7x\")."
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "phrases/close-lines.md",
+   "flags": 2,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 7,
+     "text": "Use este banco na reta final de qualquer peça: o fecho de uma VSL ou webinar, o último e-m"
+    },
+    {
+     "line": 36,
+     "text": "- \"Cada dia parado custa [perda concreta]. Começar hoje encerra essa conta.\" [custo de adi"
+    }
+   ]
+  },
+  {
+   "rel": "phrases/ctas.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 7,
+     "text": "Use este banco em todo ponto onde a peça pede um clique, uma resposta ou uma compra: o bot"
+    }
+   ]
+  },
+  {
+   "rel": "phrases/urgency-scarcity-lines.md",
+   "flags": 2,
+   "unproven_claims": [
+    {
+     "line": 9,
+     "text": "**Regra inegociável (`truthful_scarcity`):** toda escassez e urgência são 100% verdadeiras"
+    }
+   ],
+   "scarcity": [
+    {
+     "line": 7,
+     "text": "Use este banco no fecho de uma oferta, na sequência de carrinho aberto, no aviso de última"
+    }
+   ]
+  },
+  {
+   "rel": "projects/continuity-launch-project/04-compliance-and-ship.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 19,
+     "text": "6. Escreva o FAQ com as regras de cobrança, renovação e cancelamento, e as últimas objeçõe"
+    }
+   ]
+  },
+  {
+   "rel": "projects/enterprise-deal-book-project/05-compliance-and-handoff.md",
+   "flags": 2,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 4,
+     "text": "Auditar cada claim do caso de negócio, liberar o deal book e entregá-lo ao time de vendas."
+    },
+    {
+     "line": 18,
+     "text": "5. Escreva o FAQ do comitê que neutraliza as últimas objeções por papel e formaliza as reg"
+    }
+   ]
+  },
+  {
+   "rel": "projects/full-launch-blackbook-project/12-compliance-and-blackbook-assembly.md",
+   "flags": 2,
+   "unproven_claims": [
+    {
+     "line": 4,
+     "text": "Rodar a barreira final e montar o entregável. Primeiro, a auditoria de compliance veta o q"
+    }
+   ],
+   "scarcity": [
+    {
+     "line": 10,
+     "text": "- **Task [`compliance-audit`](../../tasks/qa-memory/compliance-audit.md)** — dono [`compli"
+    }
+   ]
+  },
+  {
+   "rel": "projects/full-launch-blackbook-project/13-memory-update.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 4,
+     "text": "Extrair do blackbook fechado tudo que vira memória reutilizável — controles vencedores, pa"
+    }
+   ]
+  },
+  {
+   "rel": "projects/offer-book-project/06-money-model.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 19,
+     "text": "7. Valide a liquidação com o unit-econ da Fase 07: atração+upsell cobrem o CAC em <30 dias"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "projects/offer-book-project/07-pricing-unit-economics.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 4,
+     "text": "Derivar o preço do valor e da disposição a pagar — nunca do custo — e provar com números q"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "projects/offer-book-project/08-big-idea-positioning.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 4,
+     "text": "Destilar tudo em UMA Big Idea — e apenas uma — e travar a posição competitiva e o tipo de "
+    }
+   ]
+  },
+  {
+   "rel": "projects/relaunch-project/03-new-copy-and-funnel.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 7,
+     "text": "A [`02-offer-and-bigidea-refresh`](02-offer-and-bigidea-refresh.md) entrega o `artifact.of"
+    }
+   ]
+  },
+  {
+   "rel": "projects/relaunch-project/04-compliance-and-ship.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 18,
+     "text": "5. Escreva o FAQ que neutraliza as últimas objeções e formaliza as regras da oferta."
+    }
+   ]
+  },
+  {
+   "rel": "projects/single-promo-project/03-email-sequence.md",
+   "flags": 2,
+   "unproven_claims": [
+    {
+     "line": 4,
+     "text": "Construir a sequência que leva a lista até a peça-âncora e fecha o carrinho. Na promo enxu"
+    }
+   ],
+   "scarcity": [
+    {
+     "line": 20,
+     "text": "7. Acrescente o SMS nos picos: abertura e últimas horas, curto e direto."
+    }
+   ]
+  },
+  {
+   "rel": "projects/single-promo-project/05-compliance-and-ship.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 17,
+     "text": "4. Escreva o FAQ que neutraliza as últimas objeções e formaliza as regras da oferta."
+    }
+   ]
+  },
+  {
+   "rel": "reference/books/copywriting/collier-letter-book.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 22,
+     "text": "- **Entre na conversa** que já corre na mente do leitor; continue o pensamento dele, não o"
+    }
+   ]
+  },
+  {
+   "rel": "reference/books/offers-and-monetization/hormozi-100m-leads.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 8,
+     "text": "Uma oferta imbatível não serve para nada se ninguém a vê. Este livro é o motor de demanda "
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "reference/books/offers-and-monetization/hormozi-100m-money-models.md",
+   "flags": 2,
+   "unproven_claims": [
+    {
+     "line": 8,
+     "text": "Os dois primeiros livros da série resolvem duas peças soltas: a oferta e o fluxo de leads."
+    },
+    {
+     "line": 23,
+     "text": "- Desenhe para que **um cliente financie a aquisição de dois** em menos de 30 dias; aí o c"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "reference/books/offers-and-monetization/ramanujam-monetizing-innovation.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 28,
+     "text": "- Preço não é a última etapa; é o **primeiro filtro** de produto. Projete o produto em tor"
+    }
+   ]
+  },
+  {
+   "rel": "reference/books/persuasion-psychology/voss-never-split-the-difference.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 16,
+     "text": "Nomear a emoção (\"parece que você já tentou de tudo\") e repetir as últimas palavras do out"
+    }
+   ]
+  },
+  {
+   "rel": "reference/case-studies/100m-money-models-records.md",
+   "flags": 7,
+   "unproven_claims": [
+    {
+     "line": 4,
+     "text": "Em agosto de 2025, Alex Hormozi lançou o terceiro livro da série Acquisition.com, *$100M M"
+    },
+    {
+     "line": 9,
+     "text": "- **Atração:** o livro a ~US$ 30, com um *value stack* de bônus digitais para todo comprad"
+    },
+    {
+     "line": 11,
+     "text": "- **Continuidade de alto valor:** um mastermind/continuidade vendido ao vivo (relatado na "
+    },
+    {
+     "line": 26,
+     "text": "- Recorde anterior: *Spare*, do Príncipe Harry — **1,43 milhão** de cópias.¹"
+    },
+    {
+     "line": 27,
+     "text": "- Faturamento do dia relatado **na casa de ~US$ 87 milhões** pela cobertura do evento (cif"
+    },
+    {
+     "line": 28,
+     "text": "- Audiência: **mais de 1 milhão** de inscritos no livestream.²"
+    },
+    {
+     "line": 29,
+     "text": "- Upsell de continuidade/mastermind: relatos apontam **centenas de compradores** na faixa "
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "reference/case-studies/agora-empiricus-front-to-back.md",
+   "flags": 3,
+   "unproven_claims": [
+    {
+     "line": 31,
+     "text": "- **Agregado público:** Agora com receita estimada **~US$ 1 bilhão** e **120+ newsletters*"
+    },
+    {
+     "line": 52,
+     "text": "¹ Growth Models, *Behind the curtain of a $1B newsletter business*: <https://growthmodels."
+    }
+   ],
+   "scarcity": [
+    {
+     "line": 26,
+     "text": "- **Carta longa que vende valor antes do preço:** a VSL/página longa constrói desejo e mat"
+    }
+   ]
+  },
+  {
+   "rel": "reference/case-studies/challenge-funnel-launch.md",
+   "flags": 5,
+   "unproven_claims": [
+    {
+     "line": 9,
+     "text": "- **Atração:** inscrição grátis ou barata no desafio. A captura é fácil porque o compromis"
+    },
+    {
+     "line": 15,
+     "text": "A **big idea** (UMA, ver `one_big_idea`): *você não precisa acreditar — em 5 dias você vai"
+    },
+    {
+     "line": 36,
+     "text": "- **big-idea-architect:** ancore a Big Idea na **prova vivida** (\"em 5 dias você vê\"), não"
+    }
+   ],
+   "scarcity": [
+    {
+     "line": 11,
+     "text": "- **Núcleo (a venda):** no último dia, com o público engajado e com uma vitória no bolso, "
+    },
+    {
+     "line": 35,
+     "text": "- **money-model-designer:** desenhe o desafio como **degrau de atração de alto engajamento"
+    }
+   ]
+  },
+  {
+   "rel": "reference/case-studies/continuity-retention-wins.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 36,
+     "text": "- **big-idea-architect:** ancore a oferta de continuidade na **perda** (\"não perca o resul"
+    }
+   ]
+  },
+  {
+   "rel": "reference/case-studies/ladder-pricing-examples.md",
+   "flags": 2,
+   "unproven_claims": [
+    {
+     "line": 28,
+     "text": "- **Razão entre degraus:** saltos de 3x a 10x entre níveis adjacentes são uma faixa comum "
+    },
+    {
+     "line": 29,
+     "text": "- **Conversão do degrau de atração:** 1–5% do tráfego de página é uma faixa plausível para"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "reference/industries/agencies.md",
+   "flags": 2,
+   "unproven_claims": [
+    {
+     "line": 27,
+     "text": "- **Funil de call (agência):** do lead que agenda diagnóstico, comparecimento citado na fa"
+    }
+   ],
+   "scarcity": [
+    {
+     "line": 37,
+     "text": "O `compliance-auditor` é a última barreira (ver [`../../agents/compliance-auditor.md`](../"
+    }
+   ]
+  },
+  {
+   "rel": "reference/industries/coaching-consulting.md",
+   "flags": 4,
+   "unproven_claims": [
+    {
+     "line": 27,
+     "text": "- **Funil de call (high-ticket):** do lead que agenda, comparecimento à call frequentement"
+    },
+    {
+     "line": 28,
+     "text": "- **VSL/aplicação → call agendada:** 2–10% de quem vê pode agendar, dependendo de qualific"
+    },
+    {
+     "line": 29,
+     "text": "- **E-mail (coaching/serviços):** abertura tende a faixas médias entre setores; cliques na"
+    }
+   ],
+   "scarcity": [
+    {
+     "line": 37,
+     "text": "O `compliance-auditor` é a última barreira (ver [`../../agents/compliance-auditor.md`](../"
+    }
+   ]
+  },
+  {
+   "rel": "reference/industries/ecommerce-dtc.md",
+   "flags": 5,
+   "unproven_claims": [
+    {
+     "line": 28,
+     "text": "- **Carrinho abandonado:** taxa de abandono comumente citada em torno de ~70% (aproximado "
+    },
+    {
+     "line": 29,
+     "text": "- **ROAS:** breakeven depende da margem; muitas operações miram ROAS ~2–4x na aquisição, m"
+    },
+    {
+     "line": 30,
+     "text": "- **Take rate de upsell (order bump):** aceitação de bump frequentemente citada em ~10–30%"
+    },
+    {
+     "line": 41,
+     "text": "- **Direito de arrependimento:** compra online dá ao consumidor prazo legal de desistência"
+    }
+   ],
+   "scarcity": [
+    {
+     "line": 38,
+     "text": "O `compliance-auditor` é a última barreira (ver [`../../agents/compliance-auditor.md`](../"
+    }
+   ]
+  },
+  {
+   "rel": "reference/industries/finance-investing.md",
+   "flags": 3,
+   "unproven_claims": [
+    {
+     "line": 28,
+     "text": "- **E-mail (finanças):** abertura em faixas médias; cliques ~1–3% (aproximado).¹"
+    },
+    {
+     "line": 29,
+     "text": "- **Tráfego frio → low-ticket:** conversão de página de 1–4% é faixa plausível (ilustrativ"
+    }
+   ],
+   "scarcity": [
+    {
+     "line": 37,
+     "text": "**Setor de altíssimo risco de compliance.** O `compliance-auditor` é a última barreira (ve"
+    }
+   ]
+  },
+  {
+   "rel": "reference/industries/health-wellness.md",
+   "flags": 4,
+   "unproven_claims": [
+    {
+     "line": 16,
+     "text": "- **Atração:** desafio de poucos dias (ex.: \"desafio de 7 dias\"), aula/masterclass gratuit"
+    },
+    {
+     "line": 28,
+     "text": "- **E-mail (saúde/fitness):** abertura em faixas médias a altas; cliques ~1–3% (aproximado"
+    },
+    {
+     "line": 29,
+     "text": "- **Tráfego frio → desafio pago:** conversão de página de 1–5% é faixa plausível (ilustrat"
+    }
+   ],
+   "scarcity": [
+    {
+     "line": 37,
+     "text": "**Setor de alto risco de compliance.** O `compliance-auditor` é a última barreira (ver [`."
+    }
+   ]
+  },
+  {
+   "rel": "reference/industries/info-education.md",
+   "flags": 6,
+   "unproven_claims": [
+    {
+     "line": 23,
+     "text": "A Big Idea (UMA, ver `one_big_idea`) costuma girar em torno de **um mecanismo contraintuit"
+    },
+    {
+     "line": 27,
+     "text": "- **E-mail (educação):** taxa de abertura tende a ser das mais altas entre setores; uma re"
+    },
+    {
+     "line": 28,
+     "text": "- **Webinar/aula ao vivo:** registro→presença frequentemente citado ~50–60%; presença→lead"
+    },
+    {
+     "line": 29,
+     "text": "- **Lançamento (estilo seed/PLF):** conversão de lista quente costuma cair em **1–5%** da "
+    },
+    {
+     "line": 30,
+     "text": "- **Tráfego frio → tripwire:** conversão de 1–5% da página é uma faixa plausível (ilustrat"
+    }
+   ],
+   "scarcity": [
+    {
+     "line": 37,
+     "text": "O `compliance-auditor` é a última barreira (ver [`../../agents/compliance-auditor.md`](../"
+    }
+   ]
+  },
+  {
+   "rel": "reference/industries/local-services.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 37,
+     "text": "O `compliance-auditor` é a última barreira (ver [`../../agents/compliance-auditor.md`](../"
+    }
+   ]
+  },
+  {
+   "rel": "reference/industries/professional-services.md",
+   "flags": 2,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 37,
+     "text": "**Setor com restrição ética de publicidade — o compliance vai além do consumidor: inclui o"
+    },
+    {
+     "line": 41,
+     "text": "- **Sem urgência artificial / sem mercantilização:** \"promoção\", \"últimas vagas\", desconto"
+    }
+   ]
+  },
+  {
+   "rel": "reference/industries/saas-b2b.md",
+   "flags": 4,
+   "unproven_claims": [
+    {
+     "line": 27,
+     "text": "- **Trial → pago (PLG):** conversão frequentemente citada na faixa de ~15–25% para trial s"
+    },
+    {
+     "line": 28,
+     "text": "- **Churn:** churn mensal de logos saudável para SMB costuma ser citado em ~3–5% ao mês; m"
+    },
+    {
+     "line": 29,
+     "text": "- **NRR (net revenue retention):** referência \"boa\" frequentemente citada acima de ~100%, "
+    }
+   ],
+   "scarcity": [
+    {
+     "line": 37,
+     "text": "O `compliance-auditor` é a última barreira (ver [`../../agents/compliance-auditor.md`](../"
+    }
+   ]
+  },
+  {
+   "rel": "reference/industries/supplements-nutra.md",
+   "flags": 2,
+   "unproven_claims": [
+    {
+     "line": 27,
+     "text": "- **Conversão de página/advertorial (frio):** faixas de e-commerce se aplicam — ~1–3% é co"
+    }
+   ],
+   "scarcity": [
+    {
+     "line": 37,
+     "text": "**Setor de compliance mais severo do livro.** O `compliance-auditor` é a última barreira ("
+    }
+   ]
+  },
+  {
+   "rel": "reference/psychology/anchoring.md",
+   "flags": 2,
+   "unproven_claims": [
+    {
+     "line": 19,
+     "text": "Um curso de tráfego pago tinha preço de 2.000 reais e poucas vendas. O time inseriu uma ân"
+    }
+   ],
+   "scarcity": [
+    {
+     "line": 6,
+     "text": "Tversky e Kahneman provaram isso de forma extrema. Mostraram uma roleta com números aleató"
+    }
+   ]
+  },
+  {
+   "rel": "reference/psychology/commitment-consistency.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 19,
+     "text": "Uma escola de programação começava com um desafio gratuito de 5 dias. No dia 1, o aluno de"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "reference/psychology/decision-fatigue-and-friction.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 19,
+     "text": "Uma escola de inglês vendia seis planos numa tabela densa. A taxa de matrícula era baixa. "
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "reference/psychology/endowment-effect.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 19,
+     "text": "Uma plataforma de cursos oferecia 7 dias de acesso total sem pagar. A copy não dizia \"expe"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "reference/psychology/framing-effect.md",
+   "flags": 3,
+   "unproven_claims": [
+    {
+     "line": 4,
+     "text": "O efeito de enquadramento diz que a forma de apresentar um fato muda a decisão, mesmo quan"
+    },
+    {
+     "line": 9,
+     "text": "O Sistema 1 reage à descrição, não ao fato puro. Ele não traduz \"10% de gordura\" em \"90% m"
+    },
+    {
+     "line": 19,
+     "text": "Uma assinatura de software custava 1.200 reais por ano. A página dizia só isso, e a conver"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "reference/psychology/open-loops-zeigarnik.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 16,
+     "text": "O `email-sms-sequence-writer` fecha cada e-mail com um gancho para o próximo: o loop de ho"
+    }
+   ]
+  },
+  {
+   "rel": "reference/psychology/scarcity-principle.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 4,
+     "text": "O princípio da escassez diz que o raro parece mais valioso. O que é difícil de ter, o que "
+    }
+   ]
+  },
+  {
+   "rel": "reference/swipe-breakdowns/agora-financial-model.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 4,
+     "text": "Arquétipo: **uma editora de informação que vende assinaturas baratas na frente para depois"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "reference/swipe-breakdowns/application-funnel-anatomy.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 4,
+     "text": "Arquétipo: **o funil que filtra prospects e os leva a uma chamada de vendas para uma ofert"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "reference/swipe-breakdowns/brunson-perfect-webinar-structure.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 36,
+     "text": "9. **Imponha escassez verdadeira** e **feche por perguntas** que respondem as últimas obje"
+    }
+   ]
+  },
+  {
+   "rel": "reference/swipe-breakdowns/challenge-funnel-anatomy.md",
+   "flags": 2,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 18,
+     "text": "7. **Dia final — ponte para a oferta.** O último dia revela que o desafio foi o começo; ap"
+    },
+    {
+     "line": 38,
+     "text": "7. **No último dia, faça a ponte** para a oferta principal com stack, ancoragem e reversão"
+    }
+   ]
+  },
+  {
+   "rel": "reference/swipe-breakdowns/classic-direct-mail-controls.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 4,
+     "text": "Arquétipo: **a carta de vendas física que venceu por anos e virou o \"controle\"** — a peça "
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "reference/swipe-breakdowns/halbert-style-personal-letter.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 4,
+     "text": "Arquétipo: **a carta de vendas que se disfarça de carta pessoal** — escrita como se fosse "
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "reference/swipe-breakdowns/hormozi-100m-money-models-launch.md",
+   "flags": 2,
+   "unproven_claims": [
+    {
+     "line": 6,
+     "text": "Arquétipo: **lançamento de produto-âncora barato que existe para financiar a aquisição de "
+    },
+    {
+     "line": 11,
+     "text": "2. **Oferta de atração com preço-isca.** O livro a ~US$30 derruba a fricção de entrada e m"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "reference/swipe-breakdowns/info-product-launch-email-sequence.md",
+   "flags": 2,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 26,
+     "text": "11. **\"Últimas horas\" + recapitulação.** Reembala a oferta, o resultado e o que se perde a"
+    },
+    {
+     "line": 40,
+     "text": "4. **Fechamento:** \"último dia\" e \"últimas horas\" com urgência verdadeira e recapitulação;"
+    }
+   ]
+  },
+  {
+   "rel": "reference/swipe-breakdowns/supplement-vsl-anatomy.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 15,
+     "text": "8. **Reversão de risco forte.** Garantia longa (ex.: \"devolução em 60-90 dias\") que transf"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "reference/swipe-breakdowns/walker-plf-sideways-letter.md",
+   "flags": 2,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 12,
+     "text": "5. **Sequência de fechamento de carrinho.** E-mails de urgência genuína (último dia, bônus"
+    },
+    {
+     "line": 27,
+     "text": "5. **Fechamento:** sequência de urgência genuína até o carrinho fechar, respondendo as últ"
+    }
+   ]
+  },
+  {
+   "rel": "swipe-sources/provenance-rules.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 40,
+     "text": "- `compliance-auditor`: última barreira — reprova entrada sem as 4 exigências ou com liter"
+    }
+   ]
+  },
+  {
+   "rel": "swipe-sources/usage-license.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 31,
+     "text": "- `compliance-auditor`: última barreira — confere atribuição, teto literal e ausência de a"
+    }
+   ]
+  },
+  {
+   "rel": "swipe/ctas/index.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 9,
+     "text": "- No **final de qualquer peça de venda**: VSL, carta, página de oferta, último e-mail de u"
+    }
+   ]
+  },
+  {
+   "rel": "swipe/email-sms/launch-cart-sequence.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 15,
+     "text": "8. **\"Últimas horas\" + recapitulação.** Reembala oferta, resultado e o que se perde ao não"
+    }
+   ]
+  },
+  {
+   "rel": "swipe/guarantees/reembolso-incondicional.md",
+   "flags": 2,
+   "unproven_claims": [
+    {
+     "line": 11,
+     "text": "2. **Prazo claro** — a janela exata (ex.: 30 dias). Prazo definido fecha disputa e dá segu"
+    },
+    {
+     "line": 31,
+     "text": "- **Sofisticação 1-2** — a incondicional simples já basta; o mercado ainda confia no claim"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "swipe/headlines-hooks/benefit-promise-headline.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 11,
+     "text": "4. **A especificidade numérica.** Números exatos (não redondos) sobem a credibilidade — \"e"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "swipe/leads-openers/index.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 4,
+     "text": "Esta categoria reúne **padrões estruturais de lead** — os primeiros 10-20% de uma VSL, car"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "swipe/scarcity-urgency/index.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 12,
+     "text": "- Quando o `email-sms-sequence-writer` monta a sequência de avisos de fechamento de carrin"
+    }
+   ]
+  },
+  {
+   "rel": "tasks/big-idea/lock-positioning-lead.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 50,
+     "text": "**Próxima task:** [`assemble-offer-book`](../assembly/assemble-offer-book.md) — dono [`off"
+    }
+   ]
+  },
+  {
+   "rel": "tasks/copy/write-email-sms-sequences.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 29,
+     "text": "8. **Calibrar a cadência (ToT).** Gerar ≥3 cadências para o fechamento (suave, padrão, agr"
+    }
+   ]
+  },
+  {
+   "rel": "tasks/offer-architecture/model-unit-economics.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 44,
+     "text": "CAC, AOV, margem, LTV, payback e LTV:CAC estão calculados (ou estimados com suposição expl"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "tasks/ops/build-run-of-show.md",
+   "flags": 2,
+   "unproven_claims": [
+    {
+     "line": 23,
+     "text": "4. **Escolher a janela de carrinho (ToT).** Gerar ≥3 janelas (4 dias com cadência crescent"
+    },
+    {
+     "line": 41,
+     "text": "- Sales-flow com ondas e gatilhos de escassez **100% verdadeiros**."
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "tasks/qa-memory/compliance-audit.md",
+   "flags": 2,
+   "unproven_claims": [
+    {
+     "line": 4,
+     "text": "Auditar cada peça do lançamento contra três barreiras inegociáveis — todo claim tem lastro"
+    }
+   ],
+   "scarcity": [
+    {
+     "line": 7,
+     "text": "[`compliance-auditor`](../../agents/compliance-auditor.md). É a **última barreira** do pip"
+    }
+   ]
+  },
+  {
+   "rel": "tasks/qa-memory/memory-update.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 10,
+     "text": "Roda em D7, por último: ativa quando a [`assemble-blackbook`](assemble-blackbook.md) entre"
+    }
+   ]
+  },
+  {
+   "rel": "templates/copy/email-sms-sequences-template.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 37,
+     "text": "A sequência está pronta quando: (1) há **uma mensagem redigida por linha** da [`sequence-m"
+    }
+   ]
+  },
+  {
+   "rel": "templates/copy/recap-vsl-template.md",
+   "flags": 2,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 3,
+     "text": "A Recap VSL é o vídeo **curto** que reapresenta a oferta para quem já viu a VSL/webinar pr"
+    },
+    {
+     "line": 8,
+     "text": "- **Quando:** depois da VSL/webinar principal, para o público de fechamento (assistiu e nã"
+    }
+   ]
+  },
+  {
+   "rel": "templates/copy/sequence-matrix-template.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 9,
+     "text": "- Cada mensagem tem **um** trabalho e **um** CTA. Ordene do mais indireto (história) ao ma"
+    }
+   ]
+  },
+  {
+   "rel": "templates/funnel-tech/funnel-map-template.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 14,
+     "text": "- **{{OBJETIVO_PRIMARIO}}** — a conversão que o funil otimiza, em uma frase (ex.: \"vender "
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "templates/funnel-tech/tech-deliverability-plan-template.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 20,
+     "text": "- **{{JANELA_DE_PICO}}** — os horários de maior carga (abertura de carrinho, último e-mail"
+    }
+   ]
+  },
+  {
+   "rel": "templates/growth/affiliate-program-template.md",
+   "flags": 2,
+   "unproven_claims": [
+    {
+     "line": 3,
+     "text": "Este template desenha o **programa de afiliados** de ponta a ponta: quem recruta, quanto p"
+    },
+    {
+     "line": 16,
+     "text": "- **{{COOKIE_ATRIBUICAO}}** — a janela de atribuição do link rastreado (ex.: 30 dias, últi"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "templates/offer/money-model-template.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 13,
+     "text": "- **{{META_30_DIAS}}** — a meta de payback: quanto um cliente precisa gerar para financiar"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "templates/offer/offer-stack-template.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 42,
+     "text": "Cada item tem nome próprio, resolve uma dor nomeada, move uma alavanca e tem valor com las"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "templates/offer/products-and-offers-template.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 48,
+     "text": "Leitura: três papéis distintos, a atração (R$27) liquida o CAC, cada linha tem mecanismo n"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "templates/ops/asset-inventory-tracker-template.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 30,
+     "text": "Leitura: cada ativo tem um dono nomeado, um tipo claro, um hosting concreto e uma data de "
+    }
+   ]
+  },
+  {
+   "rel": "templates/ops/launch-memo-template.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 3,
+     "text": "Este template produz o **launch memo**: uma página única que diz a todo o squad o que vamo"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "templates/strategy/positioning-template.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 3,
+     "text": "Esta planilha fixa **o contexto** que faz o cliente entender, em segundos, o que a oferta "
+    }
+   ]
+  },
+  {
+   "rel": "templates/strategy/pricing-wtp-template.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 17,
+     "text": "- **{{FATIA_CAPTURA}}** — quanto do EVA você captura no preço (nunca 100% — deixe excedent"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "templates/strategy/unit-economics-template.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 15,
+     "text": "- **{{PAYBACK}}** — em quantos dias a receita acumulada de um cliente cobre o CAC. Alvo: <"
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "voice/do-not-say.md",
+   "flags": 2,
+   "unproven_claims": [
+    {
+     "line": 15,
+     "text": "- **Conserto:** troque por fato. \"Cresce rapidamente\" vira \"dobra em 30 dias\"."
+    }
+   ],
+   "scarcity": [
+    {
+     "line": 58,
+     "text": "- **Banir como padrão:** \"não fique para trás\", \"não perca\", \"pare de fracassar\", \"evite o"
+    }
+   ]
+  },
+  {
+   "rel": "voice/profiles/direct-response-aggressive.md",
+   "flags": 2,
+   "unproven_claims": [
+    {
+     "line": 30,
+     "text": "Frases curtas e secas. Uma vírgula no máximo. Muita frase de 3 a 6 palavras para martelar."
+    }
+   ],
+   "scarcity": [
+    {
+     "line": 24,
+     "text": "**Usar:** agora, hoje, última chance, fecha, garanta, prova, resultado, vaga, prazo, antes"
+    }
+   ]
+  },
+  {
+   "rel": "voice/profiles/friendly-creator.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 26,
+     "text": "**Banir:** advérbios em `-mente`, tom corporativo (\"prezado\", \"venha a usufruir\"), pressão"
+    }
+   ]
+  },
+  {
+   "rel": "voice/profiles/story-driven.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 30,
+     "text": "Frases curtas guiam a cena. Uma vírgula no máximo. Abra no meio da ação, não no contexto. "
+    }
+   ],
+   "scarcity": []
+  },
+  {
+   "rel": "voice/voice-checklist.md",
+   "flags": 1,
+   "unproven_claims": [],
+   "scarcity": [
+    {
+     "line": 43,
+     "text": "6. Se a intenção persuasiva corre risco, gere ≥3 reescritas e escolha a que preserva a for"
+    }
+   ]
+  },
+  {
+   "rel": "workflows/cart-open-close.md",
+   "flags": 3,
+   "unproven_claims": [
+    {
+     "line": 33,
+     "text": "- **Largura da janela (estágio 1):** ≥3 opções (4 dias com cadência crescente, 7 dias, fla"
+    }
+   ],
+   "scarcity": [
+    {
+     "line": 34,
+     "text": "- **Cadência do fechamento (estágio 3):** suave/padrão/agressiva via [`launch/cart-open-cl"
+    },
+    {
+     "line": 45,
+     "text": "- **★ Countdown falso** → o [`compliance-auditor`](../agents/compliance-auditor.md) veta o"
+    }
+   ]
+  },
+  {
+   "rel": "workflows/pre-launch-runway.md",
+   "flags": 1,
+   "unproven_claims": [
+    {
+     "line": 34,
+     "text": "- **Duração da pista:** ~45 dias é o default; ramifica por temperatura da lista (lista fri"
+    }
+   ],
+   "scarcity": []
+  }
+ ]
+}
