@@ -16,13 +16,14 @@ import argparse, json, os
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SKIP = {".git", "__pycache__", ".venv", "venv", "node_modules"}
 
-# Metas por diretório de topo (do plano / BUILD-PROGRESS)
+# Metas por diretório de topo (alinhadas às listas DETALHADAS do mapeamento;
+# o "~768" do resumo era aspiracional — o spec detalhado soma ~600).
 TARGETS = {
-    "agents": 25, "archive": 20, "authority": 22, "checklists": 120,
-    "data": 55, "docs": 18, "frameworks": 95, "lib": 38, "phrases": 18,
-    "projects": 55, "reference": 90, "scripts": 14, "swipe": 42,
-    "swipe-sources": 4, "tasks": 55, "templates": 45, "voice": 22,
-    "workflows": 20,
+    "agents": 25, "archive": 12, "authority": 14, "checklists": 112,
+    "data": 32, "docs": 12, "frameworks": 85, "lib": 19, "phrases": 12,
+    "projects": 51, "reference": 79, "scripts": 12, "swipe": 30,
+    "swipe-sources": 4, "tasks": 32, "templates": 44, "voice": 14,
+    "workflows": 12,
 }
 ROOT_FILES_TARGET = 8  # README, ARCHITECTURE, config.yaml, swipe.config, .gitignore, BUILD-PROGRESS, etc.
 
