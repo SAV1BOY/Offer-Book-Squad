@@ -52,7 +52,7 @@ A [`00-brief`](00-brief.md) entrega o `artifact.account-icp-sketch` e a frase de
 
 ## Gates
 - [`avatar/avatar-voc-verbatim-gate`](../../checklists/avatar/avatar-voc-verbatim-gate.md) — VOC com verbatims rastreáveis por papel.
-- [`proof/proof-claim-backing-gate`](../../checklists/proof-checklist.md) — cada claim com prova por papel.
+- [`proof-checklist`](../../checklists/proof-checklist.md) — cada claim com prova por papel.
 - [`avatar-voc-checklist`](../../checklists/avatar-voc-checklist.md) — a cobertura da DMU está completa.
 
 ## Critério de Saída

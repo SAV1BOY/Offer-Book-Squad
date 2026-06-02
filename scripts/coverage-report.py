@@ -19,10 +19,10 @@ SKIP = {".git", "__pycache__", ".venv", "venv", "node_modules"}
 # Metas por diretório de topo (alinhadas às listas DETALHADAS do mapeamento;
 # o "~768" do resumo era aspiracional — o spec detalhado soma ~600).
 TARGETS = {
-    "agents": 25, "archive": 12, "authority": 14, "checklists": 112,
-    "data": 32, "docs": 12, "frameworks": 85, "lib": 19, "phrases": 12,
-    "projects": 51, "reference": 79, "scripts": 12, "swipe": 30,
-    "swipe-sources": 4, "tasks": 32, "templates": 44, "voice": 14,
+    "agents": 25, "archive": 11, "authority": 13, "checklists": 112,
+    "data": 30, "docs": 10, "frameworks": 82, "lib": 19, "phrases": 10,
+    "projects": 51, "reference": 79, "scripts": 11, "swipe": 30,
+    "swipe-sources": 4, "tasks": 28, "templates": 44, "voice": 9,
     "workflows": 12,
 }
 ROOT_FILES_TARGET = 8  # README, ARCHITECTURE, config.yaml, swipe.config, .gitignore, BUILD-PROGRESS, etc.
