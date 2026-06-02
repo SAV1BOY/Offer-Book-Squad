@@ -7,6 +7,11 @@ status: stable
 version: 1.0.0
 updated: 2026-06-02
 owner_agent: market-sophistication-analyst
+sources:
+  - "Códigos de ética profissional — OAB (advocacia), CFO/CRO (odontologia), CFC (contabilidade), CFM (medicina): publicidade restrita, vedada promessa de resultado, via gov.br e sites dos conselhos."
+  - "Alex Hormozi, *$100M Offers* (2021) e *$100M Leads* (2023) — oferta e geração de leads, aplicados dentro do filtro ético, via reference/books/offers-and-monetization/."
+  - "Indicação como principal fonte de clientes e velocidade de resposta: princípios operacionais observados — diretrizes, não benchmarks numéricos fixos."
+  - "Faixas de conversão de busca local e contato→cliente: padrão representativo de mercado (aproximado/ilustrativo), não auditadas — rotuladas no texto."
 tags: [industry, professional-services, legal, dental, accounting, regulated, ethics, playbook]
 ---
 
@@ -41,6 +46,9 @@ Faixas **aproximadas e que variam muito** por profissão, praça e concorrência
 - **Velocidade e qualidade de resposta:** responder rápido e bem ao contato aumenta muito a conversão (diretriz operacional, não número fixo).
 - **Indicação:** em profissões reguladas, indicação é frequentemente a maior fonte de clientes — invista em experiência e peça referência de forma ética (princípio, não número).
 Sempre meça **conversão de contato e origem dos clientes reais**; benchmarks externos só servem para detectar anomalia.
+
+> **Fonte:** Códigos de ética dos conselhos (OAB, CFO/CRO, CFC, CFM), via gov.br; apoio de Alex Hormozi, *$100M Offers* (2021) dentro do filtro ético. Faixas de conversão e indicação: aproximado/ilustrativo. Acesso 2026-06-02.
+> **Anti-verbatim:** princípios em redação original; literal ≤25 palavras.
 
 ## Compliance do setor
 **Setor com restrição ética de publicidade — o compliance vai além do consumidor: inclui o código do conselho.** O `compliance-auditor` é a última barreira (ver [`../../agents/compliance-auditor.md`](../../agents/compliance-auditor.md)) e pode **vetar**. Pontos críticos:

@@ -7,6 +7,10 @@ status: stable
 version: 1.0.0
 updated: 2026-06-02
 owner_agent: market-sophistication-analyst
+sources:
+  - "Alex Hormozi, *$100M Offers* (2021) e *$100M Leads* (2023) — oferta de primeira visita, garantia e geração de leads, via reference/books/offers-and-monetization/hormozi-100m-offers.md e hormozi-100m-leads.md."
+  - "Velocidade de resposta a leads como driver de conversão: princípio operacional amplamente observado em geração de demanda local — diretriz, não benchmark numérico fixo."
+  - "Faixas de conversão de busca local, agendamento, recompra e CAC geo: padrão representativo de mercado (aproximado/ilustrativo), não auditadas — rotuladas no texto."
 tags: [industry, local-services, home-services, brick-and-mortar, lead-gen, appointments, playbook]
 ---
 
@@ -41,6 +45,9 @@ Faixas **aproximadas e que variam muito** por nicho, cidade e fonte de lead; tra
 - **Conversão de oferta de primeira visita → cliente recorrente:** varia enormemente por nicho e qualidade do serviço (ilustrativo).
 - **Mídia paga local (geo):** CAC depende do ticket e da concorrência da cidade; serviços de ticket alto suportam CAC maior (ilustrativo).
 Sempre meça **taxa de resposta, conversão de agendamento e recompra reais**; benchmarks externos só servem para detectar anomalia.
+
+> **Fonte:** Alex Hormozi, *$100M Offers* (2021) e *$100M Leads* (2023), via reference/books/offers-and-monetization/. Velocidade de resposta: princípio operacional observado, não número fixo. Faixas de conversão local: aproximado/ilustrativo. Acesso 2026-06-02.
+> **Anti-verbatim:** princípios em redação original; literal ≤25 palavras.
 
 ## Compliance do setor
 O `compliance-auditor` é a última barreira (ver [`../../agents/compliance-auditor.md`](../../agents/compliance-auditor.md)) e pode **vetar**. Pontos críticos do setor:

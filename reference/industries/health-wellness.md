@@ -7,6 +7,11 @@ status: stable
 version: 1.0.0
 updated: 2026-06-02
 owner_agent: market-sophistication-analyst
+sources:
+  - "MailerLite, *Email Marketing Benchmarks 2025*, via https://www.mailerlite.com/blog/compare-your-email-performance-metrics-industry-benchmarks — faixas de abertura/clique de e-mail por setor."
+  - "Anvisa e conselhos profissionais — limites de claims de saúde; bem-estar não é prática médica, via https://www.gov.br/anvisa."
+  - "Alex Hormozi, *$100M Offers* (2021) e *$100M Money Models* (2025) — oferta, garantia condicional e money model, via reference/books/offers-and-monetization/."
+  - "Faixas de desafio/masterclass, conversão de página e churn de app: padrão representativo de mercado (aproximado/ilustrativo), não auditadas — rotuladas no texto."
 tags: [industry, health, wellness, fitness, weight-loss, coaching, compliance, playbook]
 ---
 
@@ -41,6 +46,9 @@ Faixas **aproximadas e que variam muito** por nicho, oferta e qualidade de tráf
 - **Tráfego frio → desafio pago:** conversão de página de 1–5% é faixa plausível (ilustrativo).
 - **Retenção de assinatura/app:** churn mensal varia muito; apps de fitness costumam ter churn alto nos primeiros meses (aproximado).
 Sempre meça **aderência, conversão e retenção reais**; benchmarks externos só servem para detectar anomalia.
+
+> **Fonte:** MailerLite, *Email Marketing Benchmarks 2025* (mailerlite.com), e diretrizes da Anvisa (gov.br/anvisa); apoio de Alex Hormozi, *$100M Offers* (2021). Faixas de desafio e churn de app: aproximado/ilustrativo. Acesso 2026-06-02.
+> **Anti-verbatim:** princípios em redação original; literal ≤25 palavras.
 
 ## Compliance do setor
 **Setor de alto risco de compliance.** O `compliance-auditor` é a última barreira (ver [`../../agents/compliance-auditor.md`](../../agents/compliance-auditor.md)) e pode **vetar**. Pontos críticos:

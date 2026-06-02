@@ -7,6 +7,9 @@ status: stable
 version: 1.0.0
 updated: 2026-06-02
 owner_agent: market-sophistication-analyst
+sources:
+  - "Alex Hormozi, *$100M Offers* (2021) e *$100M Leads* (2023) — base de oferta, garantia e geração de leads, via reference/books/offers-and-monetization/hormozi-100m-offers.md e hormozi-100m-leads.md."
+  - "Faixas de funil de call, outbound, churn de retainer e LTV:CAC: padrão representativo de mercado (aproximado/ilustrativo), não auditadas — rotuladas no texto."
 tags: [industry, agency, done-for-you, b2b-services, retainer, lead-gen, playbook]
 ---
 
@@ -41,6 +44,9 @@ Faixas **aproximadas e que variam muito** por nicho, ticket e canal de aquisiç�
 - **Churn de retainer:** retenção é tudo; churn mensal saudável costuma ser citado em poucos por cento, mas varia muito por nicho e qualidade de entrega (aproximado).
 - **LTV:CAC:** como CAC de conta é alto, o retainer precisa durar meses para o LTV compensar — alvo comum de LTV:CAC saudável citado em ~3:1 ou mais (ilustrativo).
 Sempre meça **close rate, churn e LTV:CAC reais**; benchmarks externos só servem para detectar anomalia.
+
+> **Fonte:** Alex Hormozi, *$100M Offers* (2021) e *$100M Leads* (2023), via reference/books/offers-and-monetization/. Faixas de comparecimento, fechamento, churn e LTV:CAC: padrão representativo de mercado (aproximado/ilustrativo), não auditadas. Acesso 2026-06-02.
+> **Anti-verbatim:** princípios em redação original; literal ≤25 palavras.
 
 ## Compliance do setor
 O `compliance-auditor` é a última barreira (ver [`../../agents/compliance-auditor.md`](../../agents/compliance-auditor.md)) e pode **vetar**. Pontos críticos do setor:

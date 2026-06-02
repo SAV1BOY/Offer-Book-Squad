@@ -7,6 +7,12 @@ status: stable
 version: 1.0.0
 updated: 2026-06-02
 owner_agent: market-sophistication-analyst
+sources:
+  - "MailerLite, *Email Marketing Benchmarks 2025*, via https://www.mailerlite.com/blog/compare-your-email-performance-metrics-industry-benchmarks — abertura ~35% para educação, cliques 2–3%."
+  - "HubSpot, *Average Email Open Rate Benchmark*, via https://blog.hubspot.com/sales/average-email-open-rate-benchmark."
+  - "ON24, *2025 Webinar Benchmarks Report*, via https://www.on24.com/blog/key-takeaways-from-the-2025-webinar-benchmarks-report/ — registro→presença e engajamento."
+  - "Alex Hormozi, *$100M Offers* (2021) e *$100M Money Models* (2025) — oferta, garantia e money model, via reference/books/offers-and-monetization/."
+  - "Faixas de lançamento (seed/PLF) e tripwire: padrão representativo de mercado (aproximado/ilustrativo), não auditadas — rotuladas no texto."
 tags: [industry, info-product, online-course, education, cohort, membership, playbook]
 ---
 
@@ -41,6 +47,9 @@ Faixas **aproximadas e que variam muito** por nicho, oferta e qualidade de lista
 - **Lançamento (estilo seed/PLF):** conversão de lista quente costuma cair em **1–5%** da lista que compra (ilustrativo — varia com aquecimento, preço e oferta).
 - **Tráfego frio → tripwire:** conversão de 1–5% da página é uma faixa plausível (ilustrativo).
 Sempre meça o **click-to-open** e a conversão real do seu funil; benchmarks externos só servem para detectar anomalia.
+
+> **Fonte:** MailerLite (mailerlite.com) e HubSpot (blog.hubspot.com) para e-mail; ON24, *2025 Webinar Benchmarks* (on24.com), para webinar; apoio de Alex Hormozi, *$100M Offers* (2021). Faixas de lançamento: aproximado/ilustrativo. Acesso 2026-06-02.
+> **Anti-verbatim:** princípios em redação original; literal ≤25 palavras.
 
 ## Compliance do setor
 O `compliance-auditor` é a última barreira (ver [`../../agents/compliance-auditor.md`](../../agents/compliance-auditor.md)) e pode **vetar**. Pontos críticos do setor:

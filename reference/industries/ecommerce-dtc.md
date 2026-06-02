@@ -7,6 +7,11 @@ status: stable
 version: 1.0.0
 updated: 2026-06-02
 owner_agent: market-sophistication-analyst
+sources:
+  - "Baymard Institute, *Cart Abandonment Rate*, via https://baymard.com/lists/cart-abandonment-rate — faixas de conversão e abandono de e-commerce."
+  - "Klaviyo, *Email Marketing Benchmarks*, via https://www.klaviyo.com/marketing-resources/email-marketing-benchmarks — abertura e receita de fluxos."
+  - "Alex Hormozi, *$100M Offers* (2021) e *$100M Money Models* (2025) — value stack, garantia e money model de front-end, via reference/books/offers-and-monetization/."
+  - "ROAS, take rate de order bump e demais faixas: padrão representativo de mercado (aproximado/ilustrativo), não auditadas — rotuladas no texto."
 tags: [industry, ecommerce, dtc, physical-product, aov, ltv, subscription, playbook]
 ---
 
@@ -42,6 +47,9 @@ Faixas **aproximadas e que variam muito** por categoria, ticket e fonte de tráf
 - **Take rate de upsell (order bump):** aceitação de bump frequentemente citada em ~10–30% quando bem casado (ilustrativo).
 - **E-mail (e-commerce):** abertura em faixas médias; receita de fluxos (carrinho, boas-vindas) costuma superar campanhas avulsas (aproximado).²
 Sempre meça **conversão, AOV, CAC e LTV reais** da sua operação; benchmarks externos só servem para detectar anomalia.
+
+> **Fonte:** Baymard Institute, *Cart Abandonment Rate* (baymard.com), e Klaviyo, *Email Marketing Benchmarks* (klaviyo.com); apoio de Alex Hormozi, *$100M Offers* (2021). ROAS e take rate de bump: aproximado/ilustrativo. Acesso 2026-06-02.
+> **Anti-verbatim:** princípios em redação original; literal ≤25 palavras.
 
 ## Compliance do setor
 O `compliance-auditor` é a última barreira (ver [`../../agents/compliance-auditor.md`](../../agents/compliance-auditor.md)) e pode **vetar**. Pontos críticos do setor:

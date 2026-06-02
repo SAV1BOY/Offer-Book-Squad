@@ -7,6 +7,11 @@ status: stable
 version: 1.0.0
 updated: 2026-06-02
 owner_agent: market-sophistication-analyst
+sources:
+  - "Baymard Institute, *Cart Abandonment Rate*, via https://baymard.com/lists/cart-abandonment-rate — faixas de conversão de e-commerce aplicáveis a advertorial/VSL."
+  - "Anvisa — regras de suplementos alimentares: vedado claim de doença (prevenir/tratar/curar/diagnosticar); alegações dentro do registro, via https://www.gov.br/anvisa."
+  - "Alex Hormozi, *$100M Offers* (2021) e *$100M Money Models* (2025) — oferta empilhada, garantia e money model de assinatura, via reference/books/offers-and-monetization/."
+  - "Take rate de assinatura, recompra e AOV: padrão representativo de mercado (aproximado/ilustrativo), não auditadas — rotuladas no texto."
 tags: [industry, supplements, nutra, nutraceuticals, dtc, health-claims, compliance, playbook]
 ---
 
@@ -41,6 +46,9 @@ Faixas **aproximadas e que variam muito** por categoria, ativo e fonte de tráfe
 - **Recompra/retenção da assinatura:** a duração média da assinatura (quantos ciclos até o cancelamento) define o LTV e a saúde do negócio (ilustrativo — meça a sua).
 - **AOV:** bundles de múltiplos meses elevam o AOV bem acima do frasco único (ilustrativo).
 Sempre meça **conversão, AOV, take rate de assinatura, CAC e LTV reais**; benchmarks externos só servem para detectar anomalia.
+
+> **Fonte:** Baymard Institute (baymard.com) para conversão; regras da Anvisa (gov.br/anvisa) para claims; apoio de Alex Hormozi, *$100M Offers* (2021). Take rate de assinatura e AOV: aproximado/ilustrativo. Acesso 2026-06-02.
+> **Anti-verbatim:** princípios em redação original; literal ≤25 palavras.
 
 ## Compliance do setor
 **Setor de compliance mais severo do livro.** O `compliance-auditor` é a última barreira (ver [`../../agents/compliance-auditor.md`](../../agents/compliance-auditor.md)) e pode **vetar**. Pontos críticos:

@@ -7,6 +7,11 @@ status: stable
 version: 1.0.0
 updated: 2026-06-02
 owner_agent: market-sophistication-analyst
+sources:
+  - "MailerLite, *Email Marketing Benchmarks 2025*, via https://www.mailerlite.com/blog/compare-your-email-performance-metrics-industry-benchmarks — faixas de abertura/clique de e-mail por setor."
+  - "HubSpot, *Average Email Open Rate Benchmark*, via https://blog.hubspot.com/sales/average-email-open-rate-benchmark."
+  - "Alex Hormozi, *$100M Offers* (2021) e *$100M Money Models* (2025) — oferta, garantia e money model, via reference/books/offers-and-monetization/."
+  - "Faixas de funil de call high-ticket (comparecimento, fechamento, VSL→call): padrão representativo de mercado (aproximado/ilustrativo), não auditadas — rotuladas no texto."
 tags: [industry, coaching, consulting, high-ticket, mentoring, done-with-you, playbook]
 ---
 
@@ -41,6 +46,9 @@ Faixas **aproximadas e que variam muito** por nicho, ticket e qualidade de tráf
 - **E-mail (coaching/serviços):** abertura tende a faixas médias entre setores; cliques na casa de 1–3% (aproximado).¹
 - **Orgânico/autoridade:** a conversão de conteúdo para call não tem benchmark estável — depende de nicho e prova. Meça o seu.
 Sempre meça **show-up rate** e **close rate** reais do seu funil; benchmarks externos só servem para detectar anomalia.
+
+> **Fonte:** MailerLite, *Email Marketing Benchmarks 2025*, e HubSpot, *Average Email Open Rate Benchmark*, via mailerlite.com e blog.hubspot.com; apoio de Alex Hormozi, *$100M Offers* (2021). Faixas de call high-ticket: aproximado/ilustrativo. Acesso 2026-06-02.
+> **Anti-verbatim:** princípios em redação original; literal ≤25 palavras.
 
 ## Compliance do setor
 O `compliance-auditor` é a última barreira (ver [`../../agents/compliance-auditor.md`](../../agents/compliance-auditor.md)) e pode **vetar**. Pontos críticos do setor:

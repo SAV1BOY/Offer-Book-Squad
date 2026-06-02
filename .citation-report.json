@@ -1,98 +1,7 @@
 {
  "files": 131,
  "max_words": 25,
- "violations": [
-  {
-   "rel": "reference/industries/agencies.md",
-   "ok": false,
-   "issues": [
-    "bloco de fonte/citação ausente (sem `sources` nem '> **Fonte:**')"
-   ],
-   "warns": [],
-   "long_quotes": []
-  },
-  {
-   "rel": "reference/industries/coaching-consulting.md",
-   "ok": false,
-   "issues": [
-    "bloco de fonte/citação ausente (sem `sources` nem '> **Fonte:**')"
-   ],
-   "warns": [],
-   "long_quotes": []
-  },
-  {
-   "rel": "reference/industries/ecommerce-dtc.md",
-   "ok": false,
-   "issues": [
-    "bloco de fonte/citação ausente (sem `sources` nem '> **Fonte:**')"
-   ],
-   "warns": [],
-   "long_quotes": []
-  },
-  {
-   "rel": "reference/industries/finance-investing.md",
-   "ok": false,
-   "issues": [
-    "bloco de fonte/citação ausente (sem `sources` nem '> **Fonte:**')"
-   ],
-   "warns": [],
-   "long_quotes": []
-  },
-  {
-   "rel": "reference/industries/health-wellness.md",
-   "ok": false,
-   "issues": [
-    "bloco de fonte/citação ausente (sem `sources` nem '> **Fonte:**')"
-   ],
-   "warns": [],
-   "long_quotes": []
-  },
-  {
-   "rel": "reference/industries/info-education.md",
-   "ok": false,
-   "issues": [
-    "bloco de fonte/citação ausente (sem `sources` nem '> **Fonte:**')"
-   ],
-   "warns": [],
-   "long_quotes": []
-  },
-  {
-   "rel": "reference/industries/local-services.md",
-   "ok": false,
-   "issues": [
-    "bloco de fonte/citação ausente (sem `sources` nem '> **Fonte:**')"
-   ],
-   "warns": [],
-   "long_quotes": []
-  },
-  {
-   "rel": "reference/industries/professional-services.md",
-   "ok": false,
-   "issues": [
-    "bloco de fonte/citação ausente (sem `sources` nem '> **Fonte:**')"
-   ],
-   "warns": [],
-   "long_quotes": []
-  },
-  {
-   "rel": "reference/industries/saas-b2b.md",
-   "ok": false,
-   "issues": [
-    "bloco de fonte/citação ausente (sem `sources` nem '> **Fonte:**')"
-   ],
-   "warns": [],
-   "long_quotes": []
-  },
-  {
-   "rel": "reference/industries/supplements-nutra.md",
-   "ok": false,
-   "issues": [
-    "bloco de fonte/citação ausente (sem `sources` nem '> **Fonte:**')"
-   ],
-   "warns": [],
-   "long_quotes": []
-  }
- ],
+ "violations": [],
  "results": [
   {
    "rel": "reference/books/b2b-enterprise/dixon-adamson-challenger-sale.md",
@@ -383,91 +292,71 @@
   },
   {
    "rel": "reference/industries/agencies.md",
-   "ok": false,
-   "issues": [
-    "bloco de fonte/citação ausente (sem `sources` nem '> **Fonte:**')"
-   ],
+   "ok": true,
+   "issues": [],
    "warns": [],
    "long_quotes": []
   },
   {
    "rel": "reference/industries/coaching-consulting.md",
-   "ok": false,
-   "issues": [
-    "bloco de fonte/citação ausente (sem `sources` nem '> **Fonte:**')"
-   ],
+   "ok": true,
+   "issues": [],
    "warns": [],
    "long_quotes": []
   },
   {
    "rel": "reference/industries/ecommerce-dtc.md",
-   "ok": false,
-   "issues": [
-    "bloco de fonte/citação ausente (sem `sources` nem '> **Fonte:**')"
-   ],
+   "ok": true,
+   "issues": [],
    "warns": [],
    "long_quotes": []
   },
   {
    "rel": "reference/industries/finance-investing.md",
-   "ok": false,
-   "issues": [
-    "bloco de fonte/citação ausente (sem `sources` nem '> **Fonte:**')"
-   ],
+   "ok": true,
+   "issues": [],
    "warns": [],
    "long_quotes": []
   },
   {
    "rel": "reference/industries/health-wellness.md",
-   "ok": false,
-   "issues": [
-    "bloco de fonte/citação ausente (sem `sources` nem '> **Fonte:**')"
-   ],
+   "ok": true,
+   "issues": [],
    "warns": [],
    "long_quotes": []
   },
   {
    "rel": "reference/industries/info-education.md",
-   "ok": false,
-   "issues": [
-    "bloco de fonte/citação ausente (sem `sources` nem '> **Fonte:**')"
-   ],
+   "ok": true,
+   "issues": [],
    "warns": [],
    "long_quotes": []
   },
   {
    "rel": "reference/industries/local-services.md",
-   "ok": false,
-   "issues": [
-    "bloco de fonte/citação ausente (sem `sources` nem '> **Fonte:**')"
-   ],
+   "ok": true,
+   "issues": [],
    "warns": [],
    "long_quotes": []
   },
   {
    "rel": "reference/industries/professional-services.md",
-   "ok": false,
-   "issues": [
-    "bloco de fonte/citação ausente (sem `sources` nem '> **Fonte:**')"
-   ],
+   "ok": true,
+   "issues": [],
    "warns": [],
    "long_quotes": []
   },
   {
    "rel": "reference/industries/saas-b2b.md",
-   "ok": false,
-   "issues": [
-    "bloco de fonte/citação ausente (sem `sources` nem '> **Fonte:**')"
-   ],
+   "ok": true,
+   "issues": [],
    "warns": [],
    "long_quotes": []
   },
   {
    "rel": "reference/industries/supplements-nutra.md",
-   "ok": false,
-   "issues": [
-    "bloco de fonte/citação ausente (sem `sources` nem '> **Fonte:**')"
-   ],
+   "ok": true,
+   "issues": [],
    "warns": [],
    "long_quotes": []
   },

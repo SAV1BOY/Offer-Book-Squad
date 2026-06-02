@@ -7,6 +7,11 @@ status: stable
 version: 1.0.0
 updated: 2026-06-02
 owner_agent: market-sophistication-analyst
+sources:
+  - "MailerLite, *Email Marketing Benchmarks 2025*, via https://www.mailerlite.com/blog/compare-your-email-performance-metrics-industry-benchmarks — faixas de abertura/clique de e-mail por setor."
+  - "CVM — regras sobre análise, consultoria e gestão de valores mobiliários (educação ≠ recomendação), via https://www.gov.br/cvm; rentabilidade passada não garante futura."
+  - "Alex Hormozi, *$100M Offers* (2021) e *$100M Money Models* (2025) — oferta e money model, via reference/books/offers-and-monetization/."
+  - "Faixas de masterclass, conversão de página e CAC: padrão representativo de mercado (aproximado/ilustrativo), não auditadas — rotuladas no texto."
 tags: [industry, finance, investing, trading, wealth, compliance, cvm, playbook]
 ---
 
@@ -41,6 +46,9 @@ Faixas **aproximadas e que variam muito** por nicho, oferta e qualidade de tráf
 - **Tráfego frio → low-ticket:** conversão de página de 1–4% é faixa plausível (ilustrativo).
 - **Custo de aquisição:** tende a ser alto por causa do ceticismo e da concorrência por mídia — espere CAC elevado e compense no LTV da comunidade (ilustrativo).
 Sempre meça **conversão e retenção reais**; benchmarks externos só servem para detectar anomalia.
+
+> **Fonte:** MailerLite, *Email Marketing Benchmarks 2025* (mailerlite.com), e regras da CVM (gov.br/cvm); apoio de Alex Hormozi, *$100M Offers* (2021). Faixas de masterclass e CAC: aproximado/ilustrativo. Acesso 2026-06-02.
+> **Anti-verbatim:** princípios em redação original; literal ≤25 palavras.
 
 ## Compliance do setor
 **Setor de altíssimo risco de compliance.** O `compliance-auditor` é a última barreira (ver [`../../agents/compliance-auditor.md`](../../agents/compliance-auditor.md)) e pode **vetar**. Pontos críticos:

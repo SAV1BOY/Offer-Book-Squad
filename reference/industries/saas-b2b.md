@@ -7,6 +7,11 @@ status: stable
 version: 1.0.0
 updated: 2026-06-02
 owner_agent: market-sophistication-analyst
+sources:
+  - "OpenView, *Product-Led Growth* benchmarks, via https://openviewpartners.com/product-led-growth/ — conversão de trial/freemium por categoria."
+  - "SaaS Capital — referências de churn e net revenue retention, via https://www.saas-capital.com/."
+  - "Ramanujam & Tacke, *Monetizing Innovation* (2016), e Nagle et al., *Strategy and Tactics of Pricing* — empacotamento e precificação por valor, via reference/books/offers-and-monetization/."
+  - "Faixas de NRR, churn e CAC payback: padrão representativo de mercado (aproximado/ilustrativo), não auditadas — rotuladas no texto."
 tags: [industry, saas, b2b, subscription, plg, free-trial, retention, playbook]
 ---
 
@@ -41,6 +46,9 @@ Faixas **aproximadas e que variam muito** por categoria, ticket e motor (PLG vs 
 - **NRR (net revenue retention):** referência "boa" frequentemente citada acima de ~100%, com top performers >120% (aproximado).²
 - **CAC payback:** alvo comum citado em ~12 meses ou menos (ilustrativo — depende de margem e ticket).
 Sempre meça **ativação, churn e NRR reais** do seu produto; benchmarks externos só servem para detectar anomalia.
+
+> **Fonte:** OpenView, *Product-Led Growth* (openviewpartners.com), e SaaS Capital (saas-capital.com) para churn/NRR; apoio de Ramanujam & Tacke, *Monetizing Innovation* (2016). Faixas de payback: aproximado/ilustrativo. Acesso 2026-06-02.
+> **Anti-verbatim:** princípios em redação original; literal ≤25 palavras.
 
 ## Compliance do setor
 O `compliance-auditor` é a última barreira (ver [`../../agents/compliance-auditor.md`](../../agents/compliance-auditor.md)) e pode **vetar**. Pontos críticos do setor:
